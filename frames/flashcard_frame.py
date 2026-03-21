@@ -107,10 +107,15 @@ class FlashcardFrame(ctk.CTkFrame):
         )
         self.next_btn.grid(row=0, column=2, padx=10)
 
-        # Keyboard bindings
-        self.bind_all("<space>", lambda e: self._flip())
-        self.bind_all("<Left>", lambda e: self._prev_card())
-        self.bind_all("<Right>", lambda e: self._next_card())
+        # Keyboard bindings (bound to root window)
+        controller.bind("<space>", lambda e: self._on_key(self._flip))
+        controller.bind("<Left>", lambda e: self._on_key(self._prev_card))
+        controller.bind("<Right>", lambda e: self._on_key(self._next_card))
+
+    def _on_key(self, action):
+        """Only handle key if flashcard frame is currently visible."""
+        if self.winfo_ismapped():
+            action()
 
     def on_show(self):
         decks = self.controller.flashcard_service.get_decks()
