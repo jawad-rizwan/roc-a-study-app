@@ -5,6 +5,9 @@ on:
     branches: [master]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: windows-latest
@@ -28,3 +31,16 @@ jobs:
         with:
           name: ROCAStudyApp
           path: dist/ROCAStudyApp.exe
+
+      - name: Create or update release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: latest
+          name: ROC-A Study App (Latest Build)
+          body: |
+            Download **ROCAStudyApp.exe** below and double-click to run. No Python installation required.
+
+            Built automatically from the latest code on master.
+          files: dist/ROCAStudyApp.exe
+          make_latest: true
+          prerelease: false
