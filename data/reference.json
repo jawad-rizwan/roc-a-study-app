@@ -1,0 +1,476 @@
+{
+  "version": "1.0",
+  "sections": [
+    {
+      "id": "phonetic_alphabet_table",
+      "title": "ICAO Phonetic Alphabet",
+      "topic": "operating_procedures",
+      "type": "table",
+      "columns": ["Letter", "Word", "Pronunciation"],
+      "rows": [
+        ["A", "Alfa", "AL FAH"],
+        ["B", "Bravo", "BRAH VOH"],
+        ["C", "Charlie", "CHAR LEE or SHAR LEE"],
+        ["D", "Delta", "DELL TAH"],
+        ["E", "Echo", "ECK OH"],
+        ["F", "Foxtrot", "FOKS TROT"],
+        ["G", "Golf", "GOLF"],
+        ["H", "Hotel", "HOH TELL"],
+        ["I", "India", "IN DEE AH"],
+        ["J", "Juliett", "JEW LEE ETT"],
+        ["K", "Kilo", "KEY LOH"],
+        ["L", "Lima", "LEE MAH"],
+        ["M", "Mike", "MIKE"],
+        ["N", "November", "NO VEM BER"],
+        ["O", "Oscar", "OSS CAH"],
+        ["P", "Papa", "PAH PAH"],
+        ["Q", "Quebec", "KEH BECK"],
+        ["R", "Romeo", "ROW ME OH"],
+        ["S", "Sierra", "SEE AIR RAH"],
+        ["T", "Tango", "TANG GO"],
+        ["U", "Uniform", "YOU NEE FORM"],
+        ["V", "Victor", "VIK TAH"],
+        ["W", "Whiskey", "WISS KEY"],
+        ["X", "X-ray", "ECKS RAY"],
+        ["Y", "Yankee", "YANG KEY"],
+        ["Z", "Zulu", "ZOO LOO"]
+      ]
+    },
+    {
+      "id": "number_pronunciation",
+      "title": "Number Pronunciation",
+      "topic": "operating_procedures",
+      "type": "table",
+      "columns": ["Number", "Pronunciation"],
+      "rows": [
+        ["0", "ZE-RO"],
+        ["1", "WUN"],
+        ["2", "TOO"],
+        ["3", "TREE"],
+        ["4", "FOW-er"],
+        ["5", "FIFE"],
+        ["6", "SIX"],
+        ["7", "SEV-en"],
+        ["8", "AIT"],
+        ["9", "NIN-er"],
+        ["Decimal", "DAY-SEE-MAL"],
+        ["Hundred", "HUN-dred"],
+        ["Thousand", "TOU-SAND"]
+      ]
+    },
+    {
+      "id": "number_transmission_rules",
+      "title": "Number Transmission Rules",
+      "topic": "operating_procedures",
+      "type": "ordered_list",
+      "items": [
+        "1. Pronounce each digit separately (e.g., runway 27 = TOO SEV-en, heading 360 = TREE SIX ZE-RO).",
+        "2. Whole thousands are spoken using the digit(s) for the number of thousands followed by the word THOUSAND (e.g., 11000 = WUN WUN TOU-SAND).",
+        "3. The decimal point is spoken as DAY-SEE-MAL (e.g., 121.5 = WUN TOO WUN DAY-SEE-MAL FIFE).",
+        "4. Altitude is expressed in thousands and hundreds (e.g., 10500 feet = WUN ZE-RO TOU-SAND FIFE HUN-dred).",
+        "5. Flight levels are transmitted by pronouncing each digit separately (e.g., FL180 = Flight Level WUN AIT ZE-RO).",
+        "6. Headings are always given as three digits (e.g., heading 5 = ZE-RO ZE-RO FIFE).",
+        "7. Aerodrome elevations are prefixed with the phrase FIELD ELEVATION (e.g., FIELD ELEVATION TREE FIFE ZE-RO feet).",
+        "8. Altimeter settings (QNH) are transmitted by pronouncing each digit (e.g., altimeter TOO NIN-er NIN-er TOO).",
+        "9. Time is expressed in hours and minutes UTC using four digits (e.g., 0830 = ZE-RO AIT TREE ZE-RO).",
+        "10. Transponder codes are transmitted digit by digit (e.g., squawk WUN TOO ZE-RO ZE-RO)."
+      ]
+    },
+    {
+      "id": "procedural_words_glossary",
+      "title": "Standard Procedural Words (Prowords)",
+      "topic": "operating_procedures",
+      "type": "glossary",
+      "entries": [
+        {
+          "term": "ACKNOWLEDGE",
+          "definition": "Let me know that you have received and understood this message."
+        },
+        {
+          "term": "AFFIRM",
+          "definition": "Yes, that is correct."
+        },
+        {
+          "term": "BREAK",
+          "definition": "I hereby indicate the separation between portions of the message. Used where there is no clear distinction between the text and other portions of the message."
+        },
+        {
+          "term": "CLEARED",
+          "definition": "Authorized to proceed under the conditions specified."
+        },
+        {
+          "term": "CONFIRM",
+          "definition": "I request verification of (clearance, instruction, action, information)."
+        },
+        {
+          "term": "CORRECTION",
+          "definition": "An error has been made in this transmission (or message indicated). The correct version is..."
+        },
+        {
+          "term": "DISREGARD",
+          "definition": "Ignore this transmission."
+        },
+        {
+          "term": "GO AHEAD",
+          "definition": "Proceed with your message."
+        },
+        {
+          "term": "HOW DO YOU READ?",
+          "definition": "What is the readability of my transmission? (Response given using the readability scale 1-5.)"
+        },
+        {
+          "term": "I SAY AGAIN",
+          "definition": "I repeat for clarity or emphasis."
+        },
+        {
+          "term": "MAYDAY",
+          "definition": "The international radiotelephony distress signal. Spoken three times at the beginning of the first distress call. Indicates imminent danger to the aircraft or persons and requires immediate assistance."
+        },
+        {
+          "term": "MAYDAY RELAY",
+          "definition": "Used to relay a distress message on behalf of another station that is in distress."
+        },
+        {
+          "term": "MONITOR",
+          "definition": "Listen on (frequency)."
+        },
+        {
+          "term": "NEGATIVE",
+          "definition": "No, or that is not correct, or I do not agree, or permission is not granted."
+        },
+        {
+          "term": "OUT",
+          "definition": "This exchange of transmissions is ended and no response is expected. Never used in combination with OVER."
+        },
+        {
+          "term": "OVER",
+          "definition": "My transmission is ended and I expect a response from you. Never used in combination with OUT."
+        },
+        {
+          "term": "PAN PAN",
+          "definition": "The international radiotelephony urgency signal. Spoken three times (PAN PAN, PAN PAN, PAN PAN). Indicates an urgent situation that does not pose immediate danger but requires assistance."
+        },
+        {
+          "term": "READ BACK",
+          "definition": "Repeat all, or the specified part, of this message back to me exactly as received."
+        },
+        {
+          "term": "ROGER",
+          "definition": "I have received all of your last transmission. It shall not be used to answer a question requiring a direct answer in the affirmative (use AFFIRM) or negative (use NEGATIVE)."
+        },
+        {
+          "term": "ROGER NUMBER",
+          "definition": "Message received, each transmission in this series will be numbered consecutively."
+        },
+        {
+          "term": "SAY AGAIN",
+          "definition": "Repeat all, or the following part, of your last transmission."
+        },
+        {
+          "term": "STANDBY",
+          "definition": "Wait and I will call you. The caller should re-establish contact if delay is lengthy. No onward clearance is implied."
+        },
+        {
+          "term": "SEELONCE",
+          "definition": "Silence. Cease transmitting. Used by the station controlling distress traffic to impose radio silence on all stations in the area."
+        },
+        {
+          "term": "SEELONCE FEENEE",
+          "definition": "The distress traffic has ended and normal working may be resumed. Indicates the end of radio silence."
+        },
+        {
+          "term": "SEELONCE MAYDAY",
+          "definition": "Used by the station in distress or the station controlling distress traffic to impose radio silence."
+        },
+        {
+          "term": "WILCO",
+          "definition": "I have received your message, understand it, and will comply with it. Short for 'will comply.' Do not use ROGER and WILCO together."
+        },
+        {
+          "term": "WORDS TWICE",
+          "definition": "As a request: Communication is difficult. Please send every word or group of words twice. As information: Since communication is difficult, every word or group of words in this message will be sent twice."
+        }
+      ]
+    },
+    {
+      "id": "priority_of_communications",
+      "title": "Priority of Communications",
+      "topic": "regulations",
+      "type": "ordered_list",
+      "items": [
+        "1. Distress calls, distress messages, and distress traffic.",
+        "2. Urgency messages, including messages preceded by the medical transports signal.",
+        "3. Communications relating to radio direction-finding.",
+        "4. Flight safety messages.",
+        "5. Meteorological messages.",
+        "6. Flight regularity messages.",
+        "7. Messages relating to the application of the United Nations Charter.",
+        "8. Government priority messages for which priority has been expressly requested.",
+        "9. Service communications relating to the working of the telecommunication service or to communications previously exchanged.",
+        "10. Other aeronautical communications."
+      ]
+    },
+    {
+      "id": "frequency_assignments",
+      "title": "VHF Aeronautical Frequency Assignments",
+      "topic": "definitions_and_equipment",
+      "type": "table",
+      "columns": ["Band (MHz)", "Service"],
+      "rows": [
+        ["108.0 - 111.975", "Aeronautical Radionavigation (VOR/ILS Localizer)"],
+        ["111.975 - 117.975", "Aeronautical Radionavigation (VOR)"],
+        ["117.975 - 121.9625", "Air Traffic Control Services"],
+        ["121.9825 - 123.5875", "General Aviation Communications"],
+        ["123.5875 - 128.8125", "Air Traffic Control Services"],
+        ["128.8125 - 132.0125", "Aeronautical Operational Control Communications"],
+        ["132.0125 - 136.0", "Air Traffic Control Services"]
+      ]
+    },
+    {
+      "id": "readability_scale",
+      "title": "Readability Scale",
+      "topic": "operating_procedures",
+      "type": "table",
+      "columns": ["Scale", "Meaning"],
+      "rows": [
+        ["1", "Bad (Unreadable)"],
+        ["2", "Poor (Readable now and then)"],
+        ["3", "Fair (Readable but with difficulty)"],
+        ["4", "Good (Readable)"],
+        ["5", "Excellent (Perfectly readable)"]
+      ]
+    },
+    {
+      "id": "distress_call_format",
+      "title": "Distress Call Format",
+      "topic": "emergency_communications",
+      "type": "procedure",
+      "steps": [
+        "MAYDAY MAYDAY MAYDAY",
+        "THIS IS",
+        "[Aircraft call sign] (spoken three times)"
+      ]
+    },
+    {
+      "id": "distress_message_format",
+      "title": "Distress Message Format",
+      "topic": "emergency_communications",
+      "type": "procedure",
+      "steps": [
+        "MAYDAY",
+        "Call sign of station in distress",
+        "Nature of distress condition and assistance required",
+        "Intentions of person in command",
+        "Position (airspeed, altitude, heading)",
+        "Number of persons on board and injuries",
+        "Any other useful information (e.g., fuel remaining, type of aircraft, emergency equipment aboard)",
+        "Call sign of station in distress"
+      ]
+    },
+    {
+      "id": "distress_acknowledgment_format",
+      "title": "Distress Acknowledgment Format",
+      "topic": "emergency_communications",
+      "type": "procedure",
+      "steps": [
+        "MAYDAY",
+        "Call sign of station in distress (spoken three times)",
+        "THIS IS",
+        "Call sign of acknowledging station (spoken three times)",
+        "RECEIVED MAYDAY"
+      ]
+    },
+    {
+      "id": "mayday_relay_format",
+      "title": "MAYDAY Relay Format",
+      "topic": "emergency_communications",
+      "type": "procedure",
+      "steps": [
+        "MAYDAY RELAY MAYDAY RELAY MAYDAY RELAY",
+        "THIS IS",
+        "Call sign of relaying station (spoken three times)",
+        "MAYDAY",
+        "Particulars of station in distress (call sign, nature of distress, position, intentions, and any other useful information)"
+      ]
+    },
+    {
+      "id": "distress_cancellation_format",
+      "title": "Distress Cancellation Format",
+      "topic": "emergency_communications",
+      "type": "procedure",
+      "steps": [
+        "MAYDAY",
+        "HELLO ALL STATIONS HELLO ALL STATIONS HELLO ALL STATIONS",
+        "THIS IS",
+        "Call sign of transmitting station",
+        "Filing time",
+        "Call sign of distressed station",
+        "SEELONCE FEENEE"
+      ]
+    },
+    {
+      "id": "urgency_message_format",
+      "title": "Urgency Message Format",
+      "topic": "urgency_communications",
+      "type": "procedure",
+      "steps": [
+        "PAN PAN PAN PAN PAN PAN",
+        "ALL STATIONS ALL STATIONS ALL STATIONS (or specific station spoken three times)",
+        "THIS IS",
+        "Aircraft identification",
+        "Nature of urgency condition",
+        "Intentions of person in command",
+        "Present position, flight level or altitude, and heading",
+        "Any other useful information (e.g., fuel remaining, persons on board, type of aircraft)"
+      ]
+    },
+    {
+      "id": "single_station_call_format",
+      "title": "Single Station Call Format",
+      "topic": "operating_procedures",
+      "type": "procedure",
+      "steps": [
+        "Call sign of station called (up to three times)",
+        "THIS IS",
+        "Call sign of calling station (up to three times)",
+        "Frequency (if appropriate)",
+        "OVER"
+      ]
+    },
+    {
+      "id": "ground_station_types",
+      "title": "Ground Station Types and Call Signs",
+      "topic": "operating_procedures",
+      "type": "table",
+      "columns": ["Function", "Call Sign Example"],
+      "rows": [
+        ["Area control centre", "Ottawa Centre"],
+        ["Surface movement control", "Toronto Ground"],
+        ["Flight information", "Ottawa Information"],
+        ["Clearance delivery", "Edmonton Delivery"],
+        ["Approach control (arrivals)", "Ottawa Arrival"],
+        ["Approach control (departures)", "Winnipeg Departure"],
+        ["Precision approach", "Montreal Precision"],
+        ["Community aerodrome", "Eskimo Tower"],
+        ["Private aeronautical", "Radio"],
+        ["Company dispatch", "Dispatch"]
+      ]
+    },
+    {
+      "id": "aeronautical_definitions",
+      "title": "Aeronautical Definitions",
+      "topic": "definitions_and_equipment",
+      "type": "glossary",
+      "entries": [
+        {
+          "term": "Aerodrome",
+          "definition": "Any area of land, water (including frozen surface), or other supporting surface used or designed for the arrival and departure, movement, or servicing of aircraft. Includes buildings, installations, and equipment associated therewith."
+        },
+        {
+          "term": "Aeronautical Service",
+          "definition": "A radiocommunication service for the purpose of ensuring safety and regularity of flight, primarily along national or international civil air routes."
+        },
+        {
+          "term": "Aircraft Station",
+          "definition": "A mobile station in the aeronautical mobile service, installed aboard an aircraft. Operates under the authority of the pilot-in-command."
+        },
+        {
+          "term": "AOCC (Aeronautical Operational Control Communications)",
+          "definition": "Communications required for the exercise of authority over the initiation, continuation, diversion, or termination of a flight for safety, regularity, and efficiency reasons."
+        },
+        {
+          "term": "Aeronautical Station",
+          "definition": "A land station in the aeronautical mobile service. In certain instances, an aeronautical station may be located on board a ship or on a platform at sea."
+        },
+        {
+          "term": "ATC Service (Air Traffic Control Service)",
+          "definition": "A service provided for the purpose of preventing collisions between aircraft and, on the manoeuvring area, between aircraft and obstructions, and of expediting and maintaining an orderly flow of air traffic."
+        },
+        {
+          "term": "Controlled Aerodrome",
+          "definition": "An aerodrome at which air traffic control service is provided to aerodrome traffic. The term indicates that the aerodrome has a control tower in operation."
+        },
+        {
+          "term": "Flight Service Station (FSS)",
+          "definition": "An aeronautical telecommunication station that provides flight information service and alerting service, and may also provide advisory service within a designated area."
+        },
+        {
+          "term": "GAC (General Aviation Communications)",
+          "definition": "Air-ground communications in the aeronautical mobile service not forming part of ATC or AOCC communications. Used by general aviation aircraft for air-to-air and air-to-ground communication."
+        },
+        {
+          "term": "Ground Control Communications",
+          "definition": "Communications between a control tower and aircraft or vehicles on the surface movement area of an aerodrome."
+        },
+        {
+          "term": "Private Advisory Service",
+          "definition": "A service provided by a private aeronautical communication station at an uncontrolled aerodrome, offering advisory information to aircraft operating in the vicinity."
+        },
+        {
+          "term": "Private Multiple Station",
+          "definition": "A private aeronautical communication station authorized to communicate with two or more aircraft stations simultaneously, typically used for company operations."
+        }
+      ]
+    },
+    {
+      "id": "communication_checks",
+      "title": "Types of Communication Checks",
+      "topic": "operating_procedures",
+      "type": "table",
+      "columns": ["Check Type", "When Used"],
+      "rows": [
+        ["Signal check", "Test made while the aircraft is airborne to verify the radio equipment is functioning properly."],
+        ["Preflight check", "Test made prior to departure to ensure radio equipment is operating satisfactorily before flight."],
+        ["Maintenance check", "Test made by ground maintenance personnel to verify the operation and performance of radio equipment."]
+      ]
+    },
+    {
+      "id": "privacy_regulations",
+      "title": "Privacy of Communications Regulations",
+      "topic": "regulations",
+      "type": "ordered_list",
+      "items": [
+        "1. The contents of radio communications must not be disclosed to unauthorized persons. The Radiocommunication Act prohibits the interception and divulgence of radio communications.",
+        "2. A person who intercepts a radio communication shall not divulge its contents, use it, or allow it to be used by another person, except as permitted by the intended addressee.",
+        "3. It is illegal to make use of any information obtained by intercepting radio communications not intended for the general public.",
+        "4. Operators must not transmit false or deceptive distress signals or communications. Doing so is a serious offence under Canadian law.",
+        "5. Penalties for violations of the Radiocommunication Act may include fines and/or imprisonment. Summary conviction can result in a fine up to $5,000 and/or imprisonment for up to one year, and conviction on indictment may result in a fine up to $25,000 and/or imprisonment for up to two years.",
+        "6. Operators must not transmit profane, indecent, or obscene language over radio frequencies.",
+        "7. Radio operators must only transmit on authorized frequencies and for authorized purposes.",
+        "8. Station logs and records must be maintained as required by regulation and made available for inspection by authorized officials."
+      ]
+    },
+    {
+      "id": "equipment_fundamentals",
+      "title": "Equipment Fundamentals",
+      "topic": "definitions_and_equipment",
+      "type": "ordered_list",
+      "items": [
+        "1. Connectors: Ensure all antenna connectors and cable connections are clean, tight, and free from corrosion. A loose or corroded connector can cause significant signal loss or equipment failure.",
+        "2. Fuses: Always replace a blown fuse with one of the same rating. Never use a higher-rated fuse or bypass the fuse, as this can cause equipment damage or fire. Carry spare fuses of the correct rating.",
+        "3. Maintenance: Only qualified, licensed personnel may perform maintenance, repair, or modification of aeronautical radio equipment. Operators must not open, adjust, or tamper with sealed or calibrated components.",
+        "4. The pilot-in-command is responsible for ensuring the aircraft radio equipment is serviceable before flight and must report any deficiencies.",
+        "5. VHF radios operate on line-of-sight propagation. Range increases with altitude. Obstructions such as terrain or buildings can block signals.",
+        "6. The emergency frequency 121.5 MHz must be monitored at all times when practicable. ELTs (Emergency Locator Transmitters) transmit on 121.5 MHz and 406 MHz.",
+        "7. Squelch control adjusts the threshold for background noise. It should be set so that noise is just eliminated, allowing weak signals to still be heard.",
+        "8. Before transmitting, always listen on the frequency to avoid interfering with communications already in progress.",
+        "9. A stuck microphone (stuck mic) can block an entire frequency. If you suspect your microphone is stuck, release the push-to-talk button and check your equipment."
+      ]
+    },
+    {
+      "id": "what_not_to_say",
+      "title": "Common Phrases to Avoid",
+      "topic": "operating_procedures",
+      "type": "table",
+      "columns": ["Do NOT Say", "Say Instead", "Why"],
+      "rows": [
+        ["REPEAT", "SAY AGAIN", "REPEAT is a military term meaning to fire again. Using it in aviation can cause dangerous confusion. Always use SAY AGAIN to request a retransmission."],
+        ["OK", "AFFIRM or ROGER or WILCO", "OK is ambiguous and not a standard aviation proword. Use AFFIRM for yes, ROGER to acknowledge receipt, or WILCO to indicate you will comply."],
+        ["TEN-FOUR", "(Not used in aviation)", "TEN-FOUR is CB radio jargon and has no place in aeronautical communications. Use standard ICAO phraseology at all times."],
+        ["OVER AND OUT", "OVER or OUT (use one or the other)", "OVER means you expect a reply. OUT means you do not. They are mutually exclusive and must never be combined."],
+        ["BREAKER BREAKER", "(Not used in aviation)", "BREAKER BREAKER is CB radio jargon. In aviation, simply state the call sign of the station you wish to contact followed by your own call sign."],
+        ["COME IN PLEASE", "(Not used in aviation)", "This phrase is not standard aviation phraseology. Use the proper call format: state the station call sign, then THIS IS, then your call sign, then OVER."]
+      ]
+    }
+  ]
+}

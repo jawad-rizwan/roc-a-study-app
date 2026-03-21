@@ -1,0 +1,1904 @@
+{
+  "version": "1.0",
+  "questions": [
+    {
+      "id": "REG-001",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "What is the highest priority of aeronautical radio communications?",
+      "choices": ["Urgency communications", "Distress communications", "Flight safety messages", "Radio direction-finding"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, distress communications have the highest priority (level 1) over all other categories including urgency (level 2), radio direction-finding (level 3), and flight safety (level 4)."
+    },
+    {
+      "id": "REG-002",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "In the priority order of aeronautical communications, which comes immediately after urgency?",
+      "choices": ["Flight safety", "Meteorological", "Radio direction-finding", "Flight regularity"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21 priority hierarchy: 1) Distress, 2) Urgency, 3) Radio direction-finding, 4) Flight safety. Radio direction-finding is the third priority level, immediately after urgency."
+    },
+    {
+      "id": "REG-003",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "Which priority level do meteorological messages hold in the aeronautical communications priority order?",
+      "choices": ["Third", "Fourth", "Fifth", "Sixth"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the priority order is: 1) Distress, 2) Urgency, 3) Radio direction-finding, 4) Flight safety, 5) Meteorological. Meteorological messages are the fifth priority."
+    },
+    {
+      "id": "REG-004",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "A pilot needs to transmit a message regarding flight regularity. What is the priority level of this communication?",
+      "choices": ["Fourth", "Fifth", "Sixth", "Seventh"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, flight regularity messages are the sixth priority: 1) Distress, 2) Urgency, 3) Radio direction-finding, 4) Flight safety, 5) Meteorological, 6) Flight regularity."
+    },
+    {
+      "id": "REG-005",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "Which of the following has the LOWEST priority in the aeronautical communications priority hierarchy?",
+      "choices": ["Government priority messages", "UN Charter messages", "Service communications", "Other aeronautical communications"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, other aeronautical communications hold the lowest (tenth) priority level. The bottom four are: 7) UN Charter, 8) Government priority, 9) Service communications, 10) Other aeronautical."
+    },
+    {
+      "id": "REG-006",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "You are transmitting a routine flight regularity message when you hear a MAYDAY call. What should you do?",
+      "choices": ["Finish your transmission then listen", "Immediately cease transmitting and listen", "Acknowledge the MAYDAY before stopping", "Switch to 121.5 MHz immediately"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, distress communications have absolute priority over all other transmissions. All stations must immediately cease transmitting and listen on the distress frequency."
+    },
+    {
+      "id": "REG-007",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "How many levels of priority are defined in the aeronautical communications priority hierarchy?",
+      "choices": ["5", "7", "8", "10"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, there are 10 levels of priority in the aeronautical communications hierarchy, ranging from distress (highest) to other aeronautical communications (lowest)."
+    },
+    {
+      "id": "REG-008",
+      "topic": "regulations",
+      "subtopic": "privacy",
+      "question": "Under the Radiocommunication Act, what is the maximum fine for an individual who violates the privacy of radio communications?",
+      "choices": ["$5,000", "$10,000", "$25,000", "$75,000"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21 referencing s.9(2) of the Radiocommunication Act, an individual who violates privacy provisions may face a fine of up to $25,000 or imprisonment for up to 1 year."
+    },
+    {
+      "id": "REG-009",
+      "topic": "regulations",
+      "subtopic": "privacy",
+      "question": "A corporation violates the privacy provisions of the Radiocommunication Act. What is the maximum penalty?",
+      "choices": ["$5,000 fine", "$25,000 fine", "$50,000 fine", "$75,000 fine"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, a corporation found guilty of violating privacy provisions under the Radiocommunication Act faces a maximum fine of $75,000."
+    },
+    {
+      "id": "REG-010",
+      "topic": "regulations",
+      "subtopic": "privacy",
+      "question": "To whom may a radio operator legally divulge the contents of intercepted communications?",
+      "choices": ["Any interested party", "The addressee, their accredited agent, or authorized government officials", "Any other pilot who requests the information", "The media if it involves public safety"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, radio operators may only divulge intercepted communications to the addressee, their accredited agent, authorized government officials, court officers, or telecommunication operators."
+    },
+    {
+      "id": "REG-011",
+      "topic": "regulations",
+      "subtopic": "privacy",
+      "question": "Which of the following types of messages are exceptions to the privacy rule and may be shared freely?",
+      "choices": ["Flight regularity messages", "Meteorological reports", "Distress, urgency, safety, and ALL STATIONS messages", "Service communications"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the exceptions to radio communication privacy requirements are distress, urgency, safety, and ALL STATIONS messages. These may be shared because of their critical safety nature."
+    },
+    {
+      "id": "REG-012",
+      "topic": "regulations",
+      "subtopic": "privacy",
+      "question": "An individual convicted of violating radio communication privacy may face imprisonment of up to:",
+      "choices": ["6 months", "1 year", "2 years", "5 years"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, an individual who violates the privacy provisions of s.9(2) of the Radiocommunication Act faces up to $25,000 fine or imprisonment for up to 1 year."
+    },
+    {
+      "id": "REG-013",
+      "topic": "regulations",
+      "subtopic": "privacy",
+      "question": "You accidentally intercept a private communication between another aircraft and ATC. What are you legally required to do?",
+      "choices": ["Report it to Transport Canada", "Preserve the secrecy of the communication", "Inform the aircraft that you heard their message", "Log the communication in your flight record"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, radio operators are bound by s.9(2) of the Radiocommunication Act to preserve the privacy/secrecy of intercepted radio communications and not divulge their contents."
+    },
+    {
+      "id": "REG-014",
+      "topic": "regulations",
+      "subtopic": "control_of_communications",
+      "question": "In air-to-ground communications, who controls the order, time, and frequency of transmissions?",
+      "choices": ["The aircraft station", "The ground station", "The station that initiated the call", "Transport Canada"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the aircraft station must comply with the ground station's instructions regarding the order and time of transmission, frequency to use, and duration of communication."
+    },
+    {
+      "id": "REG-015",
+      "topic": "regulations",
+      "subtopic": "control_of_communications",
+      "question": "During a distress situation, who controls the communications?",
+      "choices": ["The nearest ground station", "The station initiating the priority call", "The area control center", "The station with the strongest signal"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the exception to normal control rules is during distress/urgency situations, where control lies with the station initiating the priority call (typically the aircraft in distress)."
+    },
+    {
+      "id": "REG-016",
+      "topic": "regulations",
+      "subtopic": "control_of_communications",
+      "question": "When two aircraft are communicating directly with each other, which station controls the communication?",
+      "choices": ["The aircraft with the higher call sign", "The aircraft that initiated the call", "The aircraft being called", "Both aircraft equally"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, in direct aircraft-to-aircraft communications, control lies with the station being called, not the calling station."
+    },
+    {
+      "id": "REG-017",
+      "topic": "regulations",
+      "subtopic": "control_of_communications",
+      "question": "An aircraft station is instructed by the ground station to change frequency. What should the pilot do?",
+      "choices": ["Request an explanation before changing", "Comply with the instruction", "Stay on the current frequency if communication is satisfactory", "Change frequency only if they agree with the instruction"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the aircraft station must comply with the ground station's instructions regarding frequency use, as the ground station controls these aspects of the communication."
+    },
+    {
+      "id": "REG-018",
+      "topic": "regulations",
+      "subtopic": "interference",
+      "question": "What type of language is strictly prohibited on aeronautical radio frequencies?",
+      "choices": ["Informal language", "Slang expressions", "Profane or obscene language", "Non-English language"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, profane and obscene language is strictly prohibited on aeronautical radio frequencies. Radiocommunications are restricted to matters related to safety and regularity of flight."
+    },
+    {
+      "id": "REG-019",
+      "topic": "regulations",
+      "subtopic": "interference",
+      "question": "Under what circumstances may you interrupt another station's transmission?",
+      "choices": ["When your message is more urgent", "Only for distress, urgency, or safety priority communications", "When you have been waiting more than 5 minutes", "When directed by your company dispatch"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, you may only interrupt another station's transmission for communications of distress, urgency, or safety priority. All other interruptions constitute interference."
+    },
+    {
+      "id": "REG-020",
+      "topic": "regulations",
+      "subtopic": "interference",
+      "question": "What is the maximum fine for an individual who causes harmful interference on aeronautical frequencies?",
+      "choices": ["$1,000", "$5,000", "$25,000", "$75,000"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, an individual who causes interference faces a maximum fine of $5,000 or imprisonment for up to 1 year. A corporation faces up to $25,000."
+    },
+    {
+      "id": "REG-021",
+      "topic": "regulations",
+      "subtopic": "interference",
+      "question": "Radiocommunications on aeronautical frequencies should be restricted to:",
+      "choices": ["ATC instructions only", "Safety and flight regularity matters", "Emergency communications only", "Company business and ATC"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, aeronautical radiocommunications are restricted to matters relating to safety and regularity of flight. Unnecessary transmissions constitute interference."
+    },
+    {
+      "id": "REG-022",
+      "topic": "regulations",
+      "subtopic": "false_distress",
+      "question": "What is the penalty for an individual who knowingly sends a false distress signal?",
+      "choices": ["Warning from Transport Canada", "Up to $5,000 fine or 1 year imprisonment", "Up to $25,000 fine or 1 year imprisonment", "Automatic licence revocation"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, under s.9(1)(a) of the Radiocommunication Act, an individual who knowingly sends a false distress signal faces a fine of up to $5,000 or imprisonment for up to 1 year."
+    },
+    {
+      "id": "REG-023",
+      "topic": "regulations",
+      "subtopic": "false_distress",
+      "question": "A corporation is found to have knowingly transmitted a false distress signal. What is the maximum penalty?",
+      "choices": ["$5,000", "$10,000", "$25,000", "$75,000"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, a corporation that knowingly sends a false distress signal under s.9(1)(a) of the Radiocommunication Act faces a maximum fine of $25,000."
+    },
+    {
+      "id": "REG-024",
+      "topic": "regulations",
+      "subtopic": "false_distress",
+      "question": "Which section of the Radiocommunication Act addresses false distress signals?",
+      "choices": ["s.9(1)(a)", "s.9(2)", "s.10(1)", "s.12(3)"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, s.9(1)(a) of the Radiocommunication Act specifically states that no person shall knowingly send, transmit, or cause to be sent a false or fraudulent distress signal."
+    },
+    {
+      "id": "REG-025",
+      "topic": "regulations",
+      "subtopic": "interference",
+      "question": "What is the maximum penalty for a corporation found guilty of causing harmful interference?",
+      "choices": ["$5,000", "$10,000", "$25,000", "$75,000"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, a corporation found guilty of causing harmful interference on aeronautical frequencies faces a maximum fine of $25,000."
+    },
+    {
+      "id": "PROC-001",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What is the correct phonetic alphabet word for the letter 'J'?",
+      "choices": ["Juliet", "Juliett", "Jericho", "Jakarta"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet, the correct word for 'J' is JULIETT (with two t's). This is a common spelling error on the exam."
+    },
+    {
+      "id": "PROC-002",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What is the phonetic alphabet word for the letter 'A'?",
+      "choices": ["Alpha", "Alfa", "Adam", "Apple"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet, the correct word for 'A' is ALFA (not Alpha). The 'f' spelling is the internationally recognized standard to avoid pronunciation confusion."
+    },
+    {
+      "id": "PROC-003",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "A pilot needs to spell out the registration C-GXYZ using the phonetic alphabet. Which is correct?",
+      "choices": ["Charlie Golf X-ray Yankee Zulu", "Charlie Gulf X-ray Yankee Zorro", "Charlie Golf Xavier Yankee Zulu", "Charlie Gulf X-ray Yellow Zulu"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet: C=Charlie, G=Golf, X=X-ray, Y=Yankee, Z=Zulu."
+    },
+    {
+      "id": "PROC-004",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What is the correct phonetic alphabet word for the letter 'Q'?",
+      "choices": ["Queen", "Quincy", "Quebec", "Quest"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet, the correct word for 'Q' is QUEBEC."
+    },
+    {
+      "id": "PROC-005",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "Which phonetic alphabet word represents the letter 'N'?",
+      "choices": ["Nancy", "Niner", "November", "Nectar"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet, the letter 'N' is represented by NOVEMBER."
+    },
+    {
+      "id": "PROC-006",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should the number 10 be transmitted on aeronautical radio?",
+      "choices": ["Ten", "One zero", "One-oh", "Wun zero"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, numbers are transmitted by pronouncing each digit separately. The number 10 is transmitted as 'one zero.'"
+    },
+    {
+      "id": "PROC-007",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should the altitude of 5,800 feet be transmitted?",
+      "choices": ["Fifty-eight hundred", "Five thousand eight hundred", "Five eight zero zero", "Fife eight zero zero"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, numbers are pronounced as individual digits. 5,800 is transmitted as 'five eight zero zero.'"
+    },
+    {
+      "id": "PROC-008",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should the number 11,000 be transmitted?",
+      "choices": ["Eleven thousand", "One one thousand", "One one zero zero zero", "Wun wun tousand"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, whole thousands are spoken using the word 'thousand.' 11,000 is transmitted as 'one one thousand.'"
+    },
+    {
+      "id": "PROC-009",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should Flight Level 265 be transmitted?",
+      "choices": ["Flight level twenty-six five", "Flight level two sixty-five", "Flight level two six five", "Flight level two six fife"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, flight levels are transmitted as 'flight level' followed by each digit spoken separately. FL265 = 'flight level two six five.'"
+    },
+    {
+      "id": "PROC-010",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should the frequency 121.5 be transmitted?",
+      "choices": ["One twenty-one point five", "One two one decimal five", "One two one point five", "Wun too wun day-see-mal fife"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the decimal point in frequencies is spoken as 'decimal.' 121.5 is transmitted as 'one two one decimal five.'"
+    },
+    {
+      "id": "PROC-011",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should the number 100 be transmitted on aeronautical radio?",
+      "choices": ["Hundred", "One hundred", "One zero zero", "Wun zero zero"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, each digit is pronounced separately. 100 is transmitted as 'one zero zero.'"
+    },
+    {
+      "id": "PROC-012",
+      "topic": "operating_procedures",
+      "subtopic": "time_and_date",
+      "question": "How is the time 12:45 AM expressed in aeronautical radio communications?",
+      "choices": ["0045", "1245", "0045 Zulu", "12:45 AM"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, time is expressed using the 24-hour clock in four figures. 12:45 AM is 0045."
+    },
+    {
+      "id": "PROC-013",
+      "topic": "operating_procedures",
+      "subtopic": "time_and_date",
+      "question": "What does the six-figure group '161200' represent?",
+      "choices": ["16 hours 12 minutes 00 seconds", "Noon on the 16th day of the month", "16 minutes past noon", "December 16th at midnight"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a six-figure date-time group combines the date (first two digits) with time (last four digits). 161200 means 1200 hours (noon) on the 16th of the month."
+    },
+    {
+      "id": "PROC-014",
+      "topic": "operating_procedures",
+      "subtopic": "time_and_date",
+      "question": "What time standard is used in aeronautical communications?",
+      "choices": ["Local time", "Eastern Standard Time", "UTC/Zulu", "Greenwich Mean Time only"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, aeronautical communications use Coordinated Universal Time (UTC), also referred to as 'Zulu' time."
+    },
+    {
+      "id": "PROC-015",
+      "topic": "operating_procedures",
+      "subtopic": "time_and_date",
+      "question": "How should midnight be expressed in aeronautical time format?",
+      "choices": ["0000", "2400", "1200", "12:00 AM"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, time is expressed using the 24-hour clock in four figures. Midnight is expressed as 0000."
+    },
+    {
+      "id": "PROC-016",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "Which of the following words/phrases should NOT be used in aeronautical radio communications?",
+      "choices": ["ROGER", "WILCO", "TEN-FOUR", "AFFIRMATIVE"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, TEN-FOUR is listed as a procedural word that must NOT be used in aeronautical communications. It is CB radio jargon, not standard aviation phraseology."
+    },
+    {
+      "id": "PROC-017",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "Why should the phrase 'OVER AND OUT' never be used?",
+      "choices": ["It is too long", "OVER means you expect a reply while OUT means you do not; they are contradictory", "It is reserved for military use only", "It is a CB radio term"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, OVER means you are expecting a response, while OUT means no response is expected. Using them together is contradictory and incorrect."
+    },
+    {
+      "id": "PROC-018",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "Which of the following words should NOT be used on aeronautical radio?",
+      "choices": ["ROGER", "REPEAT", "WILCO", "AFFIRMATIVE"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the word REPEAT should not be used in aeronautical radio communications. The correct term to request a repetition is SAY AGAIN."
+    },
+    {
+      "id": "PROC-019",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "What does the word 'OUT' signify at the end of a transmission?",
+      "choices": ["You are leaving the frequency", "You are ending your transmission and expect a reply", "You are ending your transmission and no reply is expected", "You are switching to another frequency"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, OUT signifies the end of a transmission and indicates that no response is expected or required."
+    },
+    {
+      "id": "PROC-020",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "Which phrase should NOT be used in aeronautical radio communications?",
+      "choices": ["GO AHEAD", "STAND BY", "COME IN PLEASE", "SAY AGAIN"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, COME IN PLEASE is listed among the procedural words that should NOT be used. It is CB radio jargon. The correct terms are established aviation phraseology."
+    },
+    {
+      "id": "PROC-021",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "Which expression should NOT be used in place of standard aviation phraseology?",
+      "choices": ["ROGER", "OK", "WILCO", "NEGATIVE"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, OK is a procedural word that should NOT be used in aeronautical radio. Proper alternatives include ROGER, WILCO, or AFFIRMATIVE."
+    },
+    {
+      "id": "PROC-022",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "Which of the following is NOT listed as a prohibited procedural expression?",
+      "choices": ["BREAKER BREAKER", "TEN-FOUR", "OVER AND OUT", "STAND BY"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, STAND BY is a legitimate aviation procedural word. BREAKER BREAKER, TEN-FOUR, and OVER AND OUT are all prohibited CB radio jargon."
+    },
+    {
+      "id": "PROC-023",
+      "topic": "operating_procedures",
+      "subtopic": "call_signs",
+      "question": "How should a Canadian private aircraft with registration C-GFAC and type Cessna 182 identify itself?",
+      "choices": ["Charlie Golf Foxtrot Alfa Charlie", "Cessna one eight two Golf Foxtrot Alfa Charlie", "Cessna Golf Foxtrot Alfa Charlie", "Golf Foxtrot Alfa Charlie"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, private aircraft use the manufacturer/type name followed by the last four characters of the registration. C-GFAC in a Cessna 182 would be 'Cessna one eight two Golf Foxtrot Alfa Charlie.'"
+    },
+    {
+      "id": "PROC-024",
+      "topic": "operating_procedures",
+      "subtopic": "call_signs",
+      "question": "How does a Canadian airline identify its aircraft on radio?",
+      "choices": ["By full registration number", "By company name and flight number or last 3 characters of registration", "By aircraft type and last 4 of registration", "By company name only"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, Canadian carriers use the company name followed by the flight number or last three characters of the registration."
+    },
+    {
+      "id": "PROC-025",
+      "topic": "operating_procedures",
+      "subtopic": "call_signs",
+      "question": "What is the correct call sign format for a ground station at Ottawa providing tower services?",
+      "choices": ["Ottawa ATC", "Ottawa Control", "Ottawa Tower", "Tower Ottawa"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, ground station call signs use the format of location name followed by function. An aerodrome tower at Ottawa would be 'Ottawa Tower.'"
+    },
+    {
+      "id": "PROC-026",
+      "topic": "operating_procedures",
+      "subtopic": "call_signs",
+      "question": "What would the call sign be for the ground control service at Toronto?",
+      "choices": ["Toronto Control", "Toronto Tower", "Toronto Ground", "Ground Toronto"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, ground station call signs consist of the location name followed by the function. Ground control at Toronto is 'Toronto Ground.'"
+    },
+    {
+      "id": "PROC-027",
+      "topic": "operating_procedures",
+      "subtopic": "calling_procedure",
+      "question": "In the initial call, which station's call sign is transmitted first?",
+      "choices": ["The calling station", "The station being called", "Either station", "The ground station always first"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the correct calling order is: station being called FIRST, then THIS IS, then the calling station's call sign."
+    },
+    {
+      "id": "PROC-028",
+      "topic": "operating_procedures",
+      "subtopic": "calling_procedure",
+      "question": "How many times may an initial call be made in a single transmission?",
+      "choices": ["Once only", "Up to 3 times", "Up to 5 times", "As many times as needed"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a single call may include the call-up sequence up to 3 times before waiting for a reply."
+    },
+    {
+      "id": "PROC-029",
+      "topic": "operating_procedures",
+      "subtopic": "calling_procedure",
+      "question": "When making a general call to all stations, how many times should 'ALL STATIONS' be repeated?",
+      "choices": ["Once", "Twice", "Three times", "Five times"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, for a general call, ALL STATIONS is repeated three times."
+    },
+    {
+      "id": "PROC-030",
+      "topic": "operating_procedures",
+      "subtopic": "calling_procedure",
+      "question": "A ground station receives a call but cannot identify the calling aircraft. What should the ground station say?",
+      "choices": ["UNKNOWN STATION", "SAY AGAIN YOUR CALL SIGN", "STATION CALLING", "IDENTIFY YOURSELF"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, if a station is uncertain which station is calling, it replies with STATION CALLING to request identification."
+    },
+    {
+      "id": "PROC-031",
+      "topic": "operating_procedures",
+      "subtopic": "calling_procedure",
+      "question": "What is the correct reply when a station is ready to receive your message?",
+      "choices": ["PROCEED", "GO AHEAD", "SEND IT", "COPY"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, when a station is ready to receive your message, they reply with GO AHEAD."
+    },
+    {
+      "id": "PROC-032",
+      "topic": "operating_procedures",
+      "subtopic": "calling_procedure",
+      "question": "If a station cannot respond immediately, what should they say?",
+      "choices": ["WAIT", "HOLD", "STAND BY followed by estimated wait in minutes", "BUSY"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, if a station cannot respond immediately, they should reply STAND BY followed by an estimate of the wait time in minutes."
+    },
+    {
+      "id": "PROC-033",
+      "topic": "operating_procedures",
+      "subtopic": "message_handling",
+      "question": "What are the four parts of a standard radio message?",
+      "choices": ["Header, body, footer, sign-off", "Call, reply, message, acknowledgment/ending", "Introduction, content, summary, close", "Greeting, request, response, farewell"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a standard radio message consists of four parts: 1) call (addressee and originator), 2) reply, 3) message, and 4) acknowledgment/ending."
+    },
+    {
+      "id": "PROC-034",
+      "topic": "operating_procedures",
+      "subtopic": "message_handling",
+      "question": "You make an error during a transmission. What word should you say before providing the corrected information?",
+      "choices": ["ERROR", "DISREGARD", "CORRECTION", "AMEND"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, if you make an error during transmission, say CORRECTION, then provide the correct information."
+    },
+    {
+      "id": "PROC-035",
+      "topic": "operating_procedures",
+      "subtopic": "message_handling",
+      "question": "What is the correct way to request that a station repeat its entire message?",
+      "choices": ["REPEAT ALL", "SAY AGAIN", "COME AGAIN", "PLEASE REPEAT"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the correct phrase to request a repetition is SAY AGAIN. The word REPEAT must not be used."
+    },
+    {
+      "id": "PROC-036",
+      "topic": "operating_procedures",
+      "subtopic": "message_handling",
+      "question": "How do you request that a station repeat only the first part of a message?",
+      "choices": ["REPEAT FIRST PART", "SAY AGAIN ALL BEFORE [word]", "SAY FIRST PART AGAIN", "RESEND BEGINNING"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, to request repetition of the first part of a message, say SAY AGAIN ALL BEFORE followed by the last word you received clearly."
+    },
+    {
+      "id": "PROC-037",
+      "topic": "operating_procedures",
+      "subtopic": "message_handling",
+      "question": "How do you request repetition of a specific portion of a message?",
+      "choices": ["SAY AGAIN FROM [word] TO [word]", "REPEAT BETWEEN [word] AND [word]", "SAY AGAIN [word] TO [word]", "RESEND FROM [word] TO [word]"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, to request repetition of a specific portion, use SAY AGAIN followed by the starting word, TO, and the ending word of the portion needed."
+    },
+    {
+      "id": "PROC-038",
+      "topic": "operating_procedures",
+      "subtopic": "signal_checks",
+      "question": "What is readability 3 on the radio signal check scale?",
+      "choices": ["Unreadable", "Readable now and then", "Readable with difficulty", "Perfectly readable"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the readability scale is: 1=Bad/unreadable, 2=Poor/readable now and then, 3=Fair/readable with difficulty, 4=Good/readable, 5=Excellent/perfectly readable."
+    },
+    {
+      "id": "PROC-039",
+      "topic": "operating_procedures",
+      "subtopic": "signal_checks",
+      "question": "What readability rating means 'perfectly readable'?",
+      "choices": ["3", "4", "5", "10"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, readability 5 means Excellent/perfectly readable. The scale goes from 1 (Bad/unreadable) to 5 (Excellent/perfectly readable)."
+    },
+    {
+      "id": "PROC-040",
+      "topic": "operating_procedures",
+      "subtopic": "signal_checks",
+      "question": "What is the maximum duration recommended for a radio signal check?",
+      "choices": ["5 seconds", "10 seconds", "30 seconds", "1 minute"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, radio signal checks should not exceed 10 seconds to avoid blocking the frequency unnecessarily."
+    },
+    {
+      "id": "PROC-041",
+      "topic": "operating_procedures",
+      "subtopic": "signal_checks",
+      "question": "What type of radio check is performed before departure from the ground?",
+      "choices": ["Signal check", "Preflight check", "Maintenance check", "Ground check"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a preflight check is performed before departure. A signal check is conducted while airborne, and a maintenance check is for ground maintenance purposes."
+    },
+    {
+      "id": "PROC-042",
+      "topic": "operating_procedures",
+      "subtopic": "signal_checks",
+      "question": "What readability rating indicates the signal is 'readable now and then'?",
+      "choices": ["1", "2", "3", "4"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, readability 2 means Poor/readable now and then. This indicates that the signal can occasionally be understood but not consistently."
+    },
+    {
+      "id": "PROC-043",
+      "topic": "operating_procedures",
+      "subtopic": "signal_checks",
+      "question": "A radio check performed during ground maintenance is called a:",
+      "choices": ["Preflight check", "Signal check", "Maintenance check", "Systems check"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, a maintenance check is a radio check performed during ground maintenance activities."
+    },
+    {
+      "id": "PROC-044",
+      "topic": "operating_procedures",
+      "subtopic": "speech_techniques",
+      "question": "Which of the following is a correct speech technique for aeronautical radio?",
+      "choices": ["Speak loudly to ensure clarity", "Vary your speed to emphasize important words", "Speak plainly and clearly at a constant speed with natural rhythm", "Speak quickly to minimize frequency use"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, proper speech technique requires speaking plainly and clearly, at a constant speed, with natural rhythm. Shouting and varying speed should be avoided."
+    },
+    {
+      "id": "PROC-045",
+      "topic": "operating_procedures",
+      "subtopic": "speech_techniques",
+      "question": "When transmitting on aeronautical radio, you should:",
+      "choices": ["Shout to overcome background noise", "Speak as quickly as possible", "Avoid shouting and speak at a natural rhythm", "Speak slowly with pauses between each word"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, proper speech technique includes avoiding shouting, speaking plainly and clearly at a constant speed with natural rhythm."
+    },
+    {
+      "id": "PROC-046",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should a heading of 090 degrees be transmitted?",
+      "choices": ["Ninety degrees", "Zero nine zero", "Niner zero", "Zero niner zero"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, headings are transmitted using three digits with each digit spoken separately. 090 degrees is transmitted as 'zero nine zero.'"
+    },
+    {
+      "id": "PROC-047",
+      "topic": "operating_procedures",
+      "subtopic": "calling_procedure",
+      "question": "What is the correct format for an initial radio call from aircraft C-GFAC (Cessna 182) to Ottawa Tower?",
+      "choices": ["Cessna GFAC calling Ottawa Tower", "Ottawa Tower, THIS IS, Cessna one eight two Golf Foxtrot Alfa Charlie", "THIS IS Cessna GFAC for Ottawa Tower", "Ottawa Tower, Cessna GFAC here"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the correct calling format is: station called first (Ottawa Tower), THIS IS, then calling station's call sign (Cessna one eight two Golf Foxtrot Alfa Charlie)."
+    },
+    {
+      "id": "PROC-048",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "What does the word 'OVER' signify at the end of a transmission?",
+      "choices": ["You have finished your message entirely", "You are expecting a response", "You are switching to another frequency", "Your message is complete and you are leaving the frequency"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, OVER at the end of a transmission indicates that you have finished transmitting and are expecting a response from the other station."
+    },
+    {
+      "id": "PROC-049",
+      "topic": "operating_procedures",
+      "subtopic": "message_handling",
+      "question": "How do you request that a station repeat everything after a specific word?",
+      "choices": ["SAY AGAIN FROM [word]", "SAY AGAIN ALL AFTER [word]", "REPEAT AFTER [word]", "RESEND AFTER [word]"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, to request repetition of the latter part of a message, use SAY AGAIN ALL AFTER followed by the last word you received clearly."
+    },
+    {
+      "id": "PROC-050",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "Which of these phonetic alphabet words is spelled differently from how you might expect?",
+      "choices": ["Bravo", "Foxtrot", "Alfa", "Hotel"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet, ALFA is spelled with an 'f' instead of 'ph' (not 'Alpha'). This is to ensure consistent pronunciation across all languages."
+    },
+    {
+      "id": "EMER-001",
+      "topic": "emergency_communications",
+      "subtopic": "distress_signal",
+      "question": "What is the international radiotelephony distress signal?",
+      "choices": ["SOS", "MAYDAY", "PAN PAN", "SECURITE"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, MAYDAY is the international radiotelephony distress signal, indicating grave and imminent danger requiring immediate assistance."
+    },
+    {
+      "id": "EMER-002",
+      "topic": "emergency_communications",
+      "subtopic": "distress_signal",
+      "question": "What does a distress condition indicate?",
+      "choices": ["Minor equipment malfunction", "Concern about a safety issue that is not immediate", "Grave and imminent danger requiring immediate assistance", "Request for priority landing"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, a distress condition means the aircraft is threatened by grave and imminent danger and requires immediate assistance."
+    },
+    {
+      "id": "EMER-003",
+      "topic": "emergency_communications",
+      "subtopic": "distress_call",
+      "question": "How many times is 'MAYDAY' spoken in the distress call?",
+      "choices": ["Once", "Twice", "Three times", "Five times"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the distress call begins with MAYDAY spoken three times, followed by THIS IS and the call sign spoken three times."
+    },
+    {
+      "id": "EMER-004",
+      "topic": "emergency_communications",
+      "subtopic": "distress_call",
+      "question": "What is the correct format for a distress call?",
+      "choices": ["MAYDAY x3, call sign x3", "MAYDAY x3, THIS IS, call sign x3", "MAYDAY x1, THIS IS, call sign x1", "MAYDAY x3, call sign x1"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the distress call format is: MAYDAY (x3), THIS IS, aircraft call sign (x3)."
+    },
+    {
+      "id": "EMER-005",
+      "topic": "emergency_communications",
+      "subtopic": "distress_message",
+      "question": "How many elements should a complete distress message contain?",
+      "choices": ["4", "6", "8", "10"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, a distress message has 8 elements: 1) MAYDAY, 2) call sign, 3) nature of distress, 4) intentions, 5) position/altitude/heading, 6) persons on board, 7) other useful info, 8) call sign again."
+    },
+    {
+      "id": "EMER-006",
+      "topic": "emergency_communications",
+      "subtopic": "distress_message",
+      "question": "Which of the following is NOT one of the eight elements of a distress message?",
+      "choices": ["Nature of distress", "Fuel remaining", "Position and altitude", "Persons on board"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the 8 elements are: MAYDAY, call sign, nature of distress, intentions, position/altitude/heading, persons on board, other useful information, and call sign again. Fuel remaining may be included as 'other useful information' but is not a named element."
+    },
+    {
+      "id": "EMER-007",
+      "topic": "emergency_communications",
+      "subtopic": "distress_message",
+      "question": "In a distress message, which element comes immediately after stating the nature of distress?",
+      "choices": ["Position and altitude", "Intentions", "Persons on board", "Call sign"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the distress message order after nature of distress is: 4) intentions, 5) position/altitude/heading, 6) persons on board."
+    },
+    {
+      "id": "EMER-008",
+      "topic": "emergency_communications",
+      "subtopic": "distress_frequency",
+      "question": "On which frequency should a distress call first be transmitted?",
+      "choices": ["121.5 MHz", "The current air-ground frequency", "122.2 MHz", "The company frequency"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a distress call should first be transmitted on the current air-ground frequency being used. If no response is received, then transmit on the emergency frequency 121.5 MHz."
+    },
+    {
+      "id": "EMER-009",
+      "topic": "emergency_communications",
+      "subtopic": "distress_frequency",
+      "question": "What is the international aeronautical emergency frequency?",
+      "choices": ["119.1 MHz", "121.5 MHz", "123.45 MHz", "126.7 MHz"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, 121.5 MHz is the international aeronautical emergency frequency, used for distress and urgency communications."
+    },
+    {
+      "id": "EMER-010",
+      "topic": "emergency_communications",
+      "subtopic": "distress_priority",
+      "question": "When a distress call is heard, what must all other stations do?",
+      "choices": ["Continue normal operations", "Acknowledge the call immediately", "Cease transmitting and listen on the distress frequency", "Switch to an alternate frequency"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, distress has absolute priority. All stations hearing a distress call must immediately cease transmitting and listen on the frequency."
+    },
+    {
+      "id": "EMER-011",
+      "topic": "emergency_communications",
+      "subtopic": "distress_acknowledgment",
+      "question": "What is the correct format for acknowledging a distress call?",
+      "choices": ["ROGER MAYDAY, [acknowledging station]", "MAYDAY, [distressed station x3], THIS IS, [acknowledging station x3], RECEIVED MAYDAY", "COPY MAYDAY, [acknowledging station], STANDING BY", "[Distressed station], THIS IS, [acknowledging station], MAYDAY ACKNOWLEDGED"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, distress acknowledgment format is: MAYDAY, distressed station call sign (x3), THIS IS, acknowledging station call sign (x3), RECEIVED MAYDAY."
+    },
+    {
+      "id": "EMER-012",
+      "topic": "emergency_communications",
+      "subtopic": "distress_relay",
+      "question": "How does a station relay a distress message on behalf of another aircraft?",
+      "choices": ["MAYDAY x3, THIS IS, relaying station x3, then distress info", "MAYDAY RELAY x3, THIS IS, relaying station x3, MAYDAY, then distress info", "RELAY MAYDAY x3, for [distressed station], distress info", "PAN PAN RELAY x3, MAYDAY, distress info"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a distress relay begins with MAYDAY RELAY (x3), THIS IS, relaying station call sign (x3), MAYDAY, followed by the distress information."
+    },
+    {
+      "id": "EMER-013",
+      "topic": "emergency_communications",
+      "subtopic": "distress_relay",
+      "question": "Under what circumstances would a station transmit a MAYDAY RELAY?",
+      "choices": ["When an aircraft requests a frequency change during distress", "When a station is aware of a distress situation and the distressed station cannot communicate", "When practicing emergency procedures", "When relaying routine messages from a distressed area"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a MAYDAY RELAY is transmitted when a station becomes aware of a distress situation and the distressed station is unable to transmit the distress message itself."
+    },
+    {
+      "id": "EMER-014",
+      "topic": "emergency_communications",
+      "subtopic": "distress_silence",
+      "question": "What phrase is used by the station in distress or the controlling station to impose radio silence?",
+      "choices": ["SILENCE PLEASE", "SEELONCE MAYDAY", "RADIO SILENCE", "QUIET ON FREQUENCY"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, SEELONCE MAYDAY is the command used by the station in distress or the station controlling distress traffic to impose radio silence on all other stations."
+    },
+    {
+      "id": "EMER-015",
+      "topic": "emergency_communications",
+      "subtopic": "distress_silence",
+      "question": "What phrase should other stations near a distress situation use to remind nearby stations to maintain radio silence?",
+      "choices": ["SEELONCE MAYDAY", "SEELONCE DISTRESS", "SILENCE ON FREQUENCY", "MAINTAIN SILENCE"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, SEELONCE DISTRESS is used by other stations near the distress situation to remind nearby stations to maintain radio silence."
+    },
+    {
+      "id": "EMER-016",
+      "topic": "emergency_communications",
+      "subtopic": "distress_cancellation",
+      "question": "What phrase indicates that the distress situation has been resolved and normal communications may resume?",
+      "choices": ["MAYDAY CANCEL", "DISTRESS ENDED", "SEELONCE FEENEE", "RESUME NORMAL"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, SEELONCE FEENEE is the phrase used to indicate that the distress situation is over and normal communications may resume."
+    },
+    {
+      "id": "EMER-017",
+      "topic": "emergency_communications",
+      "subtopic": "distress_cancellation",
+      "question": "What is the correct format for cancelling distress silence?",
+      "choices": ["MAYDAY, ALL STATIONS x3, THIS IS, station, SEELONCE FEENEE", "MAYDAY, HELLO ALL STATIONS x3, THIS IS, station, time, distressed call sign, SEELONCE FEENEE", "ALL STATIONS, DISTRESS CANCELLED, RESUME NORMAL OPERATIONS", "SEELONCE FEENEE, ALL STATIONS, THIS IS, station, OUT"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the distress cancellation format is: MAYDAY, HELLO ALL STATIONS (x3), THIS IS, station identification, time, distressed aircraft call sign, SEELONCE FEENEE."
+    },
+    {
+      "id": "EMER-018",
+      "topic": "emergency_communications",
+      "subtopic": "distress_traffic",
+      "question": "What is an ELT?",
+      "choices": ["Emergency Landing Transponder", "Emergency Locator Transmitter", "Electronic Location Tracker", "Emergency Light Transmitter"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, ELT stands for Emergency Locator Transmitter. It is a device that automatically transmits a distress signal to help search and rescue locate the aircraft."
+    },
+    {
+      "id": "EMER-019",
+      "topic": "emergency_communications",
+      "subtopic": "distress_traffic",
+      "question": "After transmitting a distress message, what should the pilot do if no acknowledgment is received?",
+      "choices": ["Repeat the message on the same frequency indefinitely", "Switch to 121.5 MHz and try again", "Other stations should attract attention of stations that can assist and notify SAR", "Land at the nearest airport"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, if a distress message is not acknowledged, other stations hearing the call should attract the attention of stations that can assist and notify Search and Rescue (SAR)."
+    },
+    {
+      "id": "EMER-020",
+      "topic": "emergency_communications",
+      "subtopic": "distress_traffic",
+      "question": "Who may control the distress communications during a distress event?",
+      "choices": ["Only the aircraft in distress", "Only the nearest ATC unit", "The aircraft in distress, the relaying station, or a delegated aeronautical station", "Only the Search and Rescue center"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, control of distress communications rests with the aircraft in distress or the station relaying the distress. This responsibility may be delegated to an aeronautical station such as ATC or SAR."
+    },
+    {
+      "id": "EMER-021",
+      "topic": "emergency_communications",
+      "subtopic": "distress_traffic",
+      "question": "What actions should a station in distress take? Select the correct sequence.",
+      "choices": ["Transmit message, activate ELT, wait for rescue", "Activate ELT, transmit call, transmit message", "Transmit call, transmit message, listen for acknowledgment, exchange distress traffic, activate ELT", "Switch to 121.5, transmit MAYDAY, wait"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the actions by a station in distress are: transmit the distress call, transmit the distress message, listen for acknowledgment, exchange distress traffic, and activate the ELT."
+    },
+    {
+      "id": "EMER-022",
+      "topic": "emergency_communications",
+      "subtopic": "distress_priority",
+      "question": "A pilot hears a MAYDAY call while receiving weather information from flight service. What should the pilot do?",
+      "choices": ["Finish receiving the weather information", "Ask flight service to stand by", "Immediately cease all transmission and listen", "Acknowledge the MAYDAY and relay it"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, distress has absolute priority over all other communications. All stations must immediately cease transmitting and listen on the frequency when a MAYDAY is heard."
+    },
+    {
+      "id": "EMER-023",
+      "topic": "emergency_communications",
+      "subtopic": "distress_message",
+      "question": "You are experiencing an engine fire at 5,000 feet, 10 nm south of Ottawa with 3 persons on board. What is the first element of your distress message after the distress call?",
+      "choices": ["Your position", "MAYDAY", "Nature of distress (engine fire)", "Number of persons on board"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the first element of the distress message (after the distress call) is MAYDAY, followed by call sign, nature of distress, intentions, position/altitude/heading, persons on board, other info, and call sign again."
+    },
+    {
+      "id": "EMER-024",
+      "topic": "emergency_communications",
+      "subtopic": "distress_signal",
+      "question": "What distinguishes a distress situation from an urgency situation?",
+      "choices": ["Distress is for mechanical issues, urgency is for weather", "Distress means grave/imminent danger requiring immediate help; urgency means safety concern but not immediate", "Distress is only declared by ATC; urgency is declared by pilots", "There is no practical difference"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, distress indicates grave and imminent danger requiring immediate assistance, while urgency indicates a safety concern that does not involve immediate danger."
+    },
+    {
+      "id": "EMER-025",
+      "topic": "emergency_communications",
+      "subtopic": "distress_call",
+      "question": "A pilot in distress transmits the distress call. How many times is the aircraft call sign spoken in the distress call?",
+      "choices": ["Once", "Twice", "Three times", "As many times as needed"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the distress call format is MAYDAY (x3), THIS IS, call sign (x3). The call sign is spoken three times."
+    },
+    {
+      "id": "EMER-026",
+      "topic": "emergency_communications",
+      "subtopic": "distress_message",
+      "question": "What is the last element of a distress message?",
+      "choices": ["Nature of distress", "Persons on board", "Other useful information", "Call sign repeated"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, the eighth and final element of the distress message is the aircraft call sign repeated. This helps identify the distressed aircraft."
+    },
+    {
+      "id": "EMER-027",
+      "topic": "emergency_communications",
+      "subtopic": "distress_frequency",
+      "question": "If your distress call on the current frequency goes unacknowledged, what should you do next?",
+      "choices": ["Wait 5 minutes and try again", "Transmit the distress call on 121.5 MHz", "Switch to the company frequency", "Land immediately without further communication"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, if the distress call on the current air-ground frequency is not answered, the pilot should transmit the distress call on the emergency frequency 121.5 MHz."
+    },
+    {
+      "id": "EMER-028",
+      "topic": "emergency_communications",
+      "subtopic": "distress_relay",
+      "question": "How many times is 'MAYDAY RELAY' spoken when relaying a distress message?",
+      "choices": ["Once", "Twice", "Three times", "Five times"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, when relaying a distress message, MAYDAY RELAY is spoken three times, followed by THIS IS and the relaying station's call sign three times."
+    },
+    {
+      "id": "EMER-029",
+      "topic": "emergency_communications",
+      "subtopic": "distress_silence",
+      "question": "You are flying near an aircraft in distress and hear another aircraft making non-essential transmissions. What phrase should you use?",
+      "choices": ["SEELONCE MAYDAY", "SEELONCE DISTRESS", "STOP TRANSMITTING", "QUIET ON FREQUENCY"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, SEELONCE DISTRESS is used by stations other than the distressed or controlling station to remind nearby stations to maintain radio silence during a distress event."
+    },
+    {
+      "id": "EMER-030",
+      "topic": "emergency_communications",
+      "subtopic": "distress_cancellation",
+      "question": "The distress situation has been resolved. Which station is responsible for cancelling the distress?",
+      "choices": ["Any station that was monitoring", "The nearest ATC facility", "The station in distress or the station controlling distress traffic", "The Search and Rescue center"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the distress cancellation is issued by the station that was in distress or the station that was controlling the distress traffic."
+    },
+    {
+      "id": "URG-001",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_signal",
+      "question": "What is the international radiotelephony urgency signal?",
+      "choices": ["MAYDAY", "PAN PAN", "SECURITE", "URGENT"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, PAN PAN (spoken three times) is the international radiotelephony urgency signal, indicating a safety concern that does not involve immediate danger."
+    },
+    {
+      "id": "URG-002",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_signal",
+      "question": "How many times is 'PAN PAN' spoken in an urgency call?",
+      "choices": ["Once", "Twice", "Three times", "Five times"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the urgency signal PAN PAN is spoken three times at the beginning of the urgency message."
+    },
+    {
+      "id": "URG-003",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_priority",
+      "question": "What priority do urgency communications have?",
+      "choices": ["Highest priority over everything", "Priority above all except distress", "Same priority as flight safety", "Third priority after distress and radio direction-finding"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, urgency communications have priority above all other communications except distress. Distress is the only category with higher priority."
+    },
+    {
+      "id": "URG-004",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_message",
+      "question": "What is the correct format for an urgency message addressed to all stations?",
+      "choices": ["PAN PAN x3, ALL STATIONS, THIS IS, identification, nature, intentions, position, other info", "PAN PAN x3, ALL STATIONS x3, THIS IS, identification, nature, intentions, position, other info", "PAN PAN x1, ALL STATIONS x3, THIS IS, identification, message", "URGENCY x3, ALL STATIONS, THIS IS, identification, message"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the urgency message format is: PAN PAN (x3), ALL STATIONS or specific station (x3), THIS IS, identification, nature of urgency, intentions, position, and other useful information."
+    },
+    {
+      "id": "URG-005",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_message",
+      "question": "A pilot has a passenger experiencing a medical emergency but the aircraft is not in immediate danger. What signal should the pilot use?",
+      "choices": ["MAYDAY", "PAN PAN", "SECURITE", "MEDICAL EMERGENCY"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, PAN PAN is the appropriate signal for an urgency situation where there is a safety concern but the aircraft is not in grave and imminent danger. A medical emergency aboard is a classic urgency scenario."
+    },
+    {
+      "id": "URG-006",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_priority",
+      "question": "When a station hears a PAN PAN call, how long must they listen before resuming normal communications?",
+      "choices": ["30 seconds", "1 minute", "At least 3 minutes", "5 minutes"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, stations hearing an urgency (PAN PAN) call must listen for at least 3 minutes before resuming normal communications."
+    },
+    {
+      "id": "URG-007",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_cancellation",
+      "question": "What is the correct format for cancelling an urgency situation?",
+      "choices": ["PAN PAN, ALL STATIONS, THIS IS, identification, situation resolved, call sign, OUT", "CANCEL PAN PAN, ALL STATIONS, THIS IS, identification, OUT", "ALL STATIONS, THIS IS, identification, PAN PAN CANCELLED, OUT", "PAN PAN CANCEL x3, ALL STATIONS, THIS IS, identification"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, urgency cancellation format is: PAN PAN, ALL STATIONS, THIS IS, identification, situation resolved, call sign, OUT."
+    },
+    {
+      "id": "URG-008",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_signal",
+      "question": "An aircraft is experiencing a partial loss of navigation equipment but can still fly safely. The pilot is concerned about finding the destination. What is the appropriate action?",
+      "choices": ["Declare MAYDAY", "Transmit PAN PAN", "Continue without communicating the issue", "Request a frequency change"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, PAN PAN is appropriate when there is a safety concern but no grave and imminent danger. A partial navigation failure with the ability to fly safely fits the urgency category."
+    },
+    {
+      "id": "URG-009",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_message",
+      "question": "In an urgency message, what information should be included after stating the nature of the urgency?",
+      "choices": ["Fuel remaining only", "Intentions, position, and other useful information", "Number of passengers only", "ATC clearance number"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, after stating the nature of the urgency, the pilot should provide intentions, position, and any other useful information."
+    },
+    {
+      "id": "URG-010",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_cancellation",
+      "question": "When cancelling an urgency situation, how is the message terminated?",
+      "choices": ["OVER", "OUT", "ROGER", "WILCO"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the urgency cancellation message ends with the call sign followed by OUT, as no response is expected."
+    },
+    {
+      "id": "URG-011",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_priority",
+      "question": "You are transmitting a routine position report when you hear PAN PAN PAN PAN PAN PAN. What should you do?",
+      "choices": ["Finish your transmission then listen", "Immediately cease transmitting and listen for at least 3 minutes", "Acknowledge the PAN PAN call", "Continue your transmission since PAN PAN is not as urgent as MAYDAY"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, urgency communications have priority above all except distress. Stations hearing PAN PAN must cease transmitting and listen for at least 3 minutes."
+    },
+    {
+      "id": "URG-012",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_message",
+      "question": "Can an urgency message be directed to a specific station rather than ALL STATIONS?",
+      "choices": ["No, urgency messages must always be addressed to ALL STATIONS", "Yes, it can be addressed to a specific station (x3) or ALL STATIONS (x3)", "Yes, but only to ATC stations", "No, only distress messages can be addressed to specific stations"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, an urgency message can be addressed to ALL STATIONS (x3) or to a specific station (x3), depending on the situation."
+    },
+    {
+      "id": "APP-001",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What is the definition of an 'aerodrome'?",
+      "choices": ["A paved runway used for commercial aviation", "Any area of land or water used for the arrival and departure of aircraft", "A military airfield with ATC services", "An airport with at least one terminal building"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, an aerodrome is defined as any area of land or water used for the arrival and departure of aircraft. This includes airports, grass strips, and seaplane bases."
+    },
+    {
+      "id": "APP-002",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What is an 'aircraft station'?",
+      "choices": ["A ground-based transmitter at an airport", "A mobile radio station on board an aircraft", "A control tower", "A flight service station"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, an aircraft station is defined as a mobile station in the aeronautical mobile service, located on board an aircraft."
+    },
+    {
+      "id": "APP-003",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What is an 'aeronautical station'?",
+      "choices": ["Any radio station at an airport", "A land station in the aeronautical mobile service", "A mobile station on board an aircraft", "A station that provides weather services"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, an aeronautical station is a land (fixed) station in the aeronautical mobile service, such as a control tower or flight service station."
+    },
+    {
+      "id": "APP-004",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What is the purpose of ATC (Air Traffic Control) service?",
+      "choices": ["To provide weather forecasts to pilots", "To prevent collisions and expedite/maintain orderly traffic flow", "To manage airline schedules", "To provide navigation services only"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, ATC service is defined as a service provided for the purpose of preventing collisions between aircraft, and expediting and maintaining an orderly flow of air traffic."
+    },
+    {
+      "id": "APP-005",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What defines a 'controlled aerodrome'?",
+      "choices": ["An aerodrome with at least one paved runway", "An aerodrome at which an ATC unit is operating", "Any aerodrome used by commercial aircraft", "An aerodrome with radar coverage"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a controlled aerodrome is an aerodrome at which an air traffic control unit is operating."
+    },
+    {
+      "id": "APP-006",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What is the function of a Flight Service Station?",
+      "choices": ["Providing ATC separation services", "Providing selected flight information and other services", "Operating aircraft maintenance", "Managing airline operations"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a Flight Service Station is an air traffic services unit that provides selected flight information services and other services to aircraft."
+    },
+    {
+      "id": "APP-007",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What does AOCC stand for and what does it relate to?",
+      "choices": ["Air Operations Command Center - military operations", "Aeronautical Operational Control Communications - regularity of flight", "Airport Operations Coordination Center - airport management", "Air Operations Communications Channel - ATC backup"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, AOCC stands for Aeronautical Operational Control Communications, relating to communications concerned with the regularity of flight."
+    },
+    {
+      "id": "APP-008",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What does GAC refer to?",
+      "choices": ["Government Aviation Communications", "General Aviation Communications - civil aviation comms other than scheduled/non-scheduled transport for hire", "Ground-Air Communications", "General Aircraft Control"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, GAC stands for General Aviation Communications, defined as civil aviation communications other than those of scheduled or non-scheduled air transport services operating for hire."
+    },
+    {
+      "id": "APP-009",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What is 'Ground Control Communications'?",
+      "choices": ["All communications between ground and aircraft", "ATC communications for preventing collisions on the manoeuvring area", "Communications between ground crews", "Company radio communications at the airport"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, Ground Control Communications are ATC communications for the purpose of preventing collisions on the manoeuvring area of an aerodrome."
+    },
+    {
+      "id": "APP-010",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What services does a 'Private Advisory Service' provide at controlled aerodromes?",
+      "choices": ["ATC clearances and weather briefings", "Company business such as fuel and lodging, NOT ATC or weather", "Flight planning and navigation services", "Emergency response coordination"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, Private Advisory Service provides company business communications at controlled aerodromes, such as fuel arrangements and lodging, but specifically NOT ATC services or weather information."
+    },
+    {
+      "id": "APP-011",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What is a 'Private Multiple Station'?",
+      "choices": ["A station with multiple antennas", "An air-ground station used for multipurpose operational communications", "A backup station for emergency use", "A military communications station"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a Private Multiple Station is an air-ground station used for multipurpose operational communications."
+    },
+    {
+      "id": "APP-012",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "What frequency band is designated for Air Traffic Control Services in the VHF aeronautical range?",
+      "choices": ["108.0-111.975 MHz", "117.975-121.9625 MHz", "121.9825-123.5875 MHz", "108.0-117.975 MHz"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, 117.975-121.9625 MHz is one of the bands designated for Air Traffic Control Services. Other ATC bands include 123.5875-128.8125 MHz and 132.0125-136.0 MHz."
+    },
+    {
+      "id": "APP-013",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "What is the frequency 121.5 MHz designated for?",
+      "choices": ["General Aviation Communications", "Air Traffic Control", "Emergency use", "Aeronautical Operational Control"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, 121.5 MHz is the designated international aeronautical emergency frequency, used for distress and urgency communications."
+    },
+    {
+      "id": "APP-014",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "What is the frequency range for General Aviation Communications (GAC)?",
+      "choices": ["108.0-111.975 MHz", "117.975-121.9625 MHz", "121.9825-123.5875 MHz", "128.8125-132.0125 MHz"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the frequency range 121.9825-123.5875 MHz is designated for General Aviation Communications (GAC)."
+    },
+    {
+      "id": "APP-015",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "What is the frequency range for Aeronautical Radionavigation?",
+      "choices": ["108.0-117.975 MHz", "117.975-121.9625 MHz", "121.9825-123.5875 MHz", "128.8125-132.0125 MHz"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, the frequency range 108.0-117.975 MHz (spanning two sub-bands: 108.0-111.975 and 111.975-117.975) is designated for Aeronautical Radionavigation."
+    },
+    {
+      "id": "APP-016",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "What is the frequency range for Aeronautical Operational Control Communications (AOCC)?",
+      "choices": ["117.975-121.9625 MHz", "121.9825-123.5875 MHz", "128.8125-132.0125 MHz", "132.0125-136.0 MHz"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, 128.8125-132.0125 MHz is designated for Aeronautical Operational Control Communications (AOCC)."
+    },
+    {
+      "id": "APP-017",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "When replacing a fuse in aviation radio equipment, what is the most important rule?",
+      "choices": ["Always use a higher-rated fuse for safety margin", "Never replace with a higher-rated fuse than specified", "Use any available fuse to restore operation quickly", "Replace fuses in pairs"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, you should never replace a fuse with one of a higher rating. The correct fault should be found and corrected before replacing the fuse."
+    },
+    {
+      "id": "APP-018",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "What should be done before replacing a blown fuse?",
+      "choices": ["Replace it immediately to restore operations", "Find and correct the fault that caused the fuse to blow", "Bypass the fuse temporarily", "Replace it with a higher-rated fuse"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the correct procedure is to find and correct the fault that caused the fuse to blow before replacing it. Simply replacing the fuse without fixing the underlying issue could result in further damage."
+    },
+    {
+      "id": "APP-019",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "What precaution should be taken when changing a fuse?",
+      "choices": ["Wear rubber gloves", "Ensure your hands are dry", "Use pliers to remove the old fuse", "Turn off all avionics first"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, when changing fuses, your hands should be dry to prevent electric shock and ensure a clean connection."
+    },
+    {
+      "id": "APP-020",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "What can cause a 'short' in radio equipment wiring?",
+      "choices": ["Wires that are too long", "Bare wires touching each other", "Too many connections on one circuit", "Using the wrong type of antenna"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a 'short' (short circuit) is caused by bare wires touching each other, which creates an unintended path for electrical current."
+    },
+    {
+      "id": "APP-021",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "What causes an 'open' in radio equipment wiring?",
+      "choices": ["Too many connections", "A wire broken inside its insulation", "Exposed wire connections", "Antenna disconnection"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, an 'open' (open circuit) occurs when a wire is broken inside its insulation, interrupting the circuit even though the wire appears intact externally."
+    },
+    {
+      "id": "APP-022",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "What should be applied to exposed wire connections?",
+      "choices": ["Electrical tape only", "Silicone coating", "Solder only", "Nothing, exposed connections are acceptable"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, exposed connections should be coated with silicone to protect them from moisture, corrosion, and short circuits."
+    },
+    {
+      "id": "APP-023",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "What is the general rule about all electrical connections in radio equipment?",
+      "choices": ["They should be soldered at all times", "They should be tight and clean", "They should be replaced annually", "They should be wrapped in electrical tape"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, all electrical connections in radio equipment should be kept tight and clean to ensure proper operation and prevent faults."
+    },
+    {
+      "id": "APP-024",
+      "topic": "definitions_and_equipment",
+      "subtopic": "station_licences",
+      "question": "Which frequency band is the upper range for Air Traffic Control Services?",
+      "choices": ["117.975-121.9625 MHz", "123.5875-128.8125 MHz", "128.8125-132.0125 MHz", "132.0125-136.0 MHz"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, 132.0125-136.0 MHz is the upper ATC band. ATC services use three frequency bands: 117.975-121.9625, 123.5875-128.8125, and 132.0125-136.0 MHz."
+    },
+    {
+      "id": "APP-025",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "Which of the following is NOT an Air Traffic Control Services frequency band?",
+      "choices": ["117.975-121.9625 MHz", "121.9825-123.5875 MHz", "123.5875-128.8125 MHz", "132.0125-136.0 MHz"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, 121.9825-123.5875 MHz is designated for General Aviation Communications, not ATC services."
+    },
+    {
+      "id": "REG-026",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "Which of the following correctly lists the first four levels of communication priority?",
+      "choices": ["Distress, Flight safety, Urgency, Meteorological", "Distress, Urgency, Radio direction-finding, Flight safety", "Urgency, Distress, Flight safety, Radio direction-finding", "Distress, Urgency, Flight safety, Meteorological"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the first four priority levels are: 1) Distress, 2) Urgency, 3) Radio direction-finding, 4) Flight safety."
+    },
+    {
+      "id": "REG-027",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "Where do 'service communications' fall in the priority hierarchy?",
+      "choices": ["Seventh", "Eighth", "Ninth", "Tenth"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, service communications are the ninth priority: 7) UN Charter, 8) Government priority, 9) Service communications, 10) Other aeronautical."
+    },
+    {
+      "id": "REG-028",
+      "topic": "regulations",
+      "subtopic": "control_of_communications",
+      "question": "Aircraft GABC is calling Aircraft GXYZ on an air-to-air frequency. Which aircraft controls the communication?",
+      "choices": ["GABC because it initiated the call", "GXYZ because it is the station being called", "Neither - there is no control on air-to-air", "The aircraft with the lower registration"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, when two aircraft are communicating directly, control lies with the station being called. GXYZ, as the called station, controls the communication."
+    },
+    {
+      "id": "REG-029",
+      "topic": "regulations",
+      "subtopic": "privacy",
+      "question": "A court officer requests the contents of a communication you intercepted. Are you permitted to share it?",
+      "choices": ["No, only the addressee may receive the contents", "Yes, court officers are among those authorized to receive intercepted communications", "Only if ordered by a judge", "Only if it involves a criminal investigation"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, intercepted communications may be divulged to the addressee, their accredited agent, authorized government officials, court officers, or telecommunication operators."
+    },
+    {
+      "id": "REG-030",
+      "topic": "regulations",
+      "subtopic": "interference",
+      "question": "A pilot uses profane language on the radio after a frustrating approach. What regulation has been violated?",
+      "choices": ["No regulation has been violated if no one complains", "The prohibition on profane or obscene language on aeronautical frequencies", "The privacy provisions of the Radiocommunication Act", "The false distress signal provision"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, profane and obscene language is strictly prohibited on aeronautical radio frequencies regardless of the circumstances."
+    },
+    {
+      "id": "PROC-051",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What are the phonetic alphabet words for the letters W, X, Y, and Z?",
+      "choices": ["William, Xavier, Yankee, Zebra", "Whiskey, X-ray, Yankee, Zulu", "Washington, Xenon, Yellow, Zeus", "Whiskey, Xavier, Yoke, Zulu"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet: W=Whiskey, X=X-ray, Y=Yankee, Z=Zulu."
+    },
+    {
+      "id": "PROC-052",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "Which phonetic alphabet word represents the letter 'U'?",
+      "choices": ["Uncle", "Unicorn", "Uniform", "Union"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet, the letter 'U' is represented by UNIFORM."
+    },
+    {
+      "id": "PROC-053",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should the altimeter setting of 29.92 inches be transmitted?",
+      "choices": ["Twenty-nine point ninety-two", "Two niner decimal niner two", "Two nine decimal nine two", "Altimeter twenty-nine ninety-two"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, each digit is pronounced separately, and the decimal point is spoken as 'decimal.' 29.92 is transmitted as 'two nine decimal nine two.'"
+    },
+    {
+      "id": "PROC-054",
+      "topic": "operating_procedures",
+      "subtopic": "time_and_date",
+      "question": "How would the time 11:30 PM be expressed in aeronautical time format?",
+      "choices": ["1130", "2330", "23:30", "11:30 PM"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, time is expressed using the 24-hour clock in four figures. 11:30 PM converts to 2330 in 24-hour format."
+    },
+    {
+      "id": "PROC-055",
+      "topic": "operating_procedures",
+      "subtopic": "call_signs",
+      "question": "An Air Canada aircraft operating as flight 456 would use what call sign?",
+      "choices": ["Air Canada four five six", "C-GACA four five six", "Canadian four five six", "ACA four five six"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, Canadian carriers use the company name followed by the flight number. Air Canada flight 456 would be 'Air Canada four five six.'"
+    },
+    {
+      "id": "PROC-056",
+      "topic": "operating_procedures",
+      "subtopic": "speech_techniques",
+      "question": "Why is it important to maintain a constant speed when speaking on aeronautical radio?",
+      "choices": ["To sound more professional", "To allow the receiver to understand and copy the message accurately", "To comply with time limits on transmissions", "To save battery power on the radio"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, speaking at a constant speed with natural rhythm helps the receiving station understand and accurately copy the message. Varying speed can cause words to be missed."
+    },
+    {
+      "id": "PROC-057",
+      "topic": "operating_procedures",
+      "subtopic": "signal_checks",
+      "question": "You receive a report that your transmission readability is 1. What does this mean?",
+      "choices": ["Your signal is readable with difficulty", "Your signal is perfectly readable", "Your signal is bad and unreadable", "Your signal is readable now and then"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, readability 1 means Bad/unreadable. This is the lowest rating on the 1-5 readability scale."
+    },
+    {
+      "id": "PROC-058",
+      "topic": "operating_procedures",
+      "subtopic": "signal_checks",
+      "question": "You report another station's readability as 4. What does this indicate?",
+      "choices": ["Their signal is readable with difficulty", "Their signal is readable now and then", "Their signal is good and readable", "Their signal is perfectly readable"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, readability 4 means Good/readable. The signal can be clearly understood."
+    },
+    {
+      "id": "EMER-031",
+      "topic": "emergency_communications",
+      "subtopic": "distress_message",
+      "question": "You are flying a Cessna 172 (C-GABC) and experience an engine failure at 3,500 feet, 15 nm north of Montreal, with 2 persons on board, intending to attempt an emergency landing. After the distress call, what is the correct order of the first four elements of your distress message?",
+      "choices": ["Call sign, position, nature of distress, intentions", "MAYDAY, call sign, nature of distress, intentions", "MAYDAY, nature of distress, call sign, position", "Call sign, MAYDAY, intentions, position"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the distress message order is: 1) MAYDAY, 2) call sign, 3) nature of distress, 4) intentions. Position/altitude/heading comes fifth."
+    },
+    {
+      "id": "EMER-032",
+      "topic": "emergency_communications",
+      "subtopic": "distress_acknowledgment",
+      "question": "Ottawa Tower acknowledges a distress call from Cessna GABC. What does the acknowledgment end with?",
+      "choices": ["ROGER", "OVER", "RECEIVED MAYDAY", "ACKNOWLEDGED"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the distress acknowledgment format ends with RECEIVED MAYDAY: MAYDAY, [distressed station x3], THIS IS, [acknowledging station x3], RECEIVED MAYDAY."
+    },
+    {
+      "id": "EMER-033",
+      "topic": "emergency_communications",
+      "subtopic": "distress_traffic",
+      "question": "During a distress event, the aircraft in distress decides ATC should control the distress traffic. Is this permitted?",
+      "choices": ["No, only the aircraft in distress can control distress traffic", "Yes, the aircraft in distress may delegate control to an aeronautical station such as ATC", "Only if Search and Rescue approves", "Only during nighttime operations"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the aircraft in distress or the relaying station controls distress communications, but may delegate this responsibility to an aeronautical station (ATC/SAR)."
+    },
+    {
+      "id": "EMER-034",
+      "topic": "emergency_communications",
+      "subtopic": "distress_frequency",
+      "question": "A pilot transmits MAYDAY on the current frequency of 126.7 MHz but receives no response. What is the next step?",
+      "choices": ["Transmit MAYDAY on 121.5 MHz", "Wait 5 minutes and try 126.7 again", "Switch to the company frequency", "Transmit PAN PAN instead"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, if the distress call on the current air-ground frequency goes unanswered, the pilot should then transmit on the emergency frequency 121.5 MHz."
+    },
+    {
+      "id": "EMER-035",
+      "topic": "emergency_communications",
+      "subtopic": "distress_silence",
+      "question": "Who has the authority to impose radio silence using SEELONCE MAYDAY?",
+      "choices": ["Any station monitoring the frequency", "Only ATC", "The station in distress or the station controlling the distress traffic", "Only Search and Rescue"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, SEELONCE MAYDAY may only be issued by the station in distress or the station that has assumed control of the distress traffic."
+    },
+    {
+      "id": "URG-013",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_signal",
+      "question": "A pilot suspects they are lost but the aircraft is functioning normally and has adequate fuel. What is the appropriate signal?",
+      "choices": ["MAYDAY - this is a grave danger situation", "PAN PAN - this is a safety concern without immediate danger", "No signal needed - just request assistance normally", "SECURITE - this is a safety information message"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, PAN PAN is appropriate for safety concerns that do not involve grave and imminent danger. Being lost with a functioning aircraft and adequate fuel is an urgency situation, not a distress situation."
+    },
+    {
+      "id": "URG-014",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_cancellation",
+      "question": "After declaring PAN PAN due to a rough-running engine, the engine resumes normal operation. What should the pilot transmit?",
+      "choices": ["MAYDAY CANCEL, ALL STATIONS, THIS IS, call sign, OUT", "PAN PAN, ALL STATIONS, THIS IS, identification, situation resolved, call sign, OUT", "CANCEL PAN PAN, THIS IS, call sign, OVER", "No transmission is needed; just resume normal operations"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the urgency cancellation format is: PAN PAN, ALL STATIONS, THIS IS, identification, situation resolved, call sign, OUT."
+    },
+    {
+      "id": "APP-026",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "A seaplane base where aircraft arrive and depart is considered:",
+      "choices": ["A heliport", "An aerodrome", "A marine station", "A water runway"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, an aerodrome is any area of land or water used for the arrival and departure of aircraft. This includes seaplane bases."
+    },
+    {
+      "id": "APP-027",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "The radio installed in an aircraft is classified as:",
+      "choices": ["An aeronautical station", "A flight service station", "An aircraft station (mobile station)", "A private multiple station"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, an aircraft station is a mobile station in the aeronautical mobile service, on board an aircraft. The radio equipment installed in the aircraft forms this station."
+    },
+    {
+      "id": "APP-028",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "You discover a blown fuse in your radio equipment. The original fuse was rated at 5 amps. You only have 10-amp fuses available. What should you do?",
+      "choices": ["Install the 10-amp fuse temporarily", "Do not replace the fuse with a higher-rated one; find a proper 5-amp replacement", "Install the 10-amp fuse and reduce power usage", "Install the 10-amp fuse and inform maintenance after the flight"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, you should never replace a fuse with one of a higher rating. Using a higher-rated fuse could mask the underlying problem and potentially cause damage to the equipment."
+    },
+    {
+      "id": "APP-029",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "A frequency of 125.0 MHz would fall under which service designation?",
+      "choices": ["General Aviation Communications", "Air Traffic Control Services", "Aeronautical Operational Control Communications", "Aeronautical Radionavigation"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, 125.0 MHz falls within the 123.5875-128.8125 MHz band, which is designated for Air Traffic Control Services."
+    },
+    {
+      "id": "APP-030",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "A frequency of 130.0 MHz would fall under which service designation?",
+      "choices": ["Air Traffic Control Services", "Aeronautical Operational Control Communications", "General Aviation Communications", "Emergency frequency"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, 130.0 MHz falls within the 128.8125-132.0125 MHz band, which is designated for Aeronautical Operational Control Communications (AOCC)."
+    },
+    {
+      "id": "PROC-059",
+      "topic": "operating_procedures",
+      "subtopic": "calling_procedure",
+      "question": "You call Ottawa Tower but cannot identify the reply clearly. What should you say?",
+      "choices": ["SAY AGAIN YOUR CALL SIGN", "STATION CALLING, SAY AGAIN", "Ottawa Tower, SAY AGAIN", "UNABLE TO COPY, REPEAT"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, if you called Ottawa Tower and received an unclear reply, you should say 'Ottawa Tower, SAY AGAIN' to request repetition. STATION CALLING is used when YOU are the station being called and cannot identify the caller."
+    },
+    {
+      "id": "PROC-060",
+      "topic": "operating_procedures",
+      "subtopic": "message_handling",
+      "question": "You are mid-transmission and realize you stated an incorrect altitude. What should you say?",
+      "choices": ["DISREGARD, then the correct altitude", "CORRECTION, then re-transmit from the correct point", "CANCEL, then re-transmit", "ERROR, then re-transmit"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, if an error is made during transmission, say CORRECTION, then re-transmit the corrected information from the appropriate point."
+    },
+    {
+      "id": "REG-031",
+      "topic": "regulations",
+      "subtopic": "false_distress",
+      "question": "A pilot accidentally triggers a false distress signal due to equipment malfunction. Has the pilot violated s.9(1)(a)?",
+      "choices": ["Yes, any false distress signal is a violation", "No, because s.9(1)(a) specifies 'knowingly' sending a false distress signal", "Yes, but the penalty is reduced for accidental triggers", "No, only corporations can be charged"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, s.9(1)(a) specifies that no person shall 'knowingly' send a false distress signal. An accidental trigger due to equipment malfunction is not a knowing act."
+    },
+    {
+      "id": "PROC-061",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should a heading of 270 degrees magnetic be transmitted?",
+      "choices": ["Two seventy", "Two seven zero", "Two hundred seventy", "Heading west"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, headings are transmitted using three digits with each digit spoken separately. 270 degrees is transmitted as 'two seven zero.'"
+    },
+    {
+      "id": "PROC-062",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What are the correct phonetic alphabet words for the letters S, T, U, V?",
+      "choices": ["Sugar, Tango, Uniform, Victor", "Sierra, Tango, Uniform, Victor", "Sierra, Tango, Uncle, Victor", "Sierra, Tiger, Uniform, Victoria"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet: S=Sierra, T=Tango, U=Uniform, V=Victor."
+    },
+    {
+      "id": "PROC-063",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What are the correct phonetic alphabet words for the letters I, J, K, L?",
+      "choices": ["India, Juliet, King, Lima", "India, Juliett, Kilo, Lima", "Italy, Juliett, Kilo, London", "India, Juliett, Kilo, London"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet: I=India, J=Juliett, K=Kilo, L=Lima."
+    },
+    {
+      "id": "PROC-064",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What are the correct phonetic alphabet words for the letters M, N, O, P?",
+      "choices": ["Mike, Nancy, Oscar, Peter", "Mike, November, Oscar, Papa", "Metro, November, Oscar, Papa", "Mike, November, Omega, Papa"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet: M=Mike, N=November, O=Oscar, P=Papa."
+    },
+    {
+      "id": "PROC-065",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What are the correct phonetic alphabet words for the letters E, F, G, H?",
+      "choices": ["Echo, Fox, Golf, Hotel", "Easy, Foxtrot, Golf, Hotel", "Echo, Foxtrot, Golf, Hotel", "Echo, Foxtrot, George, Hotel"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet: E=Echo, F=Foxtrot, G=Golf, H=Hotel."
+    },
+    {
+      "id": "PROC-066",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What is the phonetic alphabet word for the letter 'R'?",
+      "choices": ["Roger", "Romeo", "Robert", "Radio"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet, the letter 'R' is represented by ROMEO. Note that ROGER is a procedural word meaning 'message received,' not a phonetic alphabet word."
+    },
+    {
+      "id": "EMER-036",
+      "topic": "emergency_communications",
+      "subtopic": "distress_message",
+      "question": "In a distress message, where does the information about persons on board appear?",
+      "choices": ["Third element, after nature of distress", "Fourth element, after intentions", "Sixth element, after position/altitude/heading", "Eighth element, at the end"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, persons on board is the sixth element: 1) MAYDAY, 2) call sign, 3) nature of distress, 4) intentions, 5) position/altitude/heading, 6) persons on board, 7) other info, 8) call sign."
+    },
+    {
+      "id": "EMER-037",
+      "topic": "emergency_communications",
+      "subtopic": "distress_traffic",
+      "question": "When should a pilot activate their ELT during a distress situation?",
+      "choices": ["Before transmitting the distress call", "Immediately after engine failure", "After transmitting the distress call and message, listening for acknowledgment, and exchanging distress traffic", "Only after a crash landing"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the sequence is: transmit distress call, transmit distress message, listen for acknowledgment, exchange distress traffic, then activate ELT."
+    },
+    {
+      "id": "APP-031",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What is the difference between an 'aeronautical station' and an 'aircraft station'?",
+      "choices": ["There is no difference", "An aeronautical station is a land station; an aircraft station is a mobile station on board an aircraft", "An aeronautical station is on aircraft; an aircraft station is on the ground", "An aeronautical station is military; an aircraft station is civilian"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, an aeronautical station is a land (fixed) station in the aeronautical mobile service, while an aircraft station is a mobile station located on board an aircraft."
+    },
+    {
+      "id": "APP-032",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "A frequency of 110.0 MHz would fall under which service designation?",
+      "choices": ["Air Traffic Control Services", "General Aviation Communications", "Aeronautical Radionavigation", "Aeronautical Operational Control Communications"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, 110.0 MHz falls within the 108.0-111.975 MHz band, which is designated for Aeronautical Radionavigation."
+    },
+    {
+      "id": "APP-033",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "A frequency of 135.0 MHz would fall under which service designation?",
+      "choices": ["Aeronautical Operational Control Communications", "General Aviation Communications", "Aeronautical Radionavigation", "Air Traffic Control Services"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, 135.0 MHz falls within the 132.0125-136.0 MHz band, which is designated for Air Traffic Control Services."
+    },
+    {
+      "id": "REG-032",
+      "topic": "regulations",
+      "subtopic": "privacy",
+      "question": "Which section of the Radiocommunication Act addresses privacy of radio communications?",
+      "choices": ["s.9(1)(a)", "s.9(2)", "s.10(1)", "s.11(3)"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, s.9(2) of the Radiocommunication Act addresses the privacy of radio communications and binds radio operators to preserve secrecy."
+    },
+    {
+      "id": "PROC-067",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "What is the meaning of 'WILCO'?",
+      "choices": ["Message received", "Will comply with the instruction", "Waiting for further instructions", "Will continue monitoring"],
+      "correct_index": 1,
+      "explanation": "WILCO means 'I have received your message, understand it, and will comply.' It is used to acknowledge and confirm that an instruction will be followed."
+    },
+    {
+      "id": "PROC-068",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "What does 'ROGER' mean in aviation communications?",
+      "choices": ["Yes, I agree", "Will comply", "Message received and understood", "Please repeat"],
+      "correct_index": 2,
+      "explanation": "ROGER means 'I have received and understood your last transmission.' It acknowledges receipt but does not necessarily mean agreement or compliance."
+    },
+    {
+      "id": "PROC-069",
+      "topic": "operating_procedures",
+      "subtopic": "call_signs",
+      "question": "A Piper Cherokee with registration C-FABC would use which call sign format?",
+      "choices": ["Piper Foxtrot Alfa Bravo Charlie", "Cherokee Foxtrot Alfa Bravo Charlie", "Charlie Foxtrot Alfa Bravo Charlie", "Piper Cherokee Charlie Foxtrot Alfa Bravo Charlie"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, private aircraft use the manufacturer or type name followed by the last four characters of the registration. A Piper Cherokee C-FABC would be 'Cherokee Foxtrot Alfa Bravo Charlie.'"
+    },
+    {
+      "id": "PROC-070",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should the number 3,000 be transmitted?",
+      "choices": ["Three thousand", "Three zero zero zero", "Thirty hundred", "Tree tousand"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, whole thousands are spoken using the word 'thousand.' 3,000 is transmitted as 'three thousand.'"
+    },
+    {
+      "id": "EMER-038",
+      "topic": "emergency_communications",
+      "subtopic": "distress_priority",
+      "question": "An ATC controller is providing radar vectors to multiple aircraft when a MAYDAY is heard on frequency. What must the controller prioritize?",
+      "choices": ["Complete the current radar vectors first", "The distress communication above all other traffic", "Ask the distressed aircraft to stand by until the current traffic is clear", "Transfer the distressed aircraft to the emergency frequency"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, distress has absolute priority over all other transmissions. ATC must prioritize the distress communication above all other traffic."
+    },
+    {
+      "id": "URG-015",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_message",
+      "question": "A pilot declares PAN PAN due to a partial electrical failure. Which element is NOT required in the urgency message?",
+      "choices": ["Nature of the urgency", "Intentions", "Number of persons on board", "Position"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, the urgency message includes PAN PAN (x3), addressee, THIS IS, identification, nature of urgency, intentions, position, and other info. Persons on board is a specific distress message element, not a required urgency element."
+    },
+    {
+      "id": "APP-034",
+      "topic": "definitions_and_equipment",
+      "subtopic": "station_licences",
+      "question": "A radio operator must hold which certificate to operate an aircraft radio station in Canada?",
+      "choices": ["ROC-M (Maritime)", "ROC-A (Aeronautical)", "Amateur Radio Certificate", "General Radio Operator Certificate"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a Restricted Operator Certificate - Aeronautical (ROC-A) is required to operate an aircraft radio station in Canada."
+    },
+    {
+      "id": "PROC-071",
+      "topic": "operating_procedures",
+      "subtopic": "time_and_date",
+      "question": "What six-figure group represents 3:30 PM on the 25th of the month?",
+      "choices": ["250330", "251530", "251500", "153025"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a six-figure date-time group uses two digits for the date and four for the time. 3:30 PM = 1530 on the 25th = 251530."
+    },
+    {
+      "id": "PROC-072",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "Which of the following is NOT listed as a prohibited procedural expression in the RIC-21?",
+      "choices": ["BREAKER BREAKER", "OVER AND OUT", "ROGER", "OK"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, ROGER is a legitimate aviation procedural word meaning 'message received.' BREAKER BREAKER, OVER AND OUT, and OK are all listed as expressions that should NOT be used."
+    },
+    {
+      "id": "REG-033",
+      "topic": "regulations",
+      "subtopic": "control_of_communications",
+      "question": "An aircraft is told by the ground station to limit transmissions to 30 seconds. Must the aircraft comply?",
+      "choices": ["No, there is no obligation to follow time limits", "Yes, the ground station controls the duration of communications", "Only if the aircraft is at a controlled aerodrome", "Only during peak traffic hours"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the aircraft station must comply with the ground station's instructions regarding duration of communication, along with order, time, and frequency."
+    },
+    {
+      "id": "EMER-039",
+      "topic": "emergency_communications",
+      "subtopic": "distress_relay",
+      "question": "You hear an aircraft transmitting a MAYDAY on 122.8 MHz but you notice no ground station has acknowledged it. What should you do?",
+      "choices": ["Ignore it since you are not ATC", "Relay the MAYDAY using the MAYDAY RELAY format and attempt to attract attention of stations that can assist", "Switch to 121.5 and transmit PAN PAN", "Contact the distressed aircraft and tell them to try 121.5"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, if a distress message is not acknowledged, other stations should attract the attention of stations that can assist, notify SAR, and relay the distress using the MAYDAY RELAY format."
+    },
+    {
+      "id": "APP-035",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "When repairing radio equipment connectors, what should you be particularly careful about?",
+      "choices": ["Using the correct color wires", "Using the correct length of cable", "Various connector types and potential for shorts or open wires", "Ensuring the antenna is disconnected first"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, when repairing connectors, care must be taken with the various connector types and to watch for problems such as shorts (bare wires touching) or open wires (broken inside)."
+    },
+    {
+      "id": "PROC-073",
+      "topic": "operating_procedures",
+      "subtopic": "call_signs",
+      "question": "What is the call sign for the flight service station at Winnipeg?",
+      "choices": ["Winnipeg Tower", "Winnipeg Radio", "Winnipeg Flight Service", "Winnipeg Ground"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, ground station call signs use the location followed by the function. A flight service station at Winnipeg would be 'Winnipeg Flight Service' or 'Winnipeg Radio,' with the specific designation depending on services provided."
+    },
+    {
+      "id": "PROC-074",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should 7,500 feet be transmitted?",
+      "choices": ["Seventy-five hundred", "Seven five zero zero", "Seven thousand five hundred", "Seven point five thousand"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, numbers are pronounced as individual digits. 7,500 is transmitted as 'seven five zero zero.'"
+    },
+    {
+      "id": "REG-034",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "Government priority messages rank at which position in the priority hierarchy?",
+      "choices": ["Sixth", "Seventh", "Eighth", "Ninth"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, government priority messages are the eighth priority level in the hierarchy."
+    },
+    {
+      "id": "REG-035",
+      "topic": "regulations",
+      "subtopic": "priority_of_communications",
+      "question": "Messages relating to the UN Charter hold which priority level?",
+      "choices": ["Fifth", "Sixth", "Seventh", "Eighth"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, messages relating to the UN Charter are the seventh priority level in the hierarchy."
+    },
+    {
+      "id": "EMER-040",
+      "topic": "emergency_communications",
+      "subtopic": "distress_cancellation",
+      "question": "What element is included in the distress cancellation message that is NOT in most other transmissions?",
+      "choices": ["The date", "The time", "The frequency used", "The number of persons on board"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the distress cancellation message includes the time of cancellation, which helps all stations log the duration and conclusion of the distress event."
+    },
+    {
+      "id": "PROC-075",
+      "topic": "operating_procedures",
+      "subtopic": "procedural_words",
+      "question": "A controller says 'STAND BY 5 MINUTES.' What does this mean?",
+      "choices": ["Wait on the ground for 5 minutes", "The controller will respond in approximately 5 minutes", "Hold your current altitude for 5 minutes", "Maintain radio silence for 5 minutes"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, STAND BY followed by estimated minutes means the station cannot respond immediately and provides an estimate of the waiting time."
+    },
+    {
+      "id": "APP-036",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "How many separate frequency bands are designated for Air Traffic Control Services?",
+      "choices": ["One", "Two", "Three", "Four"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, ATC services use three frequency bands: 117.975-121.9625 MHz, 123.5875-128.8125 MHz, and 132.0125-136.0 MHz."
+    },
+    {
+      "id": "APP-037",
+      "topic": "definitions_and_equipment",
+      "subtopic": "aeronautical_terms",
+      "question": "What does Private Advisory Service specifically NOT include?",
+      "choices": ["Fuel arrangements", "Lodging information", "ATC services and weather information", "Crew scheduling"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, Private Advisory Service provides company business at controlled aerodromes (fuel, lodging, etc.) but specifically does NOT include ATC services or weather information."
+    },
+    {
+      "id": "EMER-041",
+      "topic": "emergency_communications",
+      "subtopic": "distress_call",
+      "question": "A pilot is experiencing a complete engine failure. Their aircraft is a Cessna 172, registration C-GABC. What is the correct distress call?",
+      "choices": ["MAYDAY MAYDAY MAYDAY, THIS IS, Cessna one seven two Golf Alfa Bravo Charlie, Cessna one seven two Golf Alfa Bravo Charlie, Cessna one seven two Golf Alfa Bravo Charlie", "MAYDAY, THIS IS, Cessna GABC", "MAYDAY MAYDAY MAYDAY, Cessna Golf Alfa Bravo Charlie", "HELP HELP HELP, THIS IS, Cessna GABC"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, the distress call is MAYDAY (x3), THIS IS, then the aircraft call sign (x3). The full call sign including type designation should be used."
+    },
+    {
+      "id": "PROC-076",
+      "topic": "operating_procedures",
+      "subtopic": "signal_checks",
+      "question": "What is the purpose of a 'signal check' as opposed to a 'preflight check'?",
+      "choices": ["Signal checks test the antenna, preflight checks test the radio", "Signal checks are performed airborne, preflight checks are performed before departure", "Signal checks use 121.5, preflight checks use the assigned frequency", "There is no difference between them"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, a signal check is performed while airborne, a preflight check is performed before departure from the ground, and a maintenance check is for ground maintenance."
+    },
+    {
+      "id": "REG-036",
+      "topic": "regulations",
+      "subtopic": "privacy",
+      "question": "A telecommunication operator intercepts an aeronautical communication. May they divulge its contents?",
+      "choices": ["No, under no circumstances", "Yes, telecommunication operators are among those authorized to receive divulged intercepted communications", "Only with written permission", "Only if it relates to an emergency"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, telecommunications operators are among those to whom contents may be divulged, along with the addressee, accredited agents, authorized government officials, and court officers."
+    },
+    {
+      "id": "PROC-077",
+      "topic": "operating_procedures",
+      "subtopic": "number_transmission",
+      "question": "How should a runway designated as Runway 27 be transmitted?",
+      "choices": ["Runway twenty-seven", "Runway two seven", "Runway two seven zero", "Runway twenty seven"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, numbers are pronounced as individual digits. Runway 27 is transmitted as 'Runway two seven.'"
+    },
+    {
+      "id": "EMER-042",
+      "topic": "emergency_communications",
+      "subtopic": "distress_message",
+      "question": "The seventh element of a distress message is described as 'other useful information.' What type of information might this include?",
+      "choices": ["The pilot's name and licence number", "Fuel remaining, visible landmarks, or any information that could assist SAR", "The aircraft's maintenance history", "The pilot's home base"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the 'other useful information' element of a distress message may include any information that could assist in search and rescue, such as fuel remaining, visible landmarks, or aircraft color."
+    },
+    {
+      "id": "APP-038",
+      "topic": "definitions_and_equipment",
+      "subtopic": "frequency_assignments",
+      "question": "If you tune your radio to 115.0 MHz, what type of service would you expect to find?",
+      "choices": ["Air Traffic Control", "General Aviation Communications", "Aeronautical Radionavigation (VOR/ILS)", "Emergency frequency"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, 115.0 MHz falls within the 111.975-117.975 MHz band designated for Aeronautical Radionavigation, which includes VOR and ILS navigation aids."
+    },
+    {
+      "id": "APP-039",
+      "topic": "definitions_and_equipment",
+      "subtopic": "equipment",
+      "question": "What are the two main types of wiring problems identified in the RIC-21?",
+      "choices": ["Corrosion and wear", "Shorts and open wires", "Overheating and underpower", "Loose connections and broken antennas"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, the two main wiring problems are shorts (bare wires touching each other, creating unintended circuits) and open wires (wires broken inside their insulation, interrupting circuits)."
+    },
+    {
+      "id": "PROC-078",
+      "topic": "operating_procedures",
+      "subtopic": "phonetic_alphabet",
+      "question": "What are the correct phonetic alphabet words for the letters D, E, F?",
+      "choices": ["David, Edward, Freddy", "Delta, Easy, Foxtrot", "Delta, Echo, Foxtrot", "Dog, Echo, Fox"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21 ITU phonetic alphabet: D=Delta, E=Echo, F=Foxtrot."
+    },
+    {
+      "id": "URG-016",
+      "topic": "urgency_communications",
+      "subtopic": "urgency_signal",
+      "question": "What is the key difference between a MAYDAY and PAN PAN situation?",
+      "choices": ["MAYDAY is for engine failures, PAN PAN is for weather problems", "MAYDAY is for grave/imminent danger requiring immediate help; PAN PAN is for safety concern without immediate danger", "MAYDAY is only used over water; PAN PAN is used over land", "MAYDAY requires ATC involvement; PAN PAN does not"],
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, MAYDAY indicates grave and imminent danger requiring immediate assistance, while PAN PAN indicates a safety concern that does not involve immediate danger to the aircraft or persons."
+    }
+  ]
+}
