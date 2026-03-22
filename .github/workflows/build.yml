@@ -1,4 +1,4 @@
-name: Build Windows EXE
+name: Build App
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: write
 
 jobs:
-  build:
+  build-windows:
     runs-on: windows-latest
 
     steps:
@@ -26,11 +26,54 @@ jobs:
       - name: Build EXE
         run: pyinstaller roca_study_app.spec
 
-      - name: Upload EXE artifact
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: ROCAStudyApp
+          name: ROCAStudyApp-Windows
           path: dist/ROCAStudyApp.exe
+
+  build-macos:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install customtkinter pyinstaller
+
+      - name: Build macOS app
+        run: pyinstaller roca_study_app.spec
+
+      - name: Zip the macOS binary
+        run: cd dist && zip ROCAStudyApp-macOS.zip ROCAStudyApp
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ROCAStudyApp-macOS
+          path: dist/ROCAStudyApp-macOS.zip
+
+  release:
+    needs: [build-windows, build-macos]
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Download Windows artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ROCAStudyApp-Windows
+          path: artifacts/windows
+
+      - name: Download macOS artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: ROCAStudyApp-macOS
+          path: artifacts/macos
 
       - name: Create or update release
         uses: softprops/action-gh-release@v2
@@ -38,9 +81,14 @@ jobs:
           tag_name: latest
           name: ROC-A Study App (Latest Build)
           body: |
-            Download **ROCAStudyApp.exe** below and double-click to run. No Python installation required.
+            ## Downloads
 
-            Built automatically from the latest code on master.
-          files: dist/ROCAStudyApp.exe
+            - **Windows**: Download `ROCAStudyApp.exe` and double-click to run
+            - **macOS**: Download `ROCAStudyApp-macOS.zip`, unzip, then run the `ROCAStudyApp` binary
+
+            No Python installation required. Built automatically from the latest code on master.
+          files: |
+            artifacts/windows/ROCAStudyApp.exe
+            artifacts/macos/ROCAStudyApp-macOS.zip
           make_latest: true
           prerelease: false
