@@ -11,6 +11,7 @@ app_datas = [
     ('data/questions.json', 'data'),
     ('data/flashcards.json', 'data'),
     ('data/reference.json', 'data'),
+    ('data/lessons.json', 'data'),
 ]
 
 a = Analysis(

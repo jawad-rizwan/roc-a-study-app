@@ -1,0 +1,800 @@
+{
+  "version": "1.0",
+  "lessons": [
+    {
+      "id": "lesson_01",
+      "title": "Introduction to the ROC-A & Regulations",
+      "description": "What the ROC-A licence is, the Radiocommunication Act, priority of communications, and privacy rules.",
+      "topic": "regulations",
+      "order": 1,
+      "sections": [
+        {
+          "type": "text",
+          "title": "What Is the ROC-A?",
+          "content": "The Restricted Operator Certificate - Aeronautical (ROC-A) is a radio operator's certificate issued by Innovation, Science and Economic Development Canada (ISED, formerly Industry Canada). It authorizes the holder to operate aeronautical radio equipment aboard aircraft operating under Visual Flight Rules (VFR) or Instrument Flight Rules (IFR) within Canadian airspace and internationally.\n\nEvery pilot-in-command of an aircraft equipped with radio transmitting apparatus must hold a valid ROC-A. This is not optional: it is a legal requirement under the Radiocommunication Act and the Radiocommunication Regulations. Flying without a valid ROC-A while using radio equipment is an offence that can result in fines and prosecution.\n\nThe ROC-A exam tests your knowledge of radio regulations, proper operating procedures, emergency and urgency communications, and basic equipment knowledge. The exam is multiple-choice and you must achieve a passing grade to obtain your certificate. Once issued, the ROC-A does not expire, but it can be suspended or revoked for violations."
+        },
+        {
+          "type": "key_points",
+          "title": "Key Points",
+          "points": [
+            "The ROC-A is issued by ISED (Innovation, Science and Economic Development Canada)",
+            "It is required by law for anyone operating aeronautical radio transmitting equipment",
+            "The certificate does not expire but can be suspended or revoked",
+            "The ROC-A covers VFR and IFR radio operations"
+          ]
+        },
+        {
+          "type": "text",
+          "title": "The Radiocommunication Act",
+          "content": "The Radiocommunication Act is the primary piece of Canadian federal legislation governing all radio communications in Canada. It establishes the legal framework for the licensing and regulation of radio apparatus and radio-sensitive equipment. Under this Act, the Minister of Innovation, Science and Economic Development has the authority to issue, amend, suspend, and revoke radio licences and operator certificates.\n\nKey provisions relevant to ROC-A holders include:\n\n- No person shall install, operate, or possess radio apparatus except under and in accordance with a licence issued by the Minister.\n- The Minister may prescribe the qualifications required to operate radio apparatus.\n- Radio operators must comply with the Radiocommunication Regulations, Radio Orders, and the International Telecommunication Union (ITU) Radio Regulations.\n- Canada is a signatory to the ITU Convention, which means Canadian radio operators must follow international standards and procedures when communicating internationally."
+        },
+        {
+          "type": "text",
+          "title": "Priority of Communications",
+          "content": "One of the most heavily tested topics on the ROC-A exam is the priority of communications. Radio communications are not all equal: some types of messages take absolute priority over others. You must memorize the complete priority list in order.\n\nThe ten levels of priority, from highest to lowest, are:\n\n1. Distress calls, distress messages, and distress traffic\n2. Urgency communications\n3. Communications relating to direction finding (radio bearings)\n4. Flight safety messages (including weather observations, forecasts, PIREPS)\n5. Meteorological messages (weather data)\n6. Flight regularity messages (messages regarding the safe, efficient, and economic operation of aircraft)\n7. Messages relating to the application of the United Nations Charter\n8. Government messages for which priority has been expressly requested\n9. Service communications (relating to the operation of the radio system itself)\n10. All other aeronautical communications (routine messages)\n\nDistress communications always have ABSOLUTE priority over all other communications. When a distress situation exists, all other stations must cease transmitting on the frequency being used for distress traffic unless they can assist."
+        },
+        {
+          "type": "warning",
+          "content": "The priority list is one of the most commonly tested topics on the ROC-A exam. You will likely see multiple questions asking you to identify which type of communication has higher priority. Pay special attention to the order of items 3 through 6 (direction finding, flight safety, meteorological, flight regularity), as these are frequently mixed up by candidates."
+        },
+        {
+          "type": "table",
+          "title": "Priority of Communications (Summary Table)",
+          "columns": ["Priority", "Type of Communication"],
+          "rows": [
+            ["1 (Highest)", "Distress calls, messages, and traffic"],
+            ["2", "Urgency communications"],
+            ["3", "Direction finding (radio bearings)"],
+            ["4", "Flight safety messages"],
+            ["5", "Meteorological messages"],
+            ["6", "Flight regularity messages"],
+            ["7", "United Nations Charter messages"],
+            ["8", "Government priority messages"],
+            ["9", "Service communications"],
+            ["10 (Lowest)", "All other aeronautical communications"]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Privacy and Secrecy of Communications",
+          "content": "Canadian law takes the privacy of radio communications very seriously. Under the Radiocommunication Act, it is illegal to intercept and make use of, or divulge the contents of, any radio communication that is not intended for you. This applies to all radio-based communications, including aeronautical communications.\n\nSpecifically, the Act states that no person shall intercept and make use of, or intercept and divulge, any radiocommunication, except with the consent of the person intended to receive it. If you overhear a radio communication that is not addressed to you, you are not permitted to disclose its contents to any unauthorized person or use the information for your own benefit.\n\nThe penalties for violating the secrecy of communications are severe:\n\n- For an individual (summary conviction): a fine of up to $25,000 and/or imprisonment for up to one year for a first offence. Subsequent offences carry higher penalties.\n- For a corporation: a fine of up to $75,000 for a first offence.\n\nThese penalties serve as a strong deterrent. As a radio operator, you must treat all communications you hear with discretion and only act on those addressed to your station."
+        },
+        {
+          "type": "warning",
+          "content": "The exam will test you on the specific fine amounts. Remember: individuals face fines up to $25,000 and/or imprisonment up to 1 year. Corporations face fines up to $75,000. Do not confuse individual penalties with corporate penalties."
+        },
+        {
+          "type": "key_points",
+          "title": "Summary of Key Regulatory Points",
+          "points": [
+            "The Radiocommunication Act governs all radio use in Canada",
+            "A valid ROC-A is required to operate aeronautical radio equipment",
+            "Distress communications always have the HIGHEST priority",
+            "There are 10 levels of communication priority - memorize them in order",
+            "Divulging intercepted communications is illegal with severe penalties",
+            "Individual fine: up to $25,000 and/or 1 year imprisonment",
+            "Corporate fine: up to $75,000"
+          ]
+        }
+      ],
+      "quiz_question_ids": ["REG-001", "REG-002", "REG-003", "REG-004", "REG-005", "REG-006", "REG-007", "REG-008", "REG-009", "REG-010"]
+    },
+    {
+      "id": "lesson_02",
+      "title": "Control, Interference & False Distress Signals",
+      "description": "Who controls communications, rules on interference and superfluous transmissions, and penalties for false distress.",
+      "topic": "regulations",
+      "order": 2,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Control of Communications",
+          "content": "In aeronautical radio communications, it is essential to understand who controls the exchange of messages. The rules differ depending on whether communication is between an aircraft and a ground station or between two aircraft.\n\nWhen an aircraft communicates with a ground station (such as a tower, ground control, or flight service station), the GROUND STATION controls the communication. The ground station determines when the aircraft may transmit, assigns frequencies, and manages the flow of traffic on the frequency. Pilots must follow the instructions and directions of the ground station regarding radio procedures.\n\nWhen two aircraft communicate directly with each other (air-to-air), the station BEING CALLED controls the communication. This means the aircraft that receives the initial call has the authority to manage the exchange. This rule ensures orderly communication when no ground station is mediating.\n\nThese rules exist to prevent chaos on busy frequencies. Without clear control, multiple stations might transmit simultaneously, causing interference and potentially dangerous miscommunication."
+        },
+        {
+          "type": "warning",
+          "content": "This is a common exam trap: between two aircraft, it is the station BEING CALLED that controls, NOT the station that initiates the call. Between an aircraft and a ground station, the GROUND STATION always controls. Make sure you do not confuse these two rules."
+        },
+        {
+          "type": "key_points",
+          "title": "Control of Communications Summary",
+          "points": [
+            "Aircraft to ground station: the GROUND STATION controls",
+            "Aircraft to aircraft: the station BEING CALLED controls",
+            "Control means authority over the flow and conduct of the communication"
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Superfluous Communications",
+          "content": "Radio frequencies are shared resources, and unnecessary transmissions waste valuable airtime that could be needed for safety-critical communications. Canadian regulations strictly prohibit superfluous (unnecessary) communications.\n\nSuperfluous communications include:\n- Unnecessary or irrelevant transmissions\n- Transmissions that do not serve an operational purpose\n- Idle chatter, personal conversations, or non-essential messages on aeronautical frequencies\n- Excessively long transmissions when a brief message would suffice\n\nOperators must keep their transmissions brief, clear, and relevant to flight operations. Before pressing the transmit button, consider whether the message is necessary and whether it could be shortened without losing meaning."
+        },
+        {
+          "type": "text",
+          "title": "Interference and Prohibited Content",
+          "content": "Interference with radio communications is a serious offence under Canadian law. The Radiocommunication Act prohibits several types of interference:\n\n- Deliberate interference with any radio communication\n- Transmitting without proper authorization\n- Operating radio equipment in a manner that causes harmful interference to other stations\n\nIn addition to interference, certain types of content are absolutely prohibited on radio frequencies:\n\n- Profane or obscene language is strictly prohibited on any radio frequency. This is not merely bad etiquette; it is a legal violation that can result in penalties including fines and suspension of your certificate.\n- False or misleading information must never be transmitted. This includes false position reports, incorrect weather information, or any other deceptive communications.\n\nThe penalties for causing interference or transmitting prohibited content can include fines, suspension or revocation of your operator certificate, and in serious cases, criminal prosecution."
+        },
+        {
+          "type": "warning",
+          "content": "Profane or obscene language on any radio frequency is a violation of the regulations, not just poor practice. Even if you are frustrated or in a stressful situation, you must maintain professional language at all times. The exam will test whether you know this is a regulatory prohibition, not merely a recommendation."
+        },
+        {
+          "type": "text",
+          "title": "False Distress Signals",
+          "content": "Transmitting a false or fraudulent distress signal is one of the most serious offences in radio communications. A false distress signal can trigger massive search-and-rescue operations, diverting resources from genuine emergencies and potentially costing lives.\n\nUnder the Radiocommunication Act, knowingly transmitting or causing to be transmitted a false or fraudulent distress signal is a criminal offence. The penalties are severe:\n\n- On summary conviction: a fine of up to $25,000 and/or imprisonment for up to one year for a first offence.\n- On conviction on indictment: even more severe penalties may apply.\n\nThis prohibition applies to all forms of distress signals, including:\n- Voice MAYDAY calls\n- Activation of Emergency Locator Transmitters (ELTs) without a genuine emergency\n- Any other transmission designed to falsely indicate that an aircraft or vessel is in distress\n\nIf you accidentally trigger a false distress signal (for example, an inadvertent ELT activation), you must take immediate steps to cancel the false alert and notify the appropriate authorities."
+        },
+        {
+          "type": "key_points",
+          "title": "Key Points on False Distress",
+          "points": [
+            "Transmitting false distress signals is a criminal offence",
+            "Penalties include fines up to $25,000 and/or imprisonment up to 1 year (summary conviction)",
+            "Applies to voice MAYDAY, ELT activations, and all other distress signals",
+            "Accidental false alerts must be cancelled and authorities notified immediately"
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Radio Station Licences and Operator Certificates",
+          "content": "There is an important distinction between a radio station licence and an operator certificate. The radio station licence authorizes the installation and use of radio equipment at a specific station (such as aboard a particular aircraft). The operator certificate (ROC-A) authorizes an individual person to operate radio transmitting equipment.\n\nBoth are required: an aircraft must have a valid radio station licence for its equipment, and the person operating that equipment must hold a valid operator certificate. The radio station licence is associated with the aircraft; the operator certificate is associated with the person.\n\nThe Minister of ISED may suspend or revoke either a station licence or an operator certificate for violations of the Act or Regulations. A suspension is temporary, while a revocation is permanent (though a new certificate may be applied for after revocation)."
+        },
+        {
+          "type": "text",
+          "title": "Testing of Radio Equipment",
+          "content": "Before testing radio equipment on the air, you should listen on the frequency first to make sure you will not interfere with communications already in progress. When testing, transmissions should be kept as brief as possible.\n\nThe proper format for a test transmission includes your call sign and the word 'TEST'. For example: 'Golf Charlie Foxtrot Alpha Bravo, TEST, one two three four five, Golf Charlie Foxtrot Alpha Bravo.' You should not transmit the word 'TESTING' repeatedly or make long test transmissions. If no reply is needed, end your test with 'No reply expected' or 'No acknowledgement required.'"
+        },
+        {
+          "type": "warning",
+          "content": "Remember that both a radio station licence (for the aircraft/station) and an operator certificate (ROC-A, for the person) are required. The exam may try to trick you by suggesting only one is needed."
+        }
+      ],
+      "quiz_question_ids": ["REG-016", "REG-017", "REG-018", "REG-019", "REG-020", "REG-021", "REG-022", "REG-023", "REG-024", "REG-025"]
+    },
+    {
+      "id": "lesson_03",
+      "title": "Speech Techniques, Time & Date Systems",
+      "description": "Proper radio speech technique, the 24-hour clock, UTC/Zulu time, and standard time/date formats.",
+      "topic": "operating_procedures",
+      "order": 3,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Speech Techniques for Radio Communication",
+          "content": "Clear and effective radio communication is a skill that requires practice. Unlike face-to-face conversation, radio communication lacks visual cues, and audio quality can be degraded by static, engine noise, and atmospheric conditions. For these reasons, specific speech techniques have been developed for aeronautical radio use.\n\nThe fundamental principles of good radio speech technique are:\n\n1. Speak at a CONSTANT SPEED - Do not speed up or slow down mid-transmission. A steady pace allows the listener to follow your message without difficulty.\n\n2. Speak CLEARLY and DISTINCTLY - Enunciate each word carefully. Mumbling or slurring words can lead to dangerous misunderstandings.\n\n3. Maintain a NATURAL CONVERSATIONAL TONE - Do not shout into the microphone. Shouting causes distortion and actually makes your transmission harder to understand, not easier. If the other station cannot hear you, shouting will not help; the problem is likely equipment-related.\n\n4. Maintain a CONSISTENT RHYTHM - Avoid long pauses within a transmission, but also avoid speaking so quickly that the listener cannot process the information.\n\n5. Speak SLIGHTLY SLOWER than normal conversation - Radio communication should be at a pace that allows the listener to write down important information like frequencies, headings, and altitudes.\n\n6. Hold the microphone at a CONSISTENT DISTANCE - Too close causes distortion and breathing noise; too far causes a weak signal."
+        },
+        {
+          "type": "warning",
+          "content": "A very common exam question asks what to do if the other station is having difficulty hearing you. The answer is NEVER to shout. Shouting into the microphone causes distortion and makes the signal harder to understand. Instead, speak closer to the microphone, speak more slowly and distinctly, or check your equipment."
+        },
+        {
+          "type": "key_points",
+          "title": "Radio Speech Essentials",
+          "points": [
+            "Constant speed - do not vary your speaking pace",
+            "Clear and distinct pronunciation",
+            "Never shout - it causes distortion",
+            "Slightly slower than normal conversation",
+            "Natural conversational tone",
+            "Consistent microphone distance"
+          ]
+        },
+        {
+          "type": "text",
+          "title": "The 24-Hour Clock System",
+          "content": "All aeronautical radio communications use the 24-hour clock system. Unlike the 12-hour AM/PM system used in everyday life, the 24-hour clock eliminates ambiguity about whether a time is in the morning or afternoon/evening.\n\nIn the 24-hour clock:\n- 0000 is midnight (the start of a new day)\n- 0100 is 1:00 AM\n- 1200 is noon\n- 1300 is 1:00 PM\n- 2359 is one minute before midnight\n\nTime is always expressed as a four-figure group. If the hour is less than 10, a leading zero is used. For example:\n- 7:30 AM becomes 0730\n- 3:45 PM becomes 1545\n- 12:00 midnight becomes 0000 (or 2400 when referring to the end of a day)"
+        },
+        {
+          "type": "text",
+          "title": "UTC / Coordinated Universal Time (Zulu)",
+          "content": "Aviation operates on Coordinated Universal Time (UTC), also known as Zulu time (indicated by the letter Z). UTC is the time at the prime meridian (0 degrees longitude) in Greenwich, England.\n\nUsing UTC eliminates confusion when aircraft cross time zones. If an aircraft in Vancouver (Pacific Time) is communicating with a centre in Winnipeg (Central Time), they might misunderstand each other's local times. By using UTC, everyone references the same clock regardless of location.\n\nThe word ZULU comes from the NATO phonetic alphabet representation of the letter Z, which is appended to times expressed in UTC. When you hear or say a time in aviation, it is always in UTC unless specifically stated otherwise.\n\nTo convert from local time to UTC:\n- Pacific Standard Time (PST): add 8 hours\n- Mountain Standard Time (MST): add 7 hours\n- Central Standard Time (CST): add 6 hours\n- Eastern Standard Time (EST): add 5 hours\n- Atlantic Standard Time (AST): add 4 hours\n- Newfoundland Standard Time (NST): add 3.5 hours\n\nDuring Daylight Saving Time, subtract 1 hour from the offset (e.g., Pacific Daylight Time is UTC minus 7 instead of 8)."
+        },
+        {
+          "type": "table",
+          "title": "Canadian Time Zones and UTC Offsets",
+          "columns": ["Time Zone", "Abbreviation", "UTC Offset (Standard)", "UTC Offset (Daylight)"],
+          "rows": [
+            ["Pacific", "PST/PDT", "UTC -8", "UTC -7"],
+            ["Mountain", "MST/MDT", "UTC -7", "UTC -6"],
+            ["Central", "CST/CDT", "UTC -6", "UTC -5"],
+            ["Eastern", "EST/EDT", "UTC -5", "UTC -4"],
+            ["Atlantic", "AST/ADT", "UTC -4", "UTC -3"],
+            ["Newfoundland", "NST/NDT", "UTC -3:30", "UTC -2:30"]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Time and Date Formats",
+          "content": "In aeronautical communications, time is expressed using specific formats:\n\n4-FIGURE TIME FORMAT: Used for expressing time of day. The four digits represent hours and minutes. For example, 1430 is spoken as 'one four three zero' or, if there is no confusion about the hour, just the minutes may be given: 'three zero.'\n\n6-FIGURE DATE-TIME FORMAT: When both the date and time must be expressed, a six-figure group is used. The first two digits represent the day of the month, and the last four digits represent the time in UTC. For example, 251430 means the 25th day of the month at 1430 UTC.\n\nWhen transmitting time, each digit is spoken individually. For example:\n- 0830 is spoken as 'zero eight three zero'\n- 1645 is spoken as 'one six four five'\n- 091200 (date-time) is spoken as 'zero nine one two zero zero'\n\nNote that when no confusion exists as to the hour, only the minutes need be given. For example, if it is known to be the 14th hour, you can say 'three zero' instead of 'one four three zero.'"
+        },
+        {
+          "type": "example",
+          "title": "Example: Time Communications",
+          "content": "Controller: 'Golf Charlie Foxtrot Alpha Bravo, report your departure time.'\n\nPilot: 'Golf Charlie Foxtrot Alpha Bravo, departed at one four two five zulu.'\n\n---\n\nController: 'All stations, the current time is zero nine three zero zulu.'\n\n---\n\nIn ATIS: 'Runway 24 in use, altimeter two niner niner two, time one eight zero zero zulu, information Charlie.'"
+        },
+        {
+          "type": "warning",
+          "content": "All times in aviation are in UTC (Zulu) unless explicitly stated otherwise. If an exam question asks about time in aviation radio communications, assume UTC. Also remember that time digits are spoken individually: 0930 is 'zero niner three zero,' not 'nine thirty' or 'oh-nine-thirty.'"
+        }
+      ],
+      "quiz_question_ids": ["PROC-001", "PROC-002", "PROC-003", "PROC-004", "PROC-005", "PROC-006", "PROC-007", "PROC-008"]
+    },
+    {
+      "id": "lesson_04",
+      "title": "The ITU Phonetic Alphabet & Number Pronunciation",
+      "description": "Complete phonetic alphabet A-Z, number pronunciations 0-9, and special words for aviation radio.",
+      "topic": "operating_procedures",
+      "order": 4,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Why Use a Phonetic Alphabet?",
+          "content": "Many letters of the English alphabet sound similar when spoken over radio, especially when signal quality is poor. Letters like B/D/E, M/N, and S/F can easily be confused. To solve this problem, the International Telecommunication Union (ITU) adopted a standardized phonetic alphabet where each letter is represented by a unique word.\n\nThis phonetic alphabet is used worldwide in aviation, maritime, and military communications. It is mandatory for aeronautical communications when spelling out call signs, navigational aids, airport identifiers, and any other information where letter-by-letter clarity is essential.\n\nAs a ROC-A holder, you must memorize the entire phonetic alphabet and be able to use it fluently. You should be able to both spell words using the phonetic alphabet and recognize words spelled phonetically by others."
+        },
+        {
+          "type": "table",
+          "title": "ITU Phonetic Alphabet",
+          "columns": ["Letter", "Phonetic Word", "Pronunciation"],
+          "rows": [
+            ["A", "ALFA", "AL-FAH"],
+            ["B", "BRAVO", "BRAH-VOH"],
+            ["C", "CHARLIE", "CHAR-LEE"],
+            ["D", "DELTA", "DELL-TAH"],
+            ["E", "ECHO", "ECK-OH"],
+            ["F", "FOXTROT", "FOKS-TROT"],
+            ["G", "GOLF", "GOLF"],
+            ["H", "HOTEL", "HOH-TEL"],
+            ["I", "INDIA", "IN-DEE-AH"],
+            ["J", "JULIET", "JEW-LEE-ETT"],
+            ["K", "KILO", "KEY-LOH"],
+            ["L", "LIMA", "LEE-MAH"],
+            ["M", "MIKE", "MIKE"],
+            ["N", "NOVEMBER", "NO-VEM-BER"],
+            ["O", "OSCAR", "OSS-CAH"],
+            ["P", "PAPA", "PAH-PAH"],
+            ["Q", "QUEBEC", "KEH-BECK"],
+            ["R", "ROMEO", "ROW-ME-OH"],
+            ["S", "SIERRA", "SEE-AIR-RAH"],
+            ["T", "TANGO", "TANG-GO"],
+            ["U", "UNIFORM", "YOU-NEE-FORM"],
+            ["V", "VICTOR", "VIK-TAH"],
+            ["W", "WHISKEY", "WISS-KEY"],
+            ["X", "X-RAY", "ECKS-RAY"],
+            ["Y", "YANKEE", "YANG-KEY"],
+            ["Z", "ZULU", "ZOO-LOO"]
+          ]
+        },
+        {
+          "type": "warning",
+          "content": "Note the spelling: it is ALFA (not ALPHA) and JULIET (not JULIETT or JULIETTE). The ITU deliberately chose these non-standard spellings to ensure consistent pronunciation across different languages. The exam may test you on the correct spelling."
+        },
+        {
+          "type": "text",
+          "title": "Number Pronunciations",
+          "content": "Numbers are equally important and have specific pronunciations in aeronautical communications. Each digit has a standardized pronunciation to ensure clarity:\n\n0 - ZERO (not 'oh' or 'nought')\n1 - WUN (rhymes with 'fun')\n2 - TOO\n3 - TREE (not 'three' - the 'th' sound is difficult in many languages)\n4 - FOW-ER (two syllables, not 'four')\n5 - FIFE (not 'five' - the 'v' can be confused with 'f')\n6 - SIX\n7 - SEV-EN\n8 - AIT (not 'eight' - single syllable)\n9 - NIN-ER (two syllables, not 'nine' - to avoid confusion with 'nein', German for 'no')\n\nThese pronunciations are designed to be clearly distinguishable even in noisy conditions or when transmitted over poor-quality radio links."
+        },
+        {
+          "type": "table",
+          "title": "Number Pronunciations",
+          "columns": ["Number", "Pronunciation", "Note"],
+          "rows": [
+            ["0", "ZE-RO", "Never say 'oh' or 'nought'"],
+            ["1", "WUN", "Rhymes with 'fun'"],
+            ["2", "TOO", "Standard pronunciation"],
+            ["3", "TREE", "Avoids 'th' sound"],
+            ["4", "FOW-ER", "Two syllables"],
+            ["5", "FIFE", "Avoids confusion with 'f' and 'v'"],
+            ["6", "SIX", "Standard pronunciation"],
+            ["7", "SEV-EN", "Two syllables, stress on first"],
+            ["8", "AIT", "One syllable"],
+            ["9", "NIN-ER", "Two syllables, avoids confusion with 'nein'"]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Special Words: Decimal, Hundred, Thousand",
+          "content": "In addition to the basic digits, several special words are used when transmitting numbers in aviation:\n\nDECIMAL - Spoken as 'DAY-SEE-MAL.' Used when transmitting frequencies or other numbers containing a decimal point. For example, 121.5 is spoken as 'wun too wun DAY-SEE-MAL fife.'\n\nHUNDRED - Spoken as 'HUN-DRED.' Used when transmitting whole hundreds. For example, 500 is spoken as 'fife hun-dred.'\n\nTHOUSAND - Spoken as 'TOU-SAND.' Used when transmitting whole thousands. For example, 3000 is spoken as 'tree tou-sand.'\n\nThese words allow more natural and efficient transmission of large numbers while maintaining clarity."
+        },
+        {
+          "type": "text",
+          "title": "When to Use the Phonetic Alphabet",
+          "content": "The phonetic alphabet must be used in the following situations:\n\n1. CALL SIGNS - Aircraft registration letters are always spelled phonetically. For example, C-GFAB is spoken as 'Charlie Golf Foxtrot Alfa Bravo.'\n\n2. NAVIGATIONAL AIDS - Identifiers for VORs, NDBs, and waypoints are spelled phonetically.\n\n3. AIRPORT/AERODROME IDENTIFIERS - When the identifier could be confused.\n\n4. ANY UNCLEAR COMMUNICATION - If there is any risk of misunderstanding, use the phonetic alphabet to spell out the word or abbreviation.\n\n5. ATIS INFORMATION LETTERS - Each ATIS broadcast is assigned a letter (Alpha, Bravo, Charlie, etc.) and pilots report which information they have received using the phonetic word.\n\nYou should NOT use the phonetic alphabet for common words in routine conversation. For example, you would not spell out 'runway' phonetically; you would simply say 'runway.'"
+        },
+        {
+          "type": "example",
+          "title": "Example: Using the Phonetic Alphabet",
+          "content": "Spelling out an aircraft registration C-GFAB:\n'Charlie Golf Foxtrot Alfa Bravo'\n\nSpelling out a VOR identifier YYZ:\n'Yankee Yankee Zulu'\n\nReporting ATIS information:\n'Toronto Tower, Cessna Golf Foxtrot Alfa Bravo, with information Echo.'\n\nSpelling out a name for clarity:\n'Pilot's name is Smith, spelled Sierra Mike India Tango Hotel.'"
+        },
+        {
+          "type": "warning",
+          "content": "On the exam, pay close attention to pronunciation questions. '9' is NIN-ER (not NINE), '3' is TREE (not THREE), '5' is FIFE (not FIVE), and '4' is FOW-ER (two syllables). These non-standard pronunciations exist to improve clarity across languages and in noisy conditions."
+        }
+      ],
+      "quiz_question_ids": ["PROC-009", "PROC-010", "PROC-011", "PROC-012", "PROC-013", "PROC-014", "PROC-015", "PROC-016", "PROC-017", "PROC-018"]
+    },
+    {
+      "id": "lesson_05",
+      "title": "Number Transmission Rules & Procedural Words",
+      "description": "How to transmit numbers for altitudes, headings, and frequencies, plus all standard procedural words.",
+      "topic": "operating_procedures",
+      "order": 5,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Rules for Transmitting Numbers",
+          "content": "The way numbers are spoken on the radio depends on what the number represents. Different rules apply to different types of information. The general rule is that numbers are transmitted by speaking each digit separately, but there are important exceptions.\n\nGENERAL RULE: All numbers are transmitted by pronouncing each digit separately.\nExample: 10 is spoken as 'wun zero,' 583 is spoken as 'fife ait tree.'\n\nEXCEPTION - WHOLE HUNDREDS: Whole hundreds are spoken as the digit(s) followed by 'hundred.'\nExample: 500 is 'fife hundred,' 1100 is 'wun wun hundred.'\n\nEXCEPTION - WHOLE THOUSANDS: Whole thousands are spoken as the digit(s) followed by 'thousand.'\nExample: 3000 is 'tree tou-sand,' 12000 is 'wun too tou-sand.'\n\nEXCEPTION - COMBINATIONS: Numbers with both thousands and hundreds are spoken as the thousands portion followed by the hundreds portion.\nExample: 4500 is 'fow-er tou-sand fife hundred,' 10500 is 'wun zero tou-sand fife hundred.'"
+        },
+        {
+          "type": "text",
+          "title": "Altitude and Flight Level Transmission",
+          "content": "Altitudes and flight levels have specific rules for radio transmission:\n\nALTITUDES (below 18,000 feet in Canada):\nAltitudes are spoken in thousands and hundreds of feet.\n- 1,500 feet: 'wun tou-sand fife hundred'\n- 8,000 feet: 'ait tou-sand'\n- 10,500 feet: 'wun zero tou-sand fife hundred'\n- 13,000 feet: 'wun tree tou-sand'\n\nFLIGHT LEVELS (at or above 18,000 feet):\nFlight levels are spoken as 'FLIGHT LEVEL' followed by each digit separately.\n- FL180: 'Flight Level wun ait zero'\n- FL350: 'Flight Level tree fife zero'\n- FL410: 'Flight Level fow-er wun zero'\n\nAERODROME ELEVATIONS:\nAerodrome elevations are transmitted the same way as altitudes."
+        },
+        {
+          "type": "text",
+          "title": "Headings, Bearings, and Wind Direction",
+          "content": "HEADINGS AND BEARINGS: Always expressed as three digits, each spoken separately.\n- 090 degrees: 'zero niner zero'\n- 180 degrees: 'wun ait zero'\n- 005 degrees: 'zero zero fife'\n- 270 degrees: 'too sev-en zero'\n\nWIND DIRECTION: Also three digits, spoken separately.\n- Wind from 240 degrees: 'too fow-er zero'\n\nRUNWAY DESIGNATIONS: Runway numbers are spoken as separate digits.\n- Runway 27: 'Runway too sev-en'\n- Runway 09L: 'Runway zero niner left'\n- Runway 33R: 'Runway tree tree right'"
+        },
+        {
+          "type": "text",
+          "title": "Frequency and Altimeter Transmission",
+          "content": "FREQUENCIES: Each digit is spoken separately, with 'decimal' for the decimal point.\n- 121.5 MHz: 'wun too wun day-see-mal fife'\n- 118.7 MHz: 'wun wun ait day-see-mal sev-en'\n- 126.9 MHz: 'wun too six day-see-mal niner'\n\nALTIMETER SETTINGS: Each digit is spoken separately.\n- 29.92: 'too niner niner too'\n- 30.12: 'tree zero wun too'"
+        },
+        {
+          "type": "example",
+          "title": "Example: Number Transmission in Context",
+          "content": "Controller: 'Cessna Golf Foxtrot Alfa Bravo, climb and maintain fife tou-sand fife hundred, turn left heading too sev-en zero.'\n\nPilot: 'Climb fife tou-sand fife hundred, left heading too sev-en zero, Golf Foxtrot Alfa Bravo.'\n\n---\n\nController: 'Air Canada wun too tree, descend to Flight Level too fife zero, contact Toronto Centre on wun too tree day-see-mal niner sev-en fife.'\n\nPilot: 'Descend Flight Level too fife zero, wun too tree day-see-mal niner sev-en fife, Air Canada wun too tree.'"
+        },
+        {
+          "type": "text",
+          "title": "Procedural Words and Their Meanings",
+          "content": "Procedural words (prowords) are standardized words and phrases with specific meanings in aeronautical communications. Using these correctly ensures clarity and brevity.\n\nAFFIRM - Yes, or permission granted. (Note: NOT 'affirmative' - the correct word is AFFIRM)\n\nNEGATIVE - No, or that is not correct, or permission not granted.\n\nROGER - I have received and understood your last transmission. Does NOT mean 'yes' or indicate compliance. It simply acknowledges receipt.\n\nWILCO - I have received your message, understand it, and WILL COMPLY. WILCO includes ROGER, so you should never say 'ROGER WILCO' - just say 'WILCO.'\n\nREAD BACK - Repeat the entire message back to me exactly as you received it.\n\nSAY AGAIN - Repeat your last transmission (or a portion of it). This is the ONLY correct way to ask for a repetition in aviation.\n\nSPEAK SLOWER - Reduce your speaking rate.\n\nSTAND BY - Wait; I will call you back. This is not an approval or denial; it means to wait.\n\nGO AHEAD - Proceed with your message.\n\nHOW DO YOU READ - What is the readability of my transmission?\n\nCONFIRM - Verify that you have correctly received my message, or verify a specific piece of information.\n\nCORRECTION - An error has been made in this transmission; the correct information follows.\n\nDISREGARD - Ignore my last transmission.\n\nI SAY AGAIN - I am repeating my message for clarity.\n\nOVER - My transmission is ended, and I expect a response from you.\n\nOUT - My transmission is ended, and I do NOT expect a response. This ends the conversation.\n\nBREAK - Used to separate portions of a message."
+        },
+        {
+          "type": "warning",
+          "content": "CRITICAL exam traps regarding procedural words:\n\n1. Never say 'ROGER WILCO' - WILCO already includes ROGER.\n2. Never say 'OVER AND OUT' - these are contradictory. OVER means you expect a reply; OUT means you do not.\n3. Never say 'REPEAT' to request a repetition - REPEAT has a military meaning (to fire again). Use 'SAY AGAIN.'\n4. Never say 'OK' or 'TEN-FOUR' or 'BREAKER BREAKER' or 'COME IN PLEASE' - these are CB radio slang and are not used in aviation.\n5. AFFIRM means yes, not 'AFFIRMATIVE.'\n6. ROGER does NOT mean yes - it only means you have received and understood the message."
+        },
+        {
+          "type": "table",
+          "title": "Prohibited Phrases and Correct Alternatives",
+          "columns": ["Never Say", "Say Instead", "Reason"],
+          "rows": [
+            ["ROGER WILCO", "WILCO", "WILCO already includes ROGER"],
+            ["OVER AND OUT", "OVER or OUT", "They are mutually contradictory"],
+            ["REPEAT", "SAY AGAIN", "REPEAT has military connotation (fire again)"],
+            ["OK", "AFFIRM or ROGER", "Not standard aviation phraseology"],
+            ["TEN-FOUR", "ROGER or AFFIRM", "CB radio slang, not aviation"],
+            ["AFFIRMATIVE", "AFFIRM", "AFFIRM is the correct word"],
+            ["COME IN PLEASE", "GO AHEAD", "Not standard aviation phraseology"],
+            ["BREAKER BREAKER", "(No equivalent)", "CB radio slang, not aviation"]
+          ]
+        },
+        {
+          "type": "key_points",
+          "title": "Key Points Summary",
+          "points": [
+            "Numbers are generally transmitted digit by digit",
+            "Whole hundreds and thousands use the words HUNDRED and THOUSAND",
+            "Flight levels: 'Flight Level' + each digit separately",
+            "Headings are always three digits, spoken separately",
+            "WILCO includes ROGER - never say both together",
+            "OVER expects a reply; OUT does not - never combine them",
+            "SAY AGAIN is the only correct way to request repetition",
+            "ROGER means 'received and understood,' NOT 'yes'"
+          ]
+        }
+      ],
+      "quiz_question_ids": ["PROC-019", "PROC-020", "PROC-021", "PROC-022", "PROC-023", "PROC-024", "PROC-025", "PROC-026", "PROC-027", "PROC-028", "PROC-029", "PROC-030"]
+    },
+    {
+      "id": "lesson_06",
+      "title": "Call Signs & Station Types",
+      "description": "Canadian aircraft call sign formats, abbreviation rules, and ground station types and identifiers.",
+      "topic": "operating_procedures",
+      "order": 6,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Canadian Aircraft Call Signs",
+          "content": "Every aircraft that communicates by radio must use a proper call sign to identify itself. Canadian aircraft call signs fall into two main categories: air carrier call signs and private civil registration call signs.\n\nAIR CARRIER CALL SIGNS:\nCanadian air carriers (airlines) use a call sign consisting of the company's ICAO telephony designator followed by the flight number. The telephony designator is the company's approved radio name.\n\nExamples:\n- Air Canada flight 123: 'Air Canada wun too tree'\n- WestJet flight 456: 'WestJet fow-er fife six'\n- Jazz flight 8001: 'Jazz ait zero zero wun'\n\nThe flight number digits are spoken individually. Air carrier call signs should NOT be abbreviated."
+        },
+        {
+          "type": "text",
+          "title": "Private Civil Registration Call Signs",
+          "content": "Canadian privately registered aircraft have a registration that begins with the letter C, followed by a hyphen and four letters (e.g., C-GFAB). When using this registration as a radio call sign, the format is:\n\nFULL CALL SIGN: The aircraft type or manufacturer's name followed by the last four letters of the registration, spoken phonetically.\n\nExample: A Cessna 172 with registration C-GFAB would use:\n'Cessna Golf Foxtrot Alfa Bravo'\n\nNote that the 'C-' prefix is dropped in the radio call sign. The manufacturer or type name is used instead. Common examples:\n- C-GFAB (Cessna 172): 'Cessna Golf Foxtrot Alfa Bravo'\n- C-FXYZ (Piper Cherokee): 'Piper Foxtrot X-ray Yankee Zulu'\n- C-GMJK (Beechcraft Baron): 'Beechcraft Golf Mike Juliet Kilo'"
+        },
+        {
+          "type": "text",
+          "title": "Call Sign Abbreviation Rules",
+          "content": "To save time on busy frequencies, call signs can be abbreviated AFTER initial contact has been established and there is no possibility of confusion.\n\nFor private civil aircraft, the abbreviated call sign uses the aircraft type or manufacturer followed by the LAST TWO LETTERS of the registration:\n\nFull: 'Cessna Golf Foxtrot Alfa Bravo'\nAbbreviated: 'Cessna Alfa Bravo'\n\nIMPORTANT RULES:\n1. The GROUND STATION must initiate the abbreviation first. A pilot must not abbreviate until the ground station has used the abbreviated form.\n2. The full call sign must be used on the INITIAL CALL on any new frequency.\n3. If there is any risk of confusion (similar call signs on the frequency), the full call sign must be used.\n4. Air carrier call signs are generally NOT abbreviated."
+        },
+        {
+          "type": "warning",
+          "content": "A common exam trap: the pilot must NOT initiate call sign abbreviation. The ground station abbreviates first, and only then may the pilot use the abbreviated form. Also, the full call sign must always be used on the initial call to a new frequency."
+        },
+        {
+          "type": "text",
+          "title": "Ground Station Types and Identifiers",
+          "content": "Ground stations in the aeronautical radio service identify themselves by the name of the location followed by a suffix that indicates the type of service provided. Knowing these suffixes tells you what kind of facility you are communicating with.\n\nThe main ground station types are:\n\nTOWER - Aerodrome control tower. Provides control service for aircraft on the manoeuvring area and in the vicinity of the aerodrome.\nExample: 'Toronto Tower'\n\nGROUND - Ground control. Handles aircraft movement on taxiways and the apron/ramp area. Used at controlled airports to manage ground traffic.\nExample: 'Vancouver Ground'\n\nDELIVERY - Clearance delivery. Issues IFR and sometimes VFR clearances before departure.\nExample: 'Montreal Delivery'\n\nAPPROACH - Approach control. Provides radar service for arriving and departing aircraft in the terminal area.\nExample: 'Calgary Approach'\n\nDEPARTURE - Departure control. Provides radar service specifically for departing aircraft.\nExample: 'Ottawa Departure'\n\nCENTRE - Area control centre (ACC). Provides en-route IFR radar services over a large geographical area.\nExample: 'Montreal Centre'\n\nRADIO - Flight service station (FSS). Provides airport advisory services, weather information, and communication relay at uncontrolled aerodromes.\nExample: 'Kamloops Radio'\n\nDISPATCH - Company dispatch for airline operations.\nExample: 'Air Canada Dispatch'"
+        },
+        {
+          "type": "table",
+          "title": "Ground Station Suffixes",
+          "columns": ["Suffix", "Facility Type", "Primary Service"],
+          "rows": [
+            ["Tower", "Control Tower", "Aerodrome control (runway, circuit)"],
+            ["Ground", "Ground Control", "Taxiway and apron movement"],
+            ["Delivery", "Clearance Delivery", "IFR/VFR clearance issuance"],
+            ["Approach", "Terminal Control", "Arriving/departing radar service"],
+            ["Departure", "Terminal Control", "Departing aircraft radar service"],
+            ["Centre", "Area Control Centre", "En-route IFR radar service"],
+            ["Radio", "Flight Service Station", "Airport advisory, weather, relay"],
+            ["Dispatch", "Company Dispatch", "Airline operational communications"]
+          ]
+        },
+        {
+          "type": "example",
+          "title": "Example: Initial Call to Different Station Types",
+          "content": "Calling a tower:\n'Toronto Tower, Cessna Golf Foxtrot Alfa Bravo, over.'\n\nCalling ground control:\n'Vancouver Ground, Piper Golf Hotel Juliet Kilo, request taxi.'\n\nCalling a flight service station:\n'Kamloops Radio, Cessna Golf Foxtrot Alfa Bravo, over.'\n\nCalling centre:\n'Montreal Centre, Air Canada wun too tree, Flight Level tree fife zero.'"
+        },
+        {
+          "type": "key_points",
+          "title": "Key Points Summary",
+          "points": [
+            "Air carrier call signs: company name + flight number (not abbreviated)",
+            "Private aircraft: manufacturer/type + last 4 registration letters (phonetic)",
+            "Abbreviated form: type + last 2 letters, ONLY after ground station initiates",
+            "Full call sign required on initial contact with any new frequency",
+            "Ground station identifier = location name + service suffix",
+            "RADIO suffix = Flight Service Station (uncontrolled aerodrome)",
+            "TOWER suffix = Control tower (controlled aerodrome)"
+          ]
+        }
+      ],
+      "quiz_question_ids": ["PROC-031", "PROC-032", "PROC-033", "PROC-034", "PROC-035", "PROC-036", "PROC-037", "PROC-038"]
+    },
+    {
+      "id": "lesson_07",
+      "title": "Radiotelephone Calling Procedures",
+      "description": "Complete calling formats, replies, corrections, repetitions, signal checks, and message handling.",
+      "topic": "operating_procedures",
+      "order": 7,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Basic Calling Format",
+          "content": "The fundamental format for initiating a radio call in aeronautical communications follows a strict order:\n\n1. The call sign of the station BEING CALLED (said FIRST)\n2. The words 'THIS IS' (optional but recommended for clarity)\n3. The call sign of the CALLING STATION\n\nThis order is the opposite of how we use a telephone (where we identify ourselves first). The reason is practical: when you hear your call sign at the beginning of a transmission, you know the message is for you and you pay attention. If your call sign were at the end, you might miss the beginning of the message.\n\nExample: An aircraft with call sign Cessna GFAB calling Toronto Tower:\n'Toronto Tower, this is Cessna Golf Foxtrot Alfa Bravo.'\n\nOr more commonly in practice:\n'Toronto Tower, Cessna Golf Foxtrot Alfa Bravo.'"
+        },
+        {
+          "type": "text",
+          "title": "Types of Calls",
+          "content": "There are several types of radio calls, each with its own format:\n\nSINGLE STATION CALL: The most common type. One station calls another specific station.\nFormat: '[Called station], [calling station], [message or request]'\nExample: 'Toronto Tower, Cessna Golf Foxtrot Alfa Bravo, request taxi clearance.'\n\nALL STATIONS GENERAL CALL: A broadcast to all stations on the frequency. Used for important information that everyone needs to hear.\nFormat: 'All stations, [calling station], [message]'\nExample: 'All stations, Toronto Tower, the airport is now closed due to snow removal, expect delays.'\n\nMULTIPLE STATION CALL: Calling two or more specific stations.\nFormat: '[Station 1], [Station 2], [Station 3], this is [calling station], [message]'\nExample: 'Air Canada wun too tree, WestJet fow-er fife six, this is Toronto Centre, expect holding at BOXUM.'\n\nBROADCAST: A transmission of information not addressed to a specific station and not requiring acknowledgement. ATIS is an example of a broadcast."
+        },
+        {
+          "type": "text",
+          "title": "Replying to Calls",
+          "content": "When you receive a call, you must respond appropriately:\n\nGO AHEAD: If you are ready to receive the message, respond with your call sign and 'go ahead.'\nExample: 'Cessna Alfa Bravo, go ahead.'\n\nSTAND BY: If you are not ready to receive the message (busy with another task, another communication, etc.), respond with your call sign and 'stand by.' This tells the caller to wait and that you will call them back.\nExample: 'Cessna Alfa Bravo, stand by.'\n\nSTATION CALLING: If you hear a call but cannot identify who is calling (garbled transmission, stepped-on transmission), respond with: 'Station calling [your call sign], say again.'\nExample: 'Station calling Toronto Tower, say again your call sign.'\n\nNO REPLY: If you call a station and receive no reply, wait at least 10 seconds before calling again. If repeated attempts fail, try on another frequency."
+        },
+        {
+          "type": "text",
+          "title": "Corrections and Repetitions",
+          "content": "Mistakes happen in radio communication. There are standard procedures for correcting errors and requesting repetitions:\n\nCORRECTION: If you make an error during your transmission, say 'CORRECTION' and then repeat the last correct item followed by the corrected information.\nExample: 'Climb to fife tou-sand... CORRECTION, climb to six tou-sand fife hundred.'\n\nSAY AGAIN: To request that the other station repeat their transmission. You can ask for all or part of it:\n- 'Say again' - Repeat your entire last message\n- 'Say again all before [word]' - Repeat everything before a specific word\n- 'Say again all after [word]' - Repeat everything after a specific word\n- 'Say again [word] to [word]' - Repeat a specific portion between two words\n\nI SAY AGAIN: When you are repeating your own message for emphasis or clarity, preface it with 'I say again.'\nExample: 'Cleared to land runway too sev-en, I say again, runway too sev-en.'\n\nREAD BACK: ATC may request that you read back a clearance or instruction to verify you received it correctly. You must read back the entire clearance accurately.\nExample: 'Read back.'\nPilot: 'Cleared ILS approach runway too fow-er right, maintain tree tou-sand until established, Cessna Alfa Bravo.'"
+        },
+        {
+          "type": "example",
+          "title": "Example: Correction During a Transmission",
+          "content": "Pilot: 'Toronto Tower, Cessna Golf Foxtrot Alfa Bravo is at tree tou-sand fife hundred... CORRECTION, fow-er tou-sand fife hundred, inbound for landing runway too six.'\n\n---\n\nController: 'Cessna Alfa Bravo, turn right heading wun ait zero... CORRECTION, turn right heading wun niner zero.'"
+        },
+        {
+          "type": "text",
+          "title": "Parts of a Message",
+          "content": "A formal radio message consists of four parts:\n\n1. THE CALL - Identifies who is calling whom (call signs)\n2. THE TEXT - The content of the message (the actual information)\n3. THE ENDING - OVER or OUT\n4. THE ACKNOWLEDGEMENT - The receiving station's response\n\nIn routine aeronautical communications, messages are often informal and these parts blend together. However, understanding the structure is important for the exam and for times when formal procedures are required (such as during emergencies)."
+        },
+        {
+          "type": "text",
+          "title": "Signal Checks (Radio Checks)",
+          "content": "A signal check (or radio check) is used to verify that your radio is working properly and to determine the quality of your transmission as received by the other station.\n\nTo request a signal check:\n'[Called station], [your call sign], radio check on [frequency].'\nExample: 'Toronto Tower, Cessna Golf Foxtrot Alfa Bravo, radio check on wun wun ait day-see-mal sev-en.'\n\nThe responding station rates readability on a scale of 1 to 5:\n\n1 - UNREADABLE\n2 - READABLE NOW AND THEN (intermittent)\n3 - READABLE BUT WITH DIFFICULTY\n4 - READABLE\n5 - PERFECTLY READABLE\n\nExample response: 'Cessna Alfa Bravo, Toronto Tower, reading you fife by fife' or simply 'reading you loud and clear.'\n\nIn some systems, two numbers are given: readability (1-5) and signal strength (1-5). For example, 'reading you tree by fow-er' means readability 3, signal strength 4."
+        },
+        {
+          "type": "table",
+          "title": "Readability Scale",
+          "columns": ["Scale", "Meaning"],
+          "rows": [
+            ["1", "Unreadable"],
+            ["2", "Readable now and then"],
+            ["3", "Readable but with difficulty"],
+            ["4", "Readable"],
+            ["5", "Perfectly readable"]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Ending a Transmission: OVER vs OUT",
+          "content": "Every transmission should end with either OVER or OUT:\n\nOVER: I have finished my transmission and I EXPECT a response from you. Use OVER when you are asking a question, making a request, or when the conversation is ongoing.\n\nOUT: I have finished my transmission and I DO NOT expect a response. Use OUT when the conversation is finished and no reply is needed.\n\nIn practice, many routine exchanges omit both OVER and OUT, as it is understood that the conversation continues until naturally concluded. However, on the exam, you must know the correct definitions."
+        },
+        {
+          "type": "warning",
+          "content": "Never combine OVER and OUT. 'OVER AND OUT' is contradictory and is one of the most commonly tested incorrect phrases on the ROC-A exam. OVER means you expect a reply; OUT means you do not. They cannot both be true at the same time."
+        },
+        {
+          "type": "example",
+          "title": "Example: Complete Radio Exchange",
+          "content": "Pilot: 'Toronto Tower, Cessna Golf Foxtrot Alfa Bravo, at the practice area, requesting clearance to enter the zone for landing, over.'\n\nTower: 'Cessna Golf Foxtrot Alfa Bravo, Toronto Tower, cleared to enter the zone, report left downwind runway too tree, altimeter too niner niner too.'\n\nPilot: 'Cleared to enter, will report left downwind runway too tree, too niner niner too, Cessna Golf Foxtrot Alfa Bravo.'\n\nTower: 'Cessna Golf Foxtrot Alfa Bravo, readback correct.'"
+        },
+        {
+          "type": "key_points",
+          "title": "Key Points Summary",
+          "points": [
+            "Station called is ALWAYS said FIRST",
+            "GO AHEAD = proceed with your message; STAND BY = wait",
+            "STATION CALLING used when you cannot identify the caller",
+            "CORRECTION = an error was made, correct info follows",
+            "SAY AGAIN = request for repetition (never use REPEAT)",
+            "Messages have 4 parts: call, text, ending, acknowledgement",
+            "Readability scale: 1 (unreadable) to 5 (perfectly readable)",
+            "OVER = expect a reply; OUT = no reply expected; NEVER combine them"
+          ]
+        }
+      ],
+      "quiz_question_ids": ["PROC-039", "PROC-040", "PROC-041", "PROC-042", "PROC-043", "PROC-044", "PROC-045", "PROC-046", "PROC-047", "PROC-048", "PROC-049", "PROC-050"]
+    },
+    {
+      "id": "lesson_08",
+      "title": "Distress Communications (MAYDAY)",
+      "description": "Emergency conditions, the MAYDAY distress signal, distress call and message format, and actions by the station in distress.",
+      "topic": "emergency_communications",
+      "order": 8,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Emergency Conditions Defined",
+          "content": "In aeronautical communications, the word 'emergency' encompasses two distinct conditions with different levels of severity:\n\nDISTRESS: A condition of being threatened by serious and/or imminent danger and requiring IMMEDIATE assistance. This is the most severe emergency condition. Examples include engine failure, structural failure, fire on board, ditching (forced landing on water), or any situation where the aircraft or its occupants are in immediate mortal danger.\n\nURGENCY: A condition concerning the safety of an aircraft or other vehicle, or of some person on board or within sight, but which does NOT require immediate assistance. This is a serious situation but not immediately life-threatening. Examples include being lost, low fuel (but not yet critical), a sick passenger, or equipment failure that does not immediately threaten the aircraft.\n\nThe distinction matters because distress communications take ABSOLUTE priority over ALL other communications, while urgency communications take priority over all communications EXCEPT distress."
+        },
+        {
+          "type": "warning",
+          "content": "Know the exact definitions: DISTRESS = serious and/or imminent danger requiring IMMEDIATE assistance. URGENCY = concerns safety but does NOT require immediate assistance. The key differentiator is 'immediate assistance.' The exam will test whether you can distinguish between distress and urgency situations."
+        },
+        {
+          "type": "text",
+          "title": "The MAYDAY Distress Signal",
+          "content": "The international radiotelephone distress signal is the word MAYDAY, spoken three times. The word comes from the French 'm'aidez' meaning 'help me.'\n\nWhen an aircraft is in distress, the pilot transmits the distress signal MAYDAY to alert all stations that a life-threatening emergency exists. Upon hearing MAYDAY, all other stations must immediately cease transmitting on the frequency (unless they can render assistance) and listen.\n\nMAYDAY has absolute priority over all other communications. No message, regardless of its importance, takes priority over a distress communication."
+        },
+        {
+          "type": "text",
+          "title": "Frequency for Distress Communications",
+          "content": "When transmitting a distress call, the pilot should use the following frequencies in order of preference:\n\n1. THE FREQUENCY CURRENTLY IN USE - This is the first choice because the station you are already communicating with is most likely to hear you and is aware of your position and situation.\n\n2. 121.5 MHz - The international aeronautical emergency frequency. This frequency is monitored by most ATC facilities, flight service stations, and many aircraft. If you cannot reach anyone on your current frequency, switch to 121.5 MHz.\n\n3. ANY OTHER AVAILABLE FREQUENCY - If neither of the above works, try any frequency on which you might obtain assistance.\n\nThe distress call should be transmitted on the frequency in use at the time the distress condition occurs. There is no need to change frequency unless the station being called does not respond."
+        },
+        {
+          "type": "text",
+          "title": "Distress Call Format",
+          "content": "The distress call is the initial alert that precedes the distress message. Its format is:\n\n1. MAYDAY MAYDAY MAYDAY\n2. THIS IS\n3. [Call sign of aircraft in distress, spoken THREE TIMES]\n\nExample:\n'MAYDAY MAYDAY MAYDAY, this is Cessna Golf Foxtrot Alfa Bravo, Cessna Golf Foxtrot Alfa Bravo, Cessna Golf Foxtrot Alfa Bravo.'\n\nThe call sign is repeated three times to ensure it is received correctly, as the situation may involve poor radio conditions, stress-induced speech issues, or interference."
+        },
+        {
+          "type": "text",
+          "title": "Distress Message Format",
+          "content": "Immediately following the distress call, the distress MESSAGE provides essential information. The distress message contains the following elements (as many as time and circumstances permit):\n\n1. MAYDAY (spoken once)\n2. Call sign of the station in distress\n3. Nature of the distress (engine failure, fire, etc.)\n4. Intention of the pilot-in-command (ditching, forced landing, etc.)\n5. Present position (latitude/longitude, bearing and distance from a known point, or last known position)\n6. Altitude or flight level\n7. Heading\n8. Any other useful information (souls on board, fuel remaining, aircraft colour, ELT status, etc.)"
+        },
+        {
+          "type": "example",
+          "title": "Example: Complete Distress Call and Message",
+          "content": "MAYDAY MAYDAY MAYDAY,\nthis is Cessna Golf Foxtrot Alfa Bravo, Golf Foxtrot Alfa Bravo, Golf Foxtrot Alfa Bravo.\n\nMAYDAY, Cessna Golf Foxtrot Alfa Bravo,\nengine failure,\nintending forced landing,\nfife miles south of Buttonville airport,\ntoo tou-sand fife hundred feet,\nheading tree fow-er zero,\ntoo persons on board,\nwun hour fuel remaining,\nwhite and blue Cessna wun sev-en too,\nELT will be activated on impact."
+        },
+        {
+          "type": "text",
+          "title": "Priority of Distress Communications",
+          "content": "Distress communications have ABSOLUTE PRIORITY over all other communications. This means:\n\n- All stations hearing a distress call must immediately cease any transmission that might interfere with distress traffic.\n- No station may transmit on the distress frequency unless it is assisting with the distress situation or unless the distress traffic has been formally terminated.\n- The station in distress or the station controlling distress traffic may impose radio silence on any station that interferes.\n- Distress priority applies regardless of the type of communication being interrupted, including urgency communications."
+        },
+        {
+          "type": "text",
+          "title": "Actions by the Station in Distress",
+          "content": "When you are the pilot of an aircraft in distress, you should take the following actions (time and circumstances permitting):\n\n1. SET TRANSPONDER TO 7700 - This is the international emergency transponder code. It causes your aircraft to appear with a distinctive symbol on ATC radar screens, immediately alerting controllers to your emergency.\n\n2. TRANSMIT THE DISTRESS CALL AND MESSAGE - Using the formats described above, on the current frequency or 121.5 MHz.\n\n3. ACTIVATE THE ELT (Emergency Locator Transmitter) - If not already automatically activated, switch the ELT to the ON position. The ELT transmits a distress signal on 121.5 MHz and 406 MHz that can be detected by satellites and search-and-rescue aircraft.\n\n4. FLY A TRIANGULAR PATTERN - If possible and if search aircraft are in the area, fly a triangular pattern to help searchers locate you (this applies mainly to VFR situations).\n\n5. WHEN COMMUNICATING, MAINTAIN A LISTENING WATCH - Listen on the distress frequency for instructions from the controlling station or search-and-rescue aircraft."
+        },
+        {
+          "type": "warning",
+          "content": "Remember the emergency transponder code: 7700. This is distinct from 7600 (communication failure) and 7500 (hijacking/unlawful interference). The exam frequently tests these codes. A helpful mnemonic: 77 = going to heaven (emergency), 76 = need a fix (radio failure), 75 = man with a knife (hijack)."
+        },
+        {
+          "type": "table",
+          "title": "Emergency Transponder Codes",
+          "columns": ["Code", "Meaning", "Mnemonic"],
+          "rows": [
+            ["7700", "General Emergency (MAYDAY)", "77 - going to heaven"],
+            ["7600", "Communication Failure (NORDO)", "76 - need a fix"],
+            ["7500", "Unlawful Interference (Hijack)", "75 - man with a knife"]
+          ]
+        },
+        {
+          "type": "key_points",
+          "title": "Key Points Summary",
+          "points": [
+            "DISTRESS = serious/imminent danger requiring IMMEDIATE assistance",
+            "MAYDAY spoken THREE times is the international distress signal",
+            "Transmit on current frequency FIRST, then 121.5 MHz if no response",
+            "Call sign spoken THREE times in the distress call",
+            "Distress message has 8 key elements (nature, intention, position, altitude, heading, etc.)",
+            "Distress has ABSOLUTE priority over ALL other communications",
+            "Set transponder to 7700 in any emergency",
+            "Activate ELT in a distress situation",
+            "121.5 MHz is the international emergency frequency"
+          ]
+        }
+      ],
+      "quiz_question_ids": ["EMER-001", "EMER-002", "EMER-003", "EMER-004", "EMER-005", "EMER-006", "EMER-007", "EMER-008", "EMER-009", "EMER-010", "EMER-011", "EMER-012"]
+    },
+    {
+      "id": "lesson_09",
+      "title": "Distress Responses & Urgency Communications (PAN PAN)",
+      "description": "Acknowledging distress, relay procedures, silence imposition, distress cancellation, and PAN PAN urgency procedures.",
+      "topic": "emergency_communications",
+      "order": 9,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Acknowledging a Distress Message",
+          "content": "When a station receives a distress message, it must acknowledge receipt promptly. The acknowledgement format is:\n\n1. MAYDAY\n2. Call sign of the station in distress (spoken THREE times)\n3. THIS IS\n4. Call sign of the acknowledging station (spoken THREE times)\n5. RECEIVED MAYDAY\n\nExample:\n'MAYDAY, Cessna Golf Foxtrot Alfa Bravo, Golf Foxtrot Alfa Bravo, Golf Foxtrot Alfa Bravo, this is Toronto Tower, Toronto Tower, Toronto Tower, RECEIVED MAYDAY.'\n\nIf the acknowledging station is able to provide assistance, it should indicate what assistance is available after the acknowledgement."
+        },
+        {
+          "type": "text",
+          "title": "Actions by Stations Hearing a Distress Call",
+          "content": "When you hear a distress call, your actions depend on your situation:\n\nIF YOU ARE THE STATION BEING CALLED:\n- Acknowledge the distress message immediately using the format above\n- Take control of distress traffic on the frequency\n- Notify the appropriate search-and-rescue authorities\n- Provide whatever assistance you can\n\nIF YOU ARE ANOTHER STATION HEARING THE CALL:\n- Listen carefully and do NOT transmit unless you can offer assistance\n- If the called station does not acknowledge, wait a reasonable time, then acknowledge the distress and relay it\n- Allow the station in distress and the station controlling the distress traffic to handle the situation\n- Do NOT transmit on the frequency unless specifically asked to or unless you have vital information\n\nIF NO STATION ACKNOWLEDGES:\n- Any station hearing an unacknowledged distress call is obligated to acknowledge it and take appropriate action\n- Relay the distress message to the nearest ATC facility or rescue coordination centre"
+        },
+        {
+          "type": "text",
+          "title": "Control of Distress Traffic",
+          "content": "Once a distress situation is declared, one station assumes control of all communications related to the distress. This is called controlling the distress traffic.\n\nThe station controlling distress traffic is typically:\n- The ground station that first acknowledged the distress, OR\n- The station in distress itself (if no ground station has taken control)\n\nThe controlling station has the authority to:\n- Direct all communications on the frequency\n- Impose radio silence on stations that are interfering\n- Coordinate search-and-rescue operations\n- Delegate control to another station if necessary\n\nAll other stations must comply with the instructions of the station controlling distress traffic."
+        },
+        {
+          "type": "text",
+          "title": "Relay of Distress Messages (MAYDAY RELAY)",
+          "content": "If you hear a distress call that is not acknowledged by the called station, or if you receive a distress message from a station that is too far away to communicate directly with rescue services, you must relay the distress message.\n\nThe relay format is:\n\n1. MAYDAY RELAY MAYDAY RELAY MAYDAY RELAY\n2. THIS IS\n3. [Your call sign, spoken THREE times]\n4. The complete distress message as received from the station in distress\n\nExample:\n'MAYDAY RELAY, MAYDAY RELAY, MAYDAY RELAY, this is Air Canada wun too tree, Air Canada wun too tree, Air Canada wun too tree. The following distress message was received from Cessna Golf Foxtrot Alfa Bravo at one four three zero zulu on frequency wun too wun day-see-mal fife: [complete distress message].'"
+        },
+        {
+          "type": "example",
+          "title": "Example: MAYDAY RELAY",
+          "content": "An aircraft hears a MAYDAY from another aircraft but the ground station does not respond:\n\n'MAYDAY RELAY, MAYDAY RELAY, MAYDAY RELAY, this is WestJet fow-er fife six, WestJet fow-er fife six, WestJet fow-er fife six. Intercepted distress from Cessna Golf Foxtrot Alfa Bravo at wun fife tree zero zulu. Cessna Golf Foxtrot Alfa Bravo reports engine failure, intending forced landing, tree zero miles north of Sudbury, tree tou-sand feet, heading wun ait zero, too persons on board.'"
+        },
+        {
+          "type": "text",
+          "title": "Imposition of Radio Silence",
+          "content": "To protect distress communications from interference, radio silence may be imposed on other stations. There are specific phrases for this:\n\nSEELONCE MAYDAY (spoken by the station in distress):\nUsed by the aircraft in distress to impose silence on interfering stations.\nFormat: 'SEELONCE MAYDAY'\nExample: 'All stations, SEELONCE MAYDAY, Cessna Golf Foxtrot Alfa Bravo.'\n\nSEELONCE DISTRESS (spoken by the controlling ground station):\nUsed by the station controlling distress traffic to impose silence.\nFormat: 'SEELONCE DISTRESS'\nExample: 'All stations, SEELONCE DISTRESS, Toronto Centre.'\n\nThe word 'SEELONCE' comes from the French word 'silence' and is pronounced 'SAY-LONCE.' It is used specifically because it is distinctive and unlikely to be confused with other words.\n\nWhen radio silence has been imposed, no station may transmit on that frequency unless:\n- It is the station in distress\n- It is the station controlling distress traffic\n- It has vital information related to the distress"
+        },
+        {
+          "type": "text",
+          "title": "Cancellation of Distress and Lifting of Silence",
+          "content": "When a distress situation is resolved, the distress condition must be formally cancelled and radio silence must be lifted.\n\nPRUDONCE: If the distress situation is still ongoing but radio silence can be partially relaxed, the controlling station may transmit:\n'PRUDONCE' - This means that normal working may be resumed on the frequency but stations should exercise caution and limit their transmissions.\n\nSEELONCE FEENEE (silence finished): When the distress situation is fully resolved, the station controlling distress traffic cancels the radio silence by transmitting:\n'MAYDAY, all stations, all stations, all stations, this is [controlling station call sign], [time in UTC], [distress call sign], SEELONCE FEENEE.'\n\nSEELONCE FEENEE means that the distress is over and normal communications may resume on the frequency.\n\n'FEENEE' comes from the French word 'fini' meaning 'finished' and is pronounced 'FEE-NEE.'\n\nAlternatively, the station in distress itself may cancel the distress if the emergency is resolved:\n'MAYDAY, all stations, this is Cessna Golf Foxtrot Alfa Bravo, cancel distress, out.'"
+        },
+        {
+          "type": "warning",
+          "content": "Remember the French-derived terms: SEELONCE MAYDAY (imposed by the aircraft in distress), SEELONCE DISTRESS (imposed by the ground station), PRUDONCE (partial relaxation of silence), and SEELONCE FEENEE (silence is finished, distress over). The exam will test whether you know who can impose silence and the correct terminology."
+        },
+        {
+          "type": "text",
+          "title": "Urgency Signal: PAN PAN",
+          "content": "The urgency signal is PAN PAN, spoken three times: 'PAN PAN, PAN PAN, PAN PAN.' The words come from the French word 'panne' meaning 'breakdown.'\n\nPAN PAN is used when a condition exists concerning the safety of an aircraft or other vehicle, or of some person on board or within sight, but which does NOT require immediate assistance.\n\nExamples of urgency situations:\n- A passenger with a medical emergency (not life-threatening)\n- Being uncertain of your position (lost)\n- Low fuel (but not yet at a critical level)\n- Equipment malfunction that affects safety but is not immediately dangerous\n- Sighting a vessel or aircraft in difficulty\n\nUrgency communications take priority over ALL communications EXCEPT distress."
+        },
+        {
+          "type": "text",
+          "title": "Urgency Message Format",
+          "content": "The urgency message format is similar to the distress message but uses PAN PAN instead of MAYDAY:\n\n1. PAN PAN, PAN PAN, PAN PAN\n2. [Station being called] or ALL STATIONS\n3. THIS IS\n4. [Call sign of station sending the urgency message]\n5. Nature of the urgency condition\n6. Intention of the pilot-in-command\n7. Position, altitude, heading\n8. Any other useful information\n\nUnlike a distress message, the urgency call does not require the call sign to be repeated three times."
+        },
+        {
+          "type": "example",
+          "title": "Example: PAN PAN Urgency Call",
+          "content": "Pilot: 'PAN PAN, PAN PAN, PAN PAN, Montreal Centre, this is Cessna Golf Foxtrot Alfa Bravo, we have a passenger experiencing chest pains, request priority handling and medical assistance on arrival, currently fow-er zero miles east of Ottawa at six tou-sand fife hundred feet, heading too sev-en zero, requesting diversion to Ottawa.'\n\nCentre: 'Cessna Golf Foxtrot Alfa Bravo, Montreal Centre, roger your PAN PAN, turn right heading too ait zero for Ottawa, descend to fow-er tou-sand, medical assistance will be arranged, squawk seven seven zero zero.'"
+        },
+        {
+          "type": "text",
+          "title": "Urgency Priority and Cancellation",
+          "content": "Urgency communications have PRIORITY over all communications EXCEPT distress. If a distress situation arises while an urgency is in progress, the distress takes precedence.\n\nUnlike distress, urgency does not require the imposition of radio silence. Other stations may continue to communicate on the frequency, but they should be mindful of the urgency traffic and avoid unnecessary transmissions.\n\nWhen the urgency condition is resolved, the station that initiated the urgency should cancel it:\n'PAN PAN, [called station or all stations], this is [your call sign], cancel PAN PAN, [reason/status], out.'\n\nExample: 'PAN PAN, Montreal Centre, this is Cessna Golf Foxtrot Alfa Bravo, cancel PAN PAN, passenger condition stabilized, continuing to Ottawa, out.'"
+        },
+        {
+          "type": "key_points",
+          "title": "Key Points Summary",
+          "points": [
+            "Acknowledge a distress with: MAYDAY + distress call sign x3 + THIS IS + your call sign x3 + RECEIVED MAYDAY",
+            "MAYDAY RELAY is used to relay a distress heard from another station",
+            "SEELONCE MAYDAY = silence imposed by the station in distress",
+            "SEELONCE DISTRESS = silence imposed by the controlling ground station",
+            "PRUDONCE = partial relaxation of silence",
+            "SEELONCE FEENEE = distress is over, normal communications resume",
+            "PAN PAN (x3) is the urgency signal - safety concern but NOT immediate danger",
+            "Urgency has priority over everything EXCEPT distress",
+            "Urgency does NOT require radio silence",
+            "Both distress and urgency must be formally cancelled when resolved"
+          ]
+        }
+      ],
+      "quiz_question_ids": ["EMER-013", "EMER-014", "EMER-015", "EMER-016", "EMER-017", "EMER-018", "EMER-019", "EMER-020", "URG-001", "URG-002", "URG-003", "URG-004"]
+    },
+    {
+      "id": "lesson_10",
+      "title": "Definitions, Equipment & Frequencies",
+      "description": "Key aeronautical definitions, radio equipment fundamentals, VHF frequency bands, and station licences.",
+      "topic": "definitions_and_equipment",
+      "order": 10,
+      "sections": [
+        {
+          "type": "text",
+          "title": "Essential Aeronautical Definitions",
+          "content": "The ROC-A exam tests your knowledge of specific aeronautical definitions. These definitions have precise meanings that differ from everyday usage:\n\nAERODROME: Any area of land, water (including frozen surfaces), or other supporting surface used, designed, prepared, equipped, or set apart for the arrival, departure, movement, or servicing of aircraft. This includes airports, airstrips, heliports, and seaplane bases.\n\nAIRCRAFT STATION: A mobile radio station installed aboard an aircraft. Your radio equipment on the aircraft constitutes an aircraft station.\n\nAERONAUTICAL STATION: A land (fixed) radio station in the aeronautical mobile service. This includes control towers, flight service stations, and other ground-based radio facilities that communicate with aircraft.\n\nAERONAUTICAL MOBILE SERVICE: A radio communication service between aeronautical stations and aircraft stations, or between aircraft stations. This is the overall service category for air-to-ground and air-to-air communications.\n\nAIR TRAFFIC CONTROL (ATC): A service provided to prevent collisions between aircraft, and between aircraft and obstructions on the manoeuvring area, and to expedite and maintain an orderly flow of air traffic."
+        },
+        {
+          "type": "text",
+          "title": "More Key Definitions",
+          "content": "AERONAUTICAL MOBILE (R) SERVICE: An aeronautical mobile service reserved for communications relating to safety and regularity of flight, primarily along national and international civil air routes. The '(R)' stands for 'route.'\n\nAERONAUTICAL MOBILE (OR) SERVICE: An aeronautical mobile service intended for communications relating to flight coordination, primarily outside national and international civil air routes. The '(OR)' stands for 'off-route.'\n\nBLIND TRANSMISSION: A transmission from one station to another in circumstances where two-way communication cannot be established, but where it is believed the called station is able to receive the transmission.\n\nBROADCAST: A transmission of information relating to air navigation that is not addressed to a specific station or stations.\n\nCONTROLLED AERODROME: An aerodrome at which air traffic control service is provided. This requires a control tower.\n\nMANOEUVRING AREA: That part of an aerodrome to be used for the takeoff, landing, and taxiing of aircraft, excluding aprons (ramp areas).\n\nMOVEMENT AREA: That part of an aerodrome to be used for the takeoff, landing, and taxiing of aircraft, INCLUDING aprons. Note: the movement area includes the manoeuvring area plus the aprons."
+        },
+        {
+          "type": "warning",
+          "content": "Pay close attention to the distinction between MANOEUVRING AREA and MOVEMENT AREA. The manoeuvring area EXCLUDES aprons; the movement area INCLUDES aprons. This is a frequently tested distinction on the exam."
+        },
+        {
+          "type": "table",
+          "title": "Area Definitions Comparison",
+          "columns": ["Term", "Includes Runways", "Includes Taxiways", "Includes Aprons/Ramp"],
+          "rows": [
+            ["Manoeuvring Area", "Yes", "Yes", "No"],
+            ["Movement Area", "Yes", "Yes", "Yes"]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Radio Equipment Fundamentals",
+          "content": "While the ROC-A does not require deep technical knowledge of radio equipment, you should understand basic equipment concepts:\n\nTRANSMITTER: The component that generates the radio signal and sends it to the antenna for broadcasting. It converts audio (your voice) into radio frequency energy.\n\nRECEIVER: The component that picks up radio signals from the antenna and converts them back into audio that you can hear.\n\nTRANSCEIVER: A combined transmitter and receiver in a single unit. Most modern aircraft radios are transceivers.\n\nANTENNA: The device that radiates radio energy into space (for transmission) and captures radio energy from space (for reception).\n\nCONNECTORS: The physical connections between radio components (antenna, transceiver, headset, microphone). Loose or corroded connectors are a common cause of radio problems.\n\nSHORT CIRCUIT: An unintended connection between two conductors that allows current to flow along an unintended path. In radio equipment, a short circuit can cause equipment failure, blown fuses, or complete loss of radio capability.\n\nOPEN CIRCUIT (OPEN WIRE): A break in the electrical circuit that prevents current from flowing. An open wire in the antenna connection, for example, would prevent the radio from transmitting or receiving."
+        },
+        {
+          "type": "text",
+          "title": "Troubleshooting Common Radio Problems",
+          "content": "As a radio operator, you should be able to identify common radio problems:\n\nNO TRANSMISSION AND NO RECEPTION:\n- Check that the radio is turned on and the volume is up\n- Check the circuit breaker or fuse\n- Check all connectors and cables for loose connections\n- The problem may be a blown fuse, a short circuit, or a complete equipment failure\n\nCAN RECEIVE BUT CANNOT TRANSMIT:\n- Check the microphone connection\n- Check the push-to-talk (PTT) switch\n- The transmitter may have failed while the receiver still works\n- Check for a stuck microphone on the frequency\n\nWEAK OR INTERMITTENT SIGNALS:\n- Check the antenna connection - a loose antenna connector is a common cause\n- Check for corrosion on connectors\n- The antenna itself may be damaged\n\nSTATIC OR INTERFERENCE:\n- May be caused by weather (thunderstorms)\n- Electrical interference from other aircraft systems\n- Being too far from the transmitting station\n\nFUSES: A blown fuse indicates an electrical problem (often a short circuit). Replace the fuse with one of the SAME RATING. Never use a higher-rated fuse, as this could allow excessive current that damages equipment or causes a fire. If the replacement fuse also blows, there is a persistent electrical fault that requires maintenance."
+        },
+        {
+          "type": "warning",
+          "content": "Never replace a blown fuse with a higher-rated fuse. This is dangerous and can cause equipment damage or fire. Always use a fuse of the same rating. If the new fuse also blows, do not keep replacing fuses - the equipment has a fault that requires professional repair."
+        },
+        {
+          "type": "text",
+          "title": "VHF Frequency Band Assignments",
+          "content": "Aeronautical communications in Canada use the Very High Frequency (VHF) band. Understanding the frequency assignments is important:\n\nVHF COMMUNICATION BAND: 118.000 MHz to 136.975 MHz\nThis is the frequency range used for voice communications between aircraft and ground stations, and between aircraft.\n\nVHF NAVIGATION BAND: 108.000 MHz to 117.950 MHz\nThis range is used for navigational aids such as VORs (VHF Omnidirectional Range) and ILS (Instrument Landing System) localizers.\n\nEMERGENCY FREQUENCY: 121.5 MHz\nThe international aeronautical emergency frequency. Monitored by ATC, flight service stations, and many aircraft. Used for distress and urgency communications.\n\nSECOND EMERGENCY FREQUENCY: 243.0 MHz\nA UHF emergency frequency primarily used by military aircraft. It is the military equivalent of 121.5 MHz.\n\nVHF radio signals travel in straight lines (line-of-sight). This means that the range of VHF communications is affected by altitude: the higher you fly, the farther you can communicate. At low altitudes, terrain can block VHF signals."
+        },
+        {
+          "type": "table",
+          "title": "Key Frequency Assignments",
+          "columns": ["Frequency/Range", "Purpose"],
+          "rows": [
+            ["108.0 - 117.95 MHz", "VHF Navigation (VOR, ILS)"],
+            ["118.0 - 136.975 MHz", "VHF Voice Communications"],
+            ["121.5 MHz", "International Aeronautical Emergency"],
+            ["123.1 MHz", "Search and Rescue (SAR)"],
+            ["126.7 MHz", "Aerodrome Traffic Frequency (ATF) - common default"],
+            ["243.0 MHz", "Military Emergency (UHF)"],
+            ["406 MHz", "ELT satellite detection frequency"]
+          ]
+        },
+        {
+          "type": "text",
+          "title": "Radio Station Licences",
+          "content": "As discussed in the regulations lessons, two types of authorization are required for lawful radio operation:\n\nRADIO STATION LICENCE: Authorizes the installation and operation of specific radio equipment at a specific station (e.g., aboard a particular aircraft). The licence is tied to the equipment and the aircraft, not to the operator. It specifies the frequencies authorized, power output, and other technical parameters.\n\nRADIO OPERATOR CERTIFICATE (ROC-A): Authorizes an individual to operate aeronautical radio equipment. The certificate is tied to the person, not the equipment.\n\nBoth must be current and valid. The radio station licence must be carried aboard the aircraft, and the operator must hold a valid ROC-A. Operating without either is a violation of the Radiocommunication Act.\n\nThe radio station licence is issued for the aircraft and must be renewed periodically. The ROC-A, once issued to an individual, does not expire but can be suspended or revoked."
+        },
+        {
+          "type": "text",
+          "title": "VHF Radio Characteristics",
+          "content": "Understanding the characteristics of VHF radio is useful for the exam and practical operations:\n\nLINE OF SIGHT: VHF signals travel in straight lines. They do not follow the curvature of the earth (unlike HF signals). This means mountains, buildings, and the earth's curvature can block VHF signals.\n\nRANGE AND ALTITUDE: Because VHF is line-of-sight, range increases with altitude. At 1,000 feet AGL, you might reach about 40 nautical miles. At 10,000 feet, you might reach over 100 nautical miles. At FL350, range can exceed 200 nautical miles.\n\nCHANNEL SPACING: VHF aeronautical communications use 25 kHz channel spacing (and 8.33 kHz spacing in some regions). This determines how many discrete frequencies are available in the band.\n\nSQUELCH: A circuit in the receiver that suppresses background noise when no signal is present. If squelch is set too high, weak signals may be missed. If set too low, you will hear constant static."
+        },
+        {
+          "type": "key_points",
+          "title": "Key Points Summary",
+          "points": [
+            "Aerodrome = any area used for aircraft operations (land, water, or ice)",
+            "Aircraft station = radio on the aircraft; Aeronautical station = ground radio facility",
+            "Manoeuvring area EXCLUDES aprons; Movement area INCLUDES aprons",
+            "VHF communications: 118.0 - 136.975 MHz",
+            "VHF navigation: 108.0 - 117.95 MHz",
+            "Emergency frequency: 121.5 MHz (international), 243.0 MHz (military)",
+            "VHF is line-of-sight: range increases with altitude",
+            "Never replace a fuse with a higher-rated one",
+            "Both a radio station licence and an operator certificate (ROC-A) are required",
+            "The ROC-A does not expire but can be suspended or revoked"
+          ]
+        }
+      ],
+      "quiz_question_ids": ["APP-001", "APP-002", "APP-003", "APP-004", "APP-005", "APP-006", "APP-007", "APP-008", "APP-009", "APP-010"]
+    }
+  ]
+}

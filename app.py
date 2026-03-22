@@ -5,12 +5,14 @@ from services.exam_service import ExamService
 from services.flashcard_service import FlashcardService
 from services.progress_service import ProgressService
 from services.search_service import SearchService
+from services.lesson_service import LessonService
 from frames.home_frame import HomeFrame
 from frames.exam_frame import ExamFrame
 from frames.exam_review_frame import ExamReviewFrame
 from frames.flashcard_frame import FlashcardFrame
 from frames.reference_frame import ReferenceFrame
 from frames.progress_frame import ProgressFrame
+from frames.lesson_frame import LessonFrame
 
 
 class App(ctk.CTk):
@@ -30,6 +32,7 @@ class App(ctk.CTk):
         self.flashcard_service = FlashcardService()
         self.progress_service = ProgressService()
         self.search_service = SearchService()
+        self.lesson_service = LessonService()
 
         # Layout
         self.grid_columnconfigure(1, weight=1)
@@ -48,7 +51,7 @@ class App(ctk.CTk):
     def _build_sidebar(self):
         self.sidebar = ctk.CTkFrame(self, width=200, corner_radius=0)
         self.sidebar.grid(row=0, column=0, sticky="nsew")
-        self.sidebar.grid_rowconfigure(7, weight=1)
+        self.sidebar.grid_rowconfigure(8, weight=1)
 
         title_label = ctk.CTkLabel(
             self.sidebar,
@@ -68,6 +71,7 @@ class App(ctk.CTk):
         self.nav_buttons: dict[str, ctk.CTkButton] = {}
         nav_items = [
             ("home", "Dashboard"),
+            ("lessons", "Lessons"),
             ("exam", "Practice Exam"),
             ("flashcards", "Flashcards"),
             ("reference", "Reference"),
@@ -94,7 +98,7 @@ class App(ctk.CTk):
         theme_label = ctk.CTkLabel(
             self.sidebar, text="Appearance:", font=ctk.CTkFont(size=12)
         )
-        theme_label.grid(row=8, column=0, padx=20, pady=(10, 0))
+        theme_label.grid(row=9, column=0, padx=20, pady=(10, 0))
 
         self.theme_menu = ctk.CTkOptionMenu(
             self.sidebar,
@@ -102,7 +106,7 @@ class App(ctk.CTk):
             command=self._change_theme,
             width=160,
         )
-        self.theme_menu.grid(row=9, column=0, padx=20, pady=(5, 5))
+        self.theme_menu.grid(row=10, column=0, padx=20, pady=(5, 5))
 
         version_label = ctk.CTkLabel(
             self.sidebar,
@@ -110,7 +114,7 @@ class App(ctk.CTk):
             font=ctk.CTkFont(size=11),
             text_color="gray",
         )
-        version_label.grid(row=10, column=0, padx=20, pady=(5, 15))
+        version_label.grid(row=11, column=0, padx=20, pady=(5, 15))
 
     def _build_frames(self):
         self.frames["home"] = HomeFrame(self, controller=self)
@@ -119,6 +123,7 @@ class App(ctk.CTk):
         self.frames["flashcards"] = FlashcardFrame(self, controller=self)
         self.frames["reference"] = ReferenceFrame(self, controller=self)
         self.frames["progress"] = ProgressFrame(self, controller=self)
+        self.frames["lessons"] = LessonFrame(self, controller=self)
 
         for frame in self.frames.values():
             frame.grid(row=0, column=1, sticky="nsew", padx=0, pady=0)
