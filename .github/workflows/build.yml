@@ -46,17 +46,28 @@ jobs:
       - name: Install dependencies
         run: pip install customtkinter pyinstaller
 
-      - name: Build macOS app
-        run: pyinstaller roca_study_app.spec
+      - name: Build macOS .app bundle
+        run: pyinstaller roca_study_app_macos.spec
 
-      - name: Zip the macOS binary
-        run: cd dist && zip ROCAStudyApp-macOS.zip ROCAStudyApp
+      - name: Create DMG
+        run: |
+          # Create a temporary directory for DMG contents
+          mkdir -p dmg_contents
+          cp -R dist/ROCAStudyApp.app dmg_contents/
+          # Create a symbolic link to Applications for drag-and-drop install
+          ln -s /Applications dmg_contents/Applications
+
+          # Create the DMG
+          hdiutil create -volname "ROC-A Study App" \
+            -srcfolder dmg_contents \
+            -ov -format UDZO \
+            dist/ROCAStudyApp.dmg
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: ROCAStudyApp-macOS
-          path: dist/ROCAStudyApp-macOS.zip
+          path: dist/ROCAStudyApp.dmg
 
   release:
     needs: [build-windows, build-macos]
@@ -84,11 +95,13 @@ jobs:
             ## Downloads
 
             - **Windows**: Download `ROCAStudyApp.exe` and double-click to run
-            - **macOS**: Download `ROCAStudyApp-macOS.zip`, unzip, then run the `ROCAStudyApp` binary
+            - **macOS**: Download `ROCAStudyApp.dmg`, open it, and drag the app to your Applications folder
 
             No Python installation required. Built automatically from the latest code on master.
+
+            > **macOS users**: On first launch, right-click the app and select "Open" to bypass the Gatekeeper warning (the app is not signed with an Apple Developer certificate).
           files: |
             artifacts/windows/ROCAStudyApp.exe
-            artifacts/macos/ROCAStudyApp-macOS.zip
+            artifacts/macos/ROCAStudyApp.dmg
           make_latest: true
           prerelease: false
