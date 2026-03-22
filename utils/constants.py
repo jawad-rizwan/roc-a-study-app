@@ -1,5 +1,16 @@
+import pathlib as _pathlib
+
 APP_NAME = "ROC-A Study App"
-APP_VERSION = "1.0.0"
+
+def _read_version():
+    # Check next to the running script / frozen bundle
+    for base in [_pathlib.Path(__file__).resolve().parent.parent, _pathlib.Path(".")]:
+        vf = base / "VERSION"
+        if vf.is_file():
+            return vf.read_text().strip()
+    return "1.0.0"
+
+APP_VERSION = _read_version()
 WINDOW_WIDTH = 1100
 WINDOW_HEIGHT = 700
 SIDEBAR_WIDTH = 200

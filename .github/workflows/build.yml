@@ -51,13 +51,10 @@ jobs:
 
       - name: Create DMG
         run: |
-          # Create a temporary directory for DMG contents
           mkdir -p dmg_contents
           cp -R dist/ROCAStudyApp.app dmg_contents/
-          # Create a symbolic link to Applications for drag-and-drop install
           ln -s /Applications dmg_contents/Applications
 
-          # Create the DMG
           hdiutil create -volname "ROC-A Study App" \
             -srcfolder dmg_contents \
             -ov -format UDZO \
@@ -74,6 +71,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Read version
+        id: version
+        run: echo "version=$(cat VERSION | tr -d '[:space:]')" >> "$GITHUB_OUTPUT"
+
       - name: Download Windows artifact
         uses: actions/download-artifact@v4
         with:
@@ -86,18 +89,22 @@ jobs:
           name: ROCAStudyApp-macOS
           path: artifacts/macos
 
-      - name: Create or update release
+      - name: Create release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: latest
-          name: ROC-A Study App (Latest Build)
+          tag_name: v${{ steps.version.outputs.version }}
+          name: ROC-A Study App v${{ steps.version.outputs.version }}
           body: |
-            ## Downloads
+            ## ROC-A Study App v${{ steps.version.outputs.version }}
 
-            - **Windows**: Download `ROCAStudyApp.exe` and double-click to run
-            - **macOS**: Download `ROCAStudyApp.dmg`, open it, and drag the app to your Applications folder
+            ### Downloads
 
-            No Python installation required. Built automatically from the latest code on master.
+            | Platform | File | Instructions |
+            |----------|------|-------------|
+            | Windows | `ROCAStudyApp.exe` | Download and double-click to run |
+            | macOS | `ROCAStudyApp.dmg` | Open DMG, drag app to Applications |
+
+            No Python installation required.
 
             > **macOS users**: On first launch, right-click the app and select "Open" to bypass the Gatekeeper warning (the app is not signed with an Apple Developer certificate).
           files: |

@@ -1,8 +1,9 @@
 # -*- mode: python ; coding: utf-8 -*-
-import platform
 from PyInstaller.utils.hooks import collect_data_files
 
 block_cipher = None
+
+_version = open('VERSION').read().strip()
 
 ctk_datas = collect_data_files('customtkinter')
 
@@ -11,6 +12,7 @@ app_datas = [
     ('data/flashcards.json', 'data'),
     ('data/reference.json', 'data'),
     ('data/lessons.json', 'data'),
+    ('VERSION', '.'),
 ]
 
 a = Analysis(
@@ -57,8 +59,8 @@ app = BUNDLE(
     info_plist={
         'CFBundleName': 'ROC-A Study App',
         'CFBundleDisplayName': 'ROC-A Study App',
-        'CFBundleShortVersionString': '1.0.0',
-        'CFBundleVersion': '1.0.0',
+        'CFBundleShortVersionString': _version,
+        'CFBundleVersion': _version,
         'NSHighResolutionCapable': True,
         'LSMinimumSystemVersion': '10.15',
     },

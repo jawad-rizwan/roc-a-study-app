@@ -12,6 +12,7 @@ app_datas = [
     ('data/flashcards.json', 'data'),
     ('data/reference.json', 'data'),
     ('data/lessons.json', 'data'),
+    ('VERSION', '.'),
 ]
 
 a = Analysis(
