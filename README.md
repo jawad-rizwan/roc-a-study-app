@@ -15,10 +15,12 @@ Live site: <https://jawad-rizwan.github.io/roc-a-study-app/>
 - Guided study plan with a recommended learn/reinforce/test/review flow
 - Flashcard decks with smart review, confidence ratings, shuffle, click-to-flip, and keyboard navigation
 - Searchable reference material
+- Printable quick study sheets for high-yield tables and call formats
 - Practice mode with instant explanations after each answer
 - Mistake review for drilling previously missed questions
 - Topic mastery, exam-readiness score, exam history, and question statistics
 - Progress export/import for backups or device moves
+- Offline support after the first successful load
 - Local-only progress storage
 
 ## Progress Storage
@@ -44,6 +46,16 @@ http://localhost:8000
 ```
 
 Opening `index.html` directly from the filesystem is not recommended because the JSON data files are loaded over HTTP.
+
+## Offline Use
+
+The site registers a service worker and caches the app shell plus study data after the first successful load. After that, the main app, lessons, exams, flashcards, reference material, and study sheets can load without a network connection on the same device.
+
+If a new version is deployed, reload the page while online to refresh the cached files.
+
+## Printable Study Sheets
+
+Use the **Study Sheets** page and click **Print Study Sheets** to print or save a PDF of the highest-yield reference material, including phonetic alphabet, number pronunciation, priorities, frequencies, readability scale, distress/urgency formats, and common phrases to avoid.
 
 ## Deployment
 

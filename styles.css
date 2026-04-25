@@ -542,6 +542,14 @@ button:disabled {
   opacity: 0.55;
 }
 
+.print-title {
+  display: none;
+}
+
+.sheet-section {
+  break-inside: avoid;
+}
+
 @media (max-width: 900px) {
   .shell {
     display: block;
@@ -612,5 +620,96 @@ button:disabled {
       opacity: 1;
       transform: translateY(0);
     }
+  }
+}
+
+@media print {
+  @page {
+    margin: 0.45in;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+
+  body {
+    color: #111;
+    background: #fff;
+    font-size: 10pt;
+  }
+
+  .sidebar,
+  .hero,
+  .no-print,
+  .storage-note {
+    display: none !important;
+  }
+
+  .shell {
+    display: block;
+    min-height: auto;
+  }
+
+  .content {
+    width: auto;
+    padding: 0;
+  }
+
+  .print-title {
+    display: block;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #111;
+  }
+
+  .print-title h1 {
+    margin-bottom: 4px;
+    font-size: 22pt;
+    line-height: 1;
+  }
+
+  .print-title p {
+    font-size: 9pt;
+  }
+
+  .reference-card,
+  .panel,
+  .lesson-card,
+  .question-card,
+  .review-card {
+    padding: 10px 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    break-inside: avoid;
+  }
+
+  .sheet-section {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #bbb;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: Georgia, serif;
+  }
+
+  h2 {
+    margin-bottom: 6px;
+    font-size: 14pt;
+  }
+
+  table {
+    font-size: 8.5pt;
+  }
+
+  th,
+  td {
+    padding: 4px 6px;
+    border: 1px solid #bbb;
+  }
+
+  .table-wrap {
+    overflow: visible;
   }
 }

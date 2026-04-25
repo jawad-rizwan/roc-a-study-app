@@ -6,6 +6,7 @@ const DATA_PATHS = {
 };
 
 const PROGRESS_KEY = "rocaStudyProgress:v1";
+const APP_VERSION = "1.3.0";
 const DEFAULT_TIME_LIMIT_SECONDS = 45 * 60;
 const TOPICS = {
   regulations: "Regulations",
@@ -311,6 +312,7 @@ function render() {
     exam: renderExam,
     flashcards: renderFlashcards,
     reference: renderReference,
+    studySheets: renderStudySheets,
     progress: renderProgress,
     about: renderAbout,
   };
@@ -1069,6 +1071,57 @@ function renderReferenceSection(section) {
   `;
 }
 
+function renderStudySheets() {
+  const sheetTitles = [
+    "ICAO Phonetic Alphabet",
+    "Number Pronunciation",
+    "Priority of Communications",
+    "VHF Aeronautical Frequency Assignments",
+    "Readability Scale",
+    "Distress Call Format",
+    "Distress Message Format",
+    "Urgency Message Format",
+    "Common Phrases to Avoid",
+  ];
+  const sheets = sheetTitles
+    .map((title) => state.data.referenceSections.find((section) => section.title === title))
+    .filter(Boolean);
+
+  return `
+    ${hero("Printable ROC-A study sheets.", "Print the highest-yield tables and call formats for quick offline review.", "Study Sheets")}
+    <section class="panel no-print">
+      <div class="actions">
+        <button class="btn" type="button" data-action="print-sheets">Print Study Sheets</button>
+        <button class="btn secondary" type="button" data-view="reference">Open Full Reference</button>
+      </div>
+    </section>
+    <section class="print-sheet">
+      <div class="print-title">
+        <h1>ROC-A Quick Study Sheets</h1>
+        <p>Based on RIC-21 - Restricted Operator Certificate with Aeronautical Qualification study material.</p>
+      </div>
+      ${sheets.map(renderStudySheetSection).join("")}
+    </section>
+  `;
+}
+
+function renderStudySheetSection(section) {
+  let body = "";
+  if (section.type === "table") body = renderTable(section.columns || [], section.rows || []);
+  if (section.type === "ordered_list") {
+    body = `<ol>${(section.items || []).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ol>`;
+  }
+  if (section.type === "procedure") {
+    body = `<ol>${(section.steps || []).map((step) => `<li>${escapeHtml(step)}</li>`).join("")}</ol>`;
+  }
+  return `
+    <article class="reference-card sheet-section">
+      <h2>${escapeHtml(section.title)}</h2>
+      ${body}
+    </article>
+  `;
+}
+
 function renderTable(columns, rows) {
   return `
     <div class="table-wrap">
@@ -1273,6 +1326,7 @@ document.addEventListener("click", (event) => {
     render();
   }
   if (action === "export-progress") exportProgress();
+  if (action === "print-sheets") window.print();
   if (action === "reset-progress") resetProgress();
 });
 
@@ -1377,3 +1431,11 @@ async function init() {
 }
 
 init();
+
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("sw.js").catch(() => {
+      // Offline support is a progressive enhancement; the app still works online.
+    });
+  });
+}
