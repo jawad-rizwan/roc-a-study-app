@@ -246,7 +246,7 @@ function render() {
 function renderHome() {
   const stats = getStats();
   return `
-    ${hero("Study the ROC-A material with everything saved in your browser.", "Lessons, practice exams, flashcards, reference material, and private progress tracking for the Canadian ROC-A exam.")}
+    ${hero("Prepare for the ROC-A exam with focused practice.", "Lessons, practice exams, flashcards, reference material, and progress tracking for the Canadian ROC-A exam.")}
     <section class="grid three">
       ${statCard("Exams Taken", stats.exams)}
       ${statCard("Average Score", `${stats.average}%`)}
