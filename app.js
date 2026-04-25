@@ -6,7 +6,8 @@ const DATA_PATHS = {
 };
 
 const PROGRESS_KEY = "rocaStudyProgress:v1";
-const APP_VERSION = "1.3.0";
+const THEME_KEY = "rocaStudyTheme";
+const APP_VERSION = "1.4.0";
 const DEFAULT_TIME_LIMIT_SECONDS = 45 * 60;
 const TOPICS = {
   regulations: "Regulations",
@@ -25,6 +26,7 @@ const TOPIC_COLORS = {
 
 const app = document.querySelector("#app");
 const navLinks = [...document.querySelectorAll(".nav-link")];
+const themeToggle = document.querySelector("[data-action='toggle-theme']");
 
 const state = {
   data: null,
@@ -49,6 +51,35 @@ const state = {
   progress: loadProgress(),
   timerId: null,
 };
+
+applyTheme(loadTheme());
+
+function loadTheme() {
+  try {
+    const stored = localStorage.getItem(THEME_KEY);
+    if (stored === "light" || stored === "dark") return stored;
+  } catch {
+    // Ignore storage errors and fall back to system preference.
+  }
+  return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+}
+
+function applyTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  if (!themeToggle) return;
+  themeToggle.textContent = theme === "dark" ? "Light mode" : "Dark mode";
+  themeToggle.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+}
+
+function toggleTheme() {
+  const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+  applyTheme(next);
+  try {
+    localStorage.setItem(THEME_KEY, next);
+  } catch {
+    // Theme persistence is non-critical.
+  }
+}
 
 function escapeHtml(value) {
   return String(value ?? "")
@@ -1327,6 +1358,7 @@ document.addEventListener("click", (event) => {
   }
   if (action === "export-progress") exportProgress();
   if (action === "print-sheets") window.print();
+  if (action === "toggle-theme") toggleTheme();
   if (action === "reset-progress") resetProgress();
 });
 
