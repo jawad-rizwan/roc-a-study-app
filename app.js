@@ -35,7 +35,7 @@ const state = {
     cards: [],
     index: 0,
     flipped: false,
-    shuffle: false,
+    mode: "smart",
   },
   reference: {
     query: "",
@@ -62,7 +62,7 @@ function loadProgress() {
   try {
     const raw = localStorage.getItem(PROGRESS_KEY);
     if (!raw) return defaultProgress();
-    return { ...defaultProgress(), ...JSON.parse(raw) };
+    return normalizeProgress(JSON.parse(raw));
   } catch {
     return defaultProgress();
   }
@@ -80,17 +80,59 @@ function defaultProgress() {
   };
 }
 
+function normalizeProgress(progress) {
+  return {
+    ...defaultProgress(),
+    ...progress,
+    examHistory: Array.isArray(progress?.examHistory) ? progress.examHistory : [],
+    questionStats: progress?.questionStats && typeof progress.questionStats === "object" ? progress.questionStats : {},
+    flashcardStats: progress?.flashcardStats && typeof progress.flashcardStats === "object" ? progress.flashcardStats : {},
+    topicMastery: progress?.topicMastery && typeof progress.topicMastery === "object" ? progress.topicMastery : {},
+    lessonCompletions: progress?.lessonCompletions && typeof progress.lessonCompletions === "object" ? progress.lessonCompletions : {},
+  };
+}
+
 function saveProgress() {
   state.progress.lastUpdated = new Date().toISOString();
   try {
     localStorage.setItem(PROGRESS_KEY, JSON.stringify(state.progress));
   } catch {
-    alert("Progress could not be saved. Browser storage may be disabled or full.");
+    alert("Progress could not be saved. Local storage may be disabled or full.");
   }
 }
 
+function exportProgress() {
+  const blob = new Blob([JSON.stringify(state.progress, null, 2)], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = `roca-study-progress-${new Date().toISOString().slice(0, 10)}.json`;
+  document.body.append(link);
+  link.click();
+  link.remove();
+  URL.revokeObjectURL(url);
+}
+
+function importProgress(file) {
+  if (!file) return;
+  const reader = new FileReader();
+  reader.addEventListener("load", () => {
+    try {
+      const parsed = JSON.parse(reader.result);
+      state.progress = normalizeProgress(parsed);
+      recomputeMastery();
+      saveProgress();
+      render();
+      alert("Progress imported.");
+    } catch {
+      alert("That file does not look like a valid ROC-A progress backup.");
+    }
+  });
+  reader.readAsText(file);
+}
+
 function resetProgress() {
-  if (!confirm("Reset all saved progress in this browser? This cannot be undone.")) {
+  if (!confirm("Reset all saved progress on this device? This cannot be undone.")) {
     return;
   }
   state.progress = defaultProgress();
@@ -131,6 +173,36 @@ function getStats() {
     average: round1(average),
     best: round1(best),
   };
+}
+
+function readinessScore() {
+  const stats = getStats();
+  const lessonCount = state.data?.lessons.length || 0;
+  const lessonPct = lessonCount ? (Object.keys(state.progress.lessonCompletions).length / lessonCount) * 100 : 0;
+  const topicValues = Object.values(state.progress.topicMastery);
+  const masteryPct = topicValues.length
+    ? topicValues.reduce((sum, item) => sum + (item.masteryPercent || 0), 0) / Object.keys(TOPICS).length
+    : 0;
+  const recent = state.progress.examHistory.slice(-3);
+  const recentPct = recent.length
+    ? recent.reduce((sum, exam) => sum + exam.scorePercent, 0) / recent.length
+    : stats.average;
+  return round1((masteryPct * 0.45) + (recentPct * 0.4) + (lessonPct * 0.15));
+}
+
+function readinessLabel(score) {
+  if (score >= 85) return "Exam-ready";
+  if (score >= 70) return "Close";
+  if (score >= 45) return "Building";
+  return "Getting started";
+}
+
+function missedQuestionIds() {
+  const ids = new Set();
+  state.progress.examHistory.forEach((record) => {
+    (record.incorrectQuestionIds || []).forEach((id) => ids.add(id));
+  });
+  return [...ids].filter(getQuestionById);
 }
 
 function round1(value) {
@@ -234,23 +306,27 @@ function render() {
   if (!state.data) return;
   const renderers = {
     home: renderHome,
+    studyPlan: renderStudyPlan,
     lessons: renderLessons,
     exam: renderExam,
     flashcards: renderFlashcards,
     reference: renderReference,
     progress: renderProgress,
+    about: renderAbout,
   };
   app.innerHTML = renderers[state.view]?.() || renderHome();
 }
 
 function renderHome() {
   const stats = getStats();
+  const readiness = readinessScore();
   return `
     ${hero("Prepare for the ROC-A exam with focused practice.", "Lessons, practice exams, flashcards, reference material, and progress tracking for the Canadian ROC-A exam.")}
-    <section class="grid three">
+    <section class="grid four">
       ${statCard("Exams Taken", stats.exams)}
       ${statCard("Average Score", `${stats.average}%`)}
       ${statCard("Questions Answered", stats.totalQuestions)}
+      ${statCard("Readiness", `${readiness}%`)}
     </section>
     <section class="grid two" style="margin-top: 18px;">
       <div class="panel">
@@ -258,6 +334,7 @@ function renderHome() {
         <p class="muted">Jump into the next useful study activity.</p>
         <div class="actions">
           <button class="btn" type="button" data-view="exam">Start Practice Exam</button>
+          <button class="btn secondary" type="button" data-view="studyPlan">Follow Study Plan</button>
           <button class="btn green" type="button" data-view="flashcards">Study Flashcards</button>
           <button class="btn amber" type="button" data-view="reference">Browse Reference</button>
         </div>
@@ -269,6 +346,51 @@ function renderHome() {
     </section>
     <section class="panel" style="margin-top: 18px;">
       <h2>Topic Mastery</h2>
+      <p class="muted">Readiness: ${readinessLabel(readiness)}. Built from topic mastery, recent exam scores, and lesson completion.</p>
+      ${renderMasteryBars()}
+    </section>
+  `;
+}
+
+function renderStudyPlan() {
+  const lessonCount = state.data.lessons.length;
+  const completedLessons = Object.keys(state.progress.lessonCompletions).length;
+  const missedCount = missedQuestionIds().length;
+  const weak = weakestTopics();
+  return `
+    ${hero("A practical path through the ROC-A material.", "Work through the guide in stages: learn, reinforce, test, and review mistakes.", "Study Plan")}
+    <section class="grid two">
+      <article class="panel">
+        <span class="pill">Step 1</span>
+        <h2>Finish the lessons</h2>
+        <p class="muted">${completedLessons}/${lessonCount} modules complete.</p>
+        <button class="btn" type="button" data-view="lessons">Open Lessons</button>
+      </article>
+      <article class="panel">
+        <span class="pill">Step 2</span>
+        <h2>Reinforce with smart flashcards</h2>
+        <p class="muted">Cards marked Again or Hard are prioritized automatically.</p>
+        <button class="btn green" type="button" data-view="flashcards">Study Flashcards</button>
+      </article>
+      <article class="panel">
+        <span class="pill">Step 3</span>
+        <h2>Take a short practice exam</h2>
+        <p class="muted">Use practice mode for instant explanations, then switch to timed exams later.</p>
+        <button class="btn amber" type="button" data-view="exam">Start Practice</button>
+      </article>
+      <article class="panel">
+        <span class="pill">Step 4</span>
+        <h2>Review weak spots</h2>
+        <p class="muted">${missedCount ? `${missedCount} missed question(s) ready to drill.` : "Mistake review appears after your first missed question."}</p>
+        <div class="actions">
+          <button class="btn red" type="button" data-action="start-mistakes" ${missedCount ? "" : "disabled"}>Drill Mistakes</button>
+          <button class="btn ghost" type="button" data-action="practice-weak" ${weak.length ? "" : "disabled"}>Weak Topics</button>
+        </div>
+      </article>
+    </section>
+    <section class="panel" style="margin-top: 18px;">
+      <h2>Exam Readiness</h2>
+      <p class="muted">${readinessScore()}% - ${readinessLabel(readinessScore())}</p>
       ${renderMasteryBars()}
     </section>
   `;
@@ -341,8 +463,15 @@ function renderExam() {
           <span>Use 45-minute timer</span>
         </label>
       </div>
+      <div class="form-row">
+        <label class="check-card">
+          <input type="checkbox" data-exam-practice>
+          <span>Practice mode: show explanations after each answer</span>
+        </label>
+      </div>
       <div class="actions">
         <button class="btn" type="button" data-action="start-exam">Start Exam</button>
+        <button class="btn secondary" type="button" data-action="start-mistakes" ${missedQuestionIds().length ? "" : "disabled"}>Drill Missed Questions</button>
       </div>
     </section>
     ${state.reviewSession ? renderExamReview(state.reviewSession) : ""}
@@ -370,6 +499,7 @@ function startExamFromForm() {
   }
   const count = Number(document.querySelector("[data-exam-count]").value);
   const timed = document.querySelector("[data-exam-timed]").checked;
+  const practiceMode = document.querySelector("[data-exam-practice]").checked;
   const questions = makeExamQuestions(topics, count);
   if (!questions.length) {
     alert("No questions are available for the selected topics.");
@@ -383,6 +513,7 @@ function startExamFromForm() {
     currentIndex: 0,
     startTime: Date.now(),
     timeLimitSeconds: timed ? DEFAULT_TIME_LIMIT_SECONDS : null,
+    practiceMode,
     submitted: false,
   };
   state.reviewSession = null;
@@ -394,6 +525,7 @@ function renderActiveExam() {
   const exam = state.exam;
   const question = exam.questions[exam.currentIndex];
   const selected = exam.userAnswers[question.id];
+  const answered = selected !== null;
   return `
     <section class="panel">
       <div class="exam-top">
@@ -407,11 +539,17 @@ function renderActiveExam() {
       <div class="question-card" style="margin-top: 14px;">
         <h3>${escapeHtml(question.question)}</h3>
         ${question.choices.map((choice, index) => `
-          <button class="choice-card ${selected === index ? "selected" : ""}" type="button" data-action="answer-exam" data-choice="${index}">
+          <button class="choice-card ${choiceClass(question, selected, index, exam.practiceMode)}" type="button" data-action="answer-exam" data-choice="${index}">
             <strong>${String.fromCharCode(65 + index)}.</strong>
             <span>${escapeHtml(choice)}</span>
           </button>
         `).join("")}
+        ${exam.practiceMode && answered ? `
+          <div class="panel" style="box-shadow: none; margin-top: 14px;">
+            <p class="${selected === question.correct_index ? "result-good" : "result-bad"}"><strong>${selected === question.correct_index ? "Correct" : "Incorrect"}</strong></p>
+            <p class="muted">${escapeHtml(question.explanation || "No explanation available for this question.")}</p>
+          </div>
+        ` : ""}
         <label class="check-card">
           <input type="checkbox" data-action="toggle-flag" ${exam.flagged.includes(question.id) ? "checked" : ""}>
           <span>Flag for review</span>
@@ -432,15 +570,51 @@ function renderActiveExam() {
         <button class="btn secondary" type="button" data-action="prev-question" ${exam.currentIndex === 0 ? "disabled" : ""}>Previous</button>
         <button class="btn secondary" type="button" data-action="next-question" ${exam.currentIndex === exam.questions.length - 1 ? "disabled" : ""}>Next</button>
         <button class="btn red" type="button" data-action="submit-exam">Submit Exam</button>
+        <span class="muted">Shortcuts: 1-4 answer, F flag, arrows navigate, Enter next.</span>
       </div>
     </section>
   `;
+}
+
+function choiceClass(question, selected, index, practiceMode) {
+  if (!practiceMode || selected === null) return selected === index ? "selected" : "";
+  if (index === question.correct_index) return "correct";
+  if (selected === index) return "wrong";
+  return "";
 }
 
 function answerExam(choice) {
   const question = state.exam.questions[state.exam.currentIndex];
   state.exam.userAnswers[question.id] = Number(choice);
   render();
+}
+
+function startMistakeExam() {
+  const questions = shuffle(missedQuestionIds().map(getQuestionById).filter(Boolean)).map((question) => {
+    const order = shuffle(question.choices.map((_, index) => index));
+    return {
+      ...question,
+      choices: order.map((index) => question.choices[index]),
+      correct_index: order.indexOf(question.correct_index),
+    };
+  });
+  if (!questions.length) {
+    alert("No missed questions yet. Take a practice exam first.");
+    return;
+  }
+  state.exam = {
+    examId: `mistakes_${Date.now()}`,
+    questions,
+    userAnswers: Object.fromEntries(questions.map((question) => [question.id, null])),
+    flagged: [],
+    currentIndex: 0,
+    startTime: Date.now(),
+    timeLimitSeconds: null,
+    practiceMode: true,
+    submitted: false,
+  };
+  state.reviewSession = null;
+  setView("exam");
 }
 
 function submitExam(auto = false) {
@@ -591,7 +765,7 @@ function renderLessonContent() {
       </div>
       <p class="eyebrow">Module ${lesson.order}</p>
       <h1>${escapeHtml(lesson.title)}</h1>
-      <p class="muted">${lesson.sections.length} sections | ${(lesson.quiz_question_ids || []).length} quiz questions</p>
+      <p class="muted">${lesson.sections.length} sections | ${(lesson.quiz_question_ids || []).length} quiz questions | Source: RIC-21 Study Guide</p>
       ${lesson.sections.map(renderLessonSection).join("")}
       <div class="actions">
         <button class="btn green" type="button" data-action="start-lesson-quiz">Take the Quiz</button>
@@ -733,7 +907,7 @@ function renderFlashcards() {
   const deck = state.data.decks.find((item) => item.deck_id === state.flashcards.deckId);
   const card = state.flashcards.cards[state.flashcards.index];
   return `
-    ${hero("Flip through topic decks.", "Click the card or press Space to flip. Arrow keys move between cards.", "Flashcards")}
+    ${hero("Flip through topic decks.", "Click the card or press Space to flip. Arrow keys move between cards. Mark confidence to prioritize weak cards.", "Flashcards")}
     <section class="grid two">
       <div class="panel">
         <h2>Decks</h2>
@@ -750,8 +924,16 @@ function renderFlashcards() {
         <div class="panel" style="margin-bottom: 18px;">
           <h2>${escapeHtml(deck?.title || "Flashcards")}</h2>
           <label class="check-card">
-            <input type="checkbox" data-action="toggle-card-shuffle" ${state.flashcards.shuffle ? "checked" : ""}>
+            <input type="radio" name="card-mode" data-action="set-card-mode" data-card-mode="smart" ${state.flashcards.mode === "smart" ? "checked" : ""}>
+            <span>Smart review: prioritize Again/Hard cards</span>
+          </label>
+          <label class="check-card">
+            <input type="radio" name="card-mode" data-action="set-card-mode" data-card-mode="shuffle" ${state.flashcards.mode === "shuffle" ? "checked" : ""}>
             <span>Shuffle this deck</span>
+          </label>
+          <label class="check-card">
+            <input type="radio" name="card-mode" data-action="set-card-mode" data-card-mode="ordered" ${state.flashcards.mode === "ordered" ? "checked" : ""}>
+            <span>Original order</span>
           </label>
         </div>
         <button class="flashcard" type="button" data-action="flip-card">
@@ -765,6 +947,14 @@ function renderFlashcards() {
           <span class="pill">${state.flashcards.index + 1} / ${state.flashcards.cards.length}</span>
           <button class="btn secondary" type="button" data-action="next-card" ${state.flashcards.index >= state.flashcards.cards.length - 1 ? "disabled" : ""}>Next</button>
         </div>
+        ${state.flashcards.flipped && card ? `
+          <div class="actions" style="margin-top: 12px;">
+            <button class="btn red" type="button" data-action="rate-card" data-rating="again">Again</button>
+            <button class="btn amber" type="button" data-action="rate-card" data-rating="hard">Hard</button>
+            <button class="btn green" type="button" data-action="rate-card" data-rating="good">Good</button>
+            <button class="btn" type="button" data-action="rate-card" data-rating="easy">Easy</button>
+          </div>
+        ` : ""}
       </div>
     </section>
   `;
@@ -773,9 +963,23 @@ function renderFlashcards() {
 function loadFlashcardDeck() {
   const deck = state.data.decks.find((item) => item.deck_id === state.flashcards.deckId);
   const cards = deck ? deck.cards : [];
-  state.flashcards.cards = state.flashcards.shuffle ? shuffle(cards) : [...cards];
+  if (state.flashcards.mode === "shuffle") {
+    state.flashcards.cards = shuffle(cards);
+  } else if (state.flashcards.mode === "smart") {
+    state.flashcards.cards = [...cards].sort((a, b) => cardPriority(b) - cardPriority(a));
+  } else {
+    state.flashcards.cards = [...cards];
+  }
   state.flashcards.index = 0;
   state.flashcards.flipped = false;
+}
+
+function cardPriority(card) {
+  const stats = state.progress.flashcardStats[card.id] || {};
+  const ratingWeight = { again: 5, hard: 4, good: 2, easy: 0 };
+  const rating = ratingWeight[stats.rating] ?? 3;
+  const views = stats.views || 0;
+  return rating * 100 - views;
 }
 
 function flipCard() {
@@ -784,11 +988,27 @@ function flipCard() {
   state.flashcards.flipped = !state.flashcards.flipped;
   if (state.flashcards.flipped) {
     if (!state.progress.flashcardStats[card.id]) {
-      state.progress.flashcardStats[card.id] = { views: 0, lastSeen: "" };
+      state.progress.flashcardStats[card.id] = { views: 0, lastSeen: "", rating: "" };
     }
     state.progress.flashcardStats[card.id].views += 1;
     state.progress.flashcardStats[card.id].lastSeen = new Date().toISOString();
     saveProgress();
+  }
+  render();
+}
+
+function rateCard(rating) {
+  const card = state.flashcards.cards[state.flashcards.index];
+  if (!card) return;
+  if (!state.progress.flashcardStats[card.id]) {
+    state.progress.flashcardStats[card.id] = { views: 0, lastSeen: "", rating: "" };
+  }
+  state.progress.flashcardStats[card.id].rating = rating;
+  state.progress.flashcardStats[card.id].lastSeen = new Date().toISOString();
+  saveProgress();
+  if (state.flashcards.index < state.flashcards.cards.length - 1) {
+    state.flashcards.index += 1;
+    state.flashcards.flipped = false;
   }
   render();
 }
@@ -843,6 +1063,7 @@ function renderReferenceSection(section) {
     <article class="reference-card">
       <span class="topic-badge">${escapeHtml(topicName(section.topic))}</span>
       <h2>${escapeHtml(section.title)}</h2>
+      <p class="muted">Source: RIC-21 Study Guide</p>
       ${body}
     </article>
   `;
@@ -863,17 +1084,35 @@ function renderTable(columns, rows) {
 
 function renderProgress() {
   const stats = getStats();
+  const readiness = readinessScore();
   return `
-    ${hero("Your progress stays on this device.", "Scores, topic mastery, lesson completions, and flashcard views are saved in browser storage.", "Progress")}
+    ${hero("Your progress stays on this device.", "Scores, topic mastery, lesson completions, flashcard confidence, and missed-question history.", "Progress")}
     <section class="grid four">
       ${statCard("Exams", stats.exams)}
       ${statCard("Avg Score", `${stats.average}%`)}
       ${statCard("Questions", stats.totalQuestions)}
-      ${statCard("Best Score", `${stats.best}%`)}
+      ${statCard("Readiness", `${readiness}%`)}
     </section>
     <section class="panel" style="margin-top: 18px;">
       <h2>Topic Mastery</h2>
+      <p class="muted">${readinessLabel(readiness)} based on recent scores, topic mastery, and lesson completion.</p>
       ${renderMasteryBars()}
+    </section>
+    <section class="grid two" style="margin-top: 18px;">
+      <div class="panel">
+        <h2>Mistakes Review</h2>
+        <p class="muted">${missedQuestionIds().length} missed question(s) available for focused practice.</p>
+        <button class="btn red" type="button" data-action="start-mistakes" ${missedQuestionIds().length ? "" : "disabled"}>Drill Mistakes</button>
+      </div>
+      <div class="panel">
+        <h2>Backup Progress</h2>
+        <p class="muted">Export a progress file or import one from another device.</p>
+        <div class="actions">
+          <button class="btn" type="button" data-action="export-progress">Export</button>
+          <label class="btn secondary" for="progress-import">Import</label>
+          <input id="progress-import" type="file" accept="application/json,.json" data-progress-import hidden>
+        </div>
+      </div>
     </section>
     <section class="panel" style="margin-top: 18px;">
       <div class="actions" style="justify-content: space-between;">
@@ -881,6 +1120,30 @@ function renderProgress() {
         <button class="btn red" type="button" data-action="reset-progress">Reset Progress</button>
       </div>
       ${renderExamHistory()}
+    </section>
+  `;
+}
+
+function renderAbout() {
+  return `
+    ${hero("A focused ROC-A study guide.", "Use the app to learn radio procedures, test recall, and review weak areas before your ROC-A exam.", "About")}
+    <section class="grid two">
+      <article class="panel">
+        <h2>Who this is for</h2>
+        <p>This guide is for ROC-A candidates who want a structured way to study Canadian aeronautical radio procedures, emergency calls, regulations, phraseology, and equipment basics.</p>
+      </article>
+      <article class="panel">
+        <h2>How to use it</h2>
+        <p>Start with the Study Plan, complete lessons, reinforce terms with flashcards, take practice exams, and drill missed questions until topic mastery is consistently high.</p>
+      </article>
+      <article class="panel">
+        <h2>Content source</h2>
+        <p>Study material is based on RIC-21 - Study Guide for the Restricted Operator Certificate with Aeronautical Qualification (ROC-A), Issue 3, February 2010, updated October 2011.</p>
+      </article>
+      <article class="panel">
+        <h2>Independent tool</h2>
+        <p>This app is not affiliated with or endorsed by Industry Canada, ISED, or the Government of Canada. Always verify exam requirements with official sources.</p>
+      </article>
     </section>
   `;
 }
@@ -940,6 +1203,7 @@ document.addEventListener("click", (event) => {
   if (action === "review-incorrect" && state.reviewSession) {
     document.querySelector("[data-review-list]").innerHTML = renderReviewQuestions(state.reviewSession, "incorrect");
   }
+  if (action === "start-mistakes") startMistakeExam();
   if (action === "practice-weak") {
     state.view = "exam";
     navLinks.forEach((link) => link.classList.toggle("active", link.dataset.view === "exam"));
@@ -991,12 +1255,13 @@ document.addEventListener("click", (event) => {
     loadFlashcardDeck();
     render();
   }
-  if (action === "toggle-card-shuffle") {
-    state.flashcards.shuffle = actionButton.checked;
+  if (action === "set-card-mode") {
+    state.flashcards.mode = actionButton.dataset.cardMode;
     loadFlashcardDeck();
     render();
   }
   if (action === "flip-card") flipCard();
+  if (action === "rate-card") rateCard(actionButton.dataset.rating);
   if (action === "prev-card" && state.flashcards.index > 0) {
     state.flashcards.index -= 1;
     state.flashcards.flipped = false;
@@ -1007,6 +1272,7 @@ document.addEventListener("click", (event) => {
     state.flashcards.flipped = false;
     render();
   }
+  if (action === "export-progress") exportProgress();
   if (action === "reset-progress") resetProgress();
 });
 
@@ -1028,9 +1294,44 @@ document.addEventListener("change", (event) => {
     state.reference.topic = event.target.value;
     render();
   }
+  if (event.target.matches("[data-progress-import]")) {
+    importProgress(event.target.files?.[0]);
+    event.target.value = "";
+  }
 });
 
 document.addEventListener("keydown", (event) => {
+  if (state.view === "exam" && state.exam && !event.target.matches("input, select, textarea")) {
+    const key = event.key.toLowerCase();
+    if (["1", "2", "3", "4"].includes(key)) {
+      event.preventDefault();
+      const index = Number(key) - 1;
+      if (index < state.exam.questions[state.exam.currentIndex].choices.length) answerExam(index);
+      return;
+    }
+    if (key === "f") {
+      event.preventDefault();
+      const question = state.exam.questions[state.exam.currentIndex];
+      state.exam.flagged = state.exam.flagged.includes(question.id)
+        ? state.exam.flagged.filter((id) => id !== question.id)
+        : [...state.exam.flagged, question.id];
+      render();
+      return;
+    }
+    if (event.key === "ArrowLeft" && state.exam.currentIndex > 0) {
+      event.preventDefault();
+      state.exam.currentIndex -= 1;
+      render();
+      return;
+    }
+    if ((event.key === "ArrowRight" || event.key === "Enter") && state.exam.currentIndex < state.exam.questions.length - 1) {
+      event.preventDefault();
+      state.exam.currentIndex += 1;
+      render();
+      return;
+    }
+  }
+
   if (state.view !== "flashcards") return;
   if (event.key === " ") {
     event.preventDefault();

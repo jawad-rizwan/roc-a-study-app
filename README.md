@@ -1,6 +1,6 @@
 # ROC-A Study App
 
-A browser-based study application for the **Canadian ROC-A (Restricted Operator Certificate - Aeronautical)** exam. It runs as a static website on GitHub Pages and keeps progress private in your browser.
+A static study application for the **Canadian ROC-A (Restricted Operator Certificate - Aeronautical)** exam. It runs on GitHub Pages and keeps progress private on your device.
 
 Live site: <https://jawad-rizwan.github.io/roc-a-study-app/>
 
@@ -12,16 +12,20 @@ Live site: <https://jawad-rizwan.github.io/roc-a-study-app/>
 - Topic filtering and weak-topic practice
 - Detailed exam review with explanations
 - Lesson modules with end-of-module quizzes
-- Flashcard decks with shuffle, click-to-flip, and keyboard navigation
+- Guided study plan with a recommended learn/reinforce/test/review flow
+- Flashcard decks with smart review, confidence ratings, shuffle, click-to-flip, and keyboard navigation
 - Searchable reference material
-- Topic mastery, exam history, and question statistics
-- Browser-only progress storage
+- Practice mode with instant explanations after each answer
+- Mistake review for drilling previously missed questions
+- Topic mastery, exam-readiness score, exam history, and question statistics
+- Progress export/import for backups or device moves
+- Local-only progress storage
 
 ## Progress Storage
 
-Progress is saved in this browser using `localStorage` under the key `rocaStudyProgress:v1`.
+Progress is saved locally on your device using the site storage key `rocaStudyProgress:v1`.
 
-Your progress is never uploaded anywhere. It stays on the current browser and device. Clearing site data, clearing browser storage, using a different browser, or using a different device will remove or hide that saved progress.
+Your progress is never uploaded anywhere. Clearing site data or using a different device will remove or hide that saved progress.
 
 Use the **Reset Progress** button on the Progress page if you want to clear all saved progress for this site.
 
@@ -39,7 +43,7 @@ Then open:
 http://localhost:8000
 ```
 
-Opening `index.html` directly from the filesystem is not recommended because browsers may block loading the JSON data files via `fetch`.
+Opening `index.html` directly from the filesystem is not recommended because the JSON data files are loaded over HTTP.
 
 ## Deployment
 

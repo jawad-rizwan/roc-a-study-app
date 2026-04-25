@@ -529,6 +529,19 @@ th {
   text-align: center;
 }
 
+pre {
+  overflow-x: auto;
+  padding: 14px;
+  border-radius: 14px;
+  background: rgba(23, 33, 43, 0.08);
+  white-space: pre-wrap;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.55;
+}
+
 @media (max-width: 900px) {
   .shell {
     display: block;
@@ -557,6 +570,27 @@ th {
 
   .progress-row {
     grid-template-columns: 1fr;
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .btn,
+  .actions .pill {
+    width: 100%;
+  }
+
+  .question-nav {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 6px;
+  }
+
+  .exam-top {
+    align-items: flex-start;
+    flex-direction: column;
   }
 }
 
