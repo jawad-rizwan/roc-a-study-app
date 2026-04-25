@@ -1,4 +1,4 @@
-name: Build App
+name: Deploy GitHub Pages
 
 on:
   push:
@@ -6,109 +6,28 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
-  build-windows:
-    runs-on: windows-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install customtkinter pyinstaller
-
-      - name: Build EXE
-        run: pyinstaller roca_study_app.spec
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ROCAStudyApp-Windows
-          path: dist/ROCAStudyApp.exe
-
-  build-macos:
-    runs-on: macos-latest
-
-    steps:
-      - uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install customtkinter pyinstaller
-
-      - name: Build macOS .app bundle
-        run: pyinstaller roca_study_app_macos.spec
-
-      - name: Create DMG
-        run: |
-          mkdir -p dmg_contents
-          cp -R dist/ROCAStudyApp.app dmg_contents/
-          ln -s /Applications dmg_contents/Applications
-
-          hdiutil create -volname "ROC-A Study App" \
-            -srcfolder dmg_contents \
-            -ov -format UDZO \
-            dist/ROCAStudyApp.dmg
-
-      - name: Upload artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ROCAStudyApp-macOS
-          path: dist/ROCAStudyApp.dmg
-
-  release:
-    needs: [build-windows, build-macos]
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Read version
-        id: version
-        run: echo "version=$(cat VERSION | tr -d '[:space:]')" >> "$GITHUB_OUTPUT"
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
 
-      - name: Download Windows artifact
-        uses: actions/download-artifact@v4
+      - name: Upload static site
+        uses: actions/upload-pages-artifact@v3
         with:
-          name: ROCAStudyApp-Windows
-          path: artifacts/windows
+          path: .
 
-      - name: Download macOS artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: ROCAStudyApp-macOS
-          path: artifacts/macos
-
-      - name: Create release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: v${{ steps.version.outputs.version }}
-          name: ROC-A Study App v${{ steps.version.outputs.version }}
-          body: |
-            ## ROC-A Study App v${{ steps.version.outputs.version }}
-
-            ### Downloads
-
-            | Platform | File | Instructions |
-            |----------|------|-------------|
-            | Windows | `ROCAStudyApp.exe` | Download and double-click to run |
-            | macOS | `ROCAStudyApp.dmg` | Open DMG, drag app to Applications |
-
-            No Python installation required.
-
-            > **macOS users**: On first launch, right-click the app and select "Open" to bypass the Gatekeeper warning (the app is not signed with an Apple Developer certificate).
-          files: |
-            artifacts/windows/ROCAStudyApp.exe
-            artifacts/macos/ROCAStudyApp.dmg
-          make_latest: true
-          prerelease: false
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
