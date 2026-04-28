@@ -87,7 +87,7 @@
       "topic": "regulations",
       "subtopic": "privacy",
       "question": "To whom may a radio operator legally divulge the contents of intercepted communications?",
-      "choices": ["Any interested party", "The addressee, their accredited agent, or authorized government officials", "Any other pilot who requests the information", "The media if it involves public safety"],
+      "choices": ["Any interested party", "The addressee, accredited agent, authorized officials, court officers, or telecom operators as required", "Any other pilot who requests the information", "The media if it involves public safety"],
       "correct_index": 1,
       "explanation": "Per the RIC-21, radio operators may only divulge intercepted communications to the addressee, their accredited agent, authorized government officials, court officers, or telecommunication operators."
     },
@@ -95,10 +95,10 @@
       "id": "REG-011",
       "topic": "regulations",
       "subtopic": "privacy",
-      "question": "Which of the following types of messages are exceptions to the privacy rule and may be shared freely?",
+      "question": "Which of the following types of messages are exceptions to the privacy restrictions?",
       "choices": ["Flight regularity messages", "Meteorological reports", "Distress, urgency, safety, and ALL STATIONS messages", "Service communications"],
       "correct_index": 2,
-      "explanation": "Per the RIC-21, the exceptions to radio communication privacy requirements are distress, urgency, safety, and ALL STATIONS messages. These may be shared because of their critical safety nature."
+      "explanation": "Per the RIC-21, the privacy restrictions do not apply to distress, urgency, safety, or ALL STATIONS messages."
     },
     {
       "id": "REG-012",
@@ -277,35 +277,35 @@
       "subtopic": "number_transmission",
       "question": "How should the number 10 be transmitted on aeronautical radio?",
       "choices": ["Ten", "One zero", "One-oh", "Wun zero"],
-      "correct_index": 1,
-      "explanation": "Per the RIC-21, numbers are transmitted by pronouncing each digit separately. The number 10 is transmitted as 'one zero.'"
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, numbers are transmitted by pronouncing each digit separately. The digit 1 is pronounced 'wun,' so 10 is transmitted as 'wun zero.'"
     },
     {
       "id": "PROC-007",
       "topic": "operating_procedures",
       "subtopic": "number_transmission",
-      "question": "How should the altitude of 5,800 feet be transmitted?",
-      "choices": ["Fifty-eight hundred", "Five thousand eight hundred", "Five eight zero zero", "Fife eight zero zero"],
-      "correct_index": 2,
-      "explanation": "Per the RIC-21, numbers are pronounced as individual digits. 5,800 is transmitted as 'five eight zero zero.'"
+      "question": "How should the number 5,800 be transmitted?",
+      "choices": ["Fifty-eight hundred", "Five thousand eight hundred", "Five eight zero zero", "Fife ait zero zero"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, numbers are pronounced as individual digits; 5 is 'fife' and 8 is 'ait.' 5,800 is transmitted as 'fife ait zero zero.'"
     },
     {
       "id": "PROC-008",
       "topic": "operating_procedures",
       "subtopic": "number_transmission",
       "question": "How should the number 11,000 be transmitted?",
-      "choices": ["Eleven thousand", "One one thousand", "One one zero zero zero", "Wun wun tousand"],
-      "correct_index": 1,
-      "explanation": "Per the RIC-21, whole thousands are spoken using the word 'thousand.' 11,000 is transmitted as 'one one thousand.'"
+      "choices": ["Eleven thousand", "One one thousand", "One one zero zero zero", "Wun wun tou-sand"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, whole thousands are spoken using the word 'thousand.' Using the standard digit pronunciations, 11,000 is transmitted as 'wun wun tou-sand.'"
     },
     {
       "id": "PROC-009",
       "topic": "operating_procedures",
       "subtopic": "number_transmission",
       "question": "How should Flight Level 265 be transmitted?",
-      "choices": ["Flight level twenty-six five", "Flight level two sixty-five", "Flight level two six five", "Flight level two six fife"],
-      "correct_index": 2,
-      "explanation": "Per the RIC-21, flight levels are transmitted as 'flight level' followed by each digit spoken separately. FL265 = 'flight level two six five.'"
+      "choices": ["Flight level twenty-six five", "Flight level two sixty-five", "Flight level two six five", "Flight level too six fife"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, flight levels are transmitted as 'flight level' followed by each digit spoken separately. FL265 is transmitted as 'flight level too six fife.'"
     },
     {
       "id": "PROC-010",
@@ -313,8 +313,8 @@
       "subtopic": "number_transmission",
       "question": "How should the frequency 121.5 be transmitted?",
       "choices": ["One twenty-one point five", "One two one decimal five", "One two one point five", "Wun too wun day-see-mal fife"],
-      "correct_index": 1,
-      "explanation": "Per the RIC-21, the decimal point in frequencies is spoken as 'decimal.' 121.5 is transmitted as 'one two one decimal five.'"
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, the decimal point in frequencies is spoken as 'decimal' and each digit uses the standard pronunciation. 121.5 is transmitted as 'wun too wun day-see-mal fife.'"
     },
     {
       "id": "PROC-011",
@@ -322,8 +322,8 @@
       "subtopic": "number_transmission",
       "question": "How should the number 100 be transmitted on aeronautical radio?",
       "choices": ["Hundred", "One hundred", "One zero zero", "Wun zero zero"],
-      "correct_index": 2,
-      "explanation": "Per the RIC-21, each digit is pronounced separately. 100 is transmitted as 'one zero zero.'"
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, each digit is pronounced separately. The digit 1 is pronounced 'wun,' so 100 is transmitted as 'wun zero zero.'"
     },
     {
       "id": "PROC-012",
@@ -356,10 +356,10 @@
       "id": "PROC-015",
       "topic": "operating_procedures",
       "subtopic": "time_and_date",
-      "question": "How should midnight be expressed in aeronautical time format?",
+      "question": "How should midnight at the start of a day be expressed in aeronautical time format?",
       "choices": ["0000", "2400", "1200", "12:00 AM"],
       "correct_index": 0,
-      "explanation": "Per the RIC-21, time is expressed using the 24-hour clock in four figures. Midnight is expressed as 0000."
+      "explanation": "Per the RIC-21, time is expressed using the 24-hour clock in four figures. Midnight at the start of a day is expressed as 0000; 2400 may be used when referring to the end of a day."
     },
     {
       "id": "PROC-016",
@@ -413,7 +413,7 @@
       "question": "Which expression should NOT be used in place of standard aviation phraseology?",
       "choices": ["ROGER", "OK", "WILCO", "NEGATIVE"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, OK is a procedural word that should NOT be used in aeronautical radio. Proper alternatives include ROGER, WILCO, or AFFIRMATIVE."
+      "explanation": "Per the RIC-21, OK is a slang expression that should NOT be used in aeronautical radio. Proper alternatives include standard procedural words such as ROGER, WILCO, or AFFIRM."
     },
     {
       "id": "PROC-022",
@@ -429,9 +429,9 @@
       "topic": "operating_procedures",
       "subtopic": "call_signs",
       "question": "How should a Canadian private aircraft with registration C-GFAC and type Cessna 182 identify itself?",
-      "choices": ["Charlie Golf Foxtrot Alfa Charlie", "Cessna one eight two Golf Foxtrot Alfa Charlie", "Cessna Golf Foxtrot Alfa Charlie", "Golf Foxtrot Alfa Charlie"],
+      "choices": ["Charlie Golf Foxtrot Alfa Charlie", "Cessna wun ait too Golf Foxtrot Alfa Charlie", "Cessna Golf Foxtrot Alfa Charlie", "Golf Foxtrot Alfa Charlie"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, private aircraft use the manufacturer/type name followed by the last four characters of the registration. C-GFAC in a Cessna 182 would be 'Cessna one eight two Golf Foxtrot Alfa Charlie.'"
+      "explanation": "Per the RIC-21, private aircraft use the manufacturer/type name followed by the last four characters of the registration. C-GFAC in a Cessna 182 would be 'Cessna wun ait too Golf Foxtrot Alfa Charlie.'"
     },
     {
       "id": "PROC-024",
@@ -637,17 +637,17 @@
       "subtopic": "number_transmission",
       "question": "How should a heading of 090 degrees be transmitted?",
       "choices": ["Ninety degrees", "Zero nine zero", "Niner zero", "Zero niner zero"],
-      "correct_index": 1,
-      "explanation": "Per the RIC-21, headings are transmitted using three digits with each digit spoken separately. 090 degrees is transmitted as 'zero nine zero.'"
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, headings are transmitted using three digits with each digit spoken separately. The digit 9 is pronounced 'niner,' so 090 degrees is transmitted as 'zero niner zero.'"
     },
     {
       "id": "PROC-047",
       "topic": "operating_procedures",
       "subtopic": "calling_procedure",
       "question": "What is the correct format for an initial radio call from aircraft C-GFAC (Cessna 182) to Ottawa Tower?",
-      "choices": ["Cessna GFAC calling Ottawa Tower", "Ottawa Tower, THIS IS, Cessna one eight two Golf Foxtrot Alfa Charlie", "THIS IS Cessna GFAC for Ottawa Tower", "Ottawa Tower, Cessna GFAC here"],
+      "choices": ["Cessna GFAC calling Ottawa Tower", "Ottawa Tower, THIS IS, Cessna wun ait too Golf Foxtrot Alfa Charlie", "THIS IS Cessna GFAC for Ottawa Tower", "Ottawa Tower, Cessna GFAC here"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, the correct calling format is: station called first (Ottawa Tower), THIS IS, then calling station's call sign (Cessna one eight two Golf Foxtrot Alfa Charlie)."
+      "explanation": "Per the RIC-21, the correct calling format is: station called first (Ottawa Tower), THIS IS, then calling station's call sign (Cessna wun ait too Golf Foxtrot Alfa Charlie)."
     },
     {
       "id": "PROC-048",
@@ -725,10 +725,10 @@
       "id": "EMER-006",
       "topic": "emergency_communications",
       "subtopic": "distress_message",
-      "question": "Which of the following is NOT one of the eight elements of a distress message?",
+      "question": "Which of the following is NOT a separately named element of a distress message?",
       "choices": ["Nature of distress", "Fuel remaining", "Position and altitude", "Persons on board"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, the 8 elements are: MAYDAY, call sign, nature of distress, intentions, position/altitude/heading, persons on board, other useful information, and call sign again. Fuel remaining may be included as 'other useful information' but is not a named element."
+      "explanation": "Per the RIC-21, the 8 named elements are: MAYDAY, call sign, nature of distress, intentions, position/altitude/heading, persons on board, other useful information, and call sign again. Fuel remaining may be included under 'other useful information,' but it is not a separately named element."
     },
     {
       "id": "EMER-007",
@@ -843,9 +843,9 @@
       "topic": "emergency_communications",
       "subtopic": "distress_traffic",
       "question": "After transmitting a distress message, what should the pilot do if no acknowledgment is received?",
-      "choices": ["Repeat the message on the same frequency indefinitely", "Switch to 121.5 MHz and try again", "Other stations should attract attention of stations that can assist and notify SAR", "Land at the nearest airport"],
-      "correct_index": 2,
-      "explanation": "Per the RIC-21, if a distress message is not acknowledged, other stations hearing the call should attract the attention of stations that can assist and notify Search and Rescue (SAR)."
+      "choices": ["Repeat the distress message at intervals, leaving time for stations to reply", "Switch to 121.5 MHz and try again", "Other stations should attract attention of stations that can assist and notify SAR", "Land at the nearest airport"],
+      "correct_index": 0,
+      "explanation": "Per the RIC-21, the aircraft in distress repeats the distress message at intervals until an answer is received or it is no longer feasible, leaving enough time between repeats for stations to reply."
     },
     {
       "id": "EMER-020",
@@ -878,10 +878,10 @@
       "id": "EMER-023",
       "topic": "emergency_communications",
       "subtopic": "distress_message",
-      "question": "You are experiencing an engine fire at 5,000 feet, 10 nm south of Ottawa with 3 persons on board. What is the first element of your distress message after the distress call?",
+      "question": "In the full RIC-21 distress-message format, what is the first listed element?",
       "choices": ["Your position", "MAYDAY", "Nature of distress (engine fire)", "Number of persons on board"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, the first element of the distress message (after the distress call) is MAYDAY, followed by call sign, nature of distress, intentions, position/altitude/heading, persons on board, other info, and call sign again."
+      "explanation": "Per the RIC-21, the first listed element of a full distress message is MAYDAY, followed by call sign, nature of distress, intentions, position/altitude/heading, persons on board, other info, and call sign again. If the message immediately follows the distress call, MAYDAY and the call sign may be omitted from the message."
     },
     {
       "id": "EMER-024",
@@ -1005,9 +1005,9 @@
       "topic": "urgency_communications",
       "subtopic": "urgency_cancellation",
       "question": "What is the correct format for cancelling an urgency situation?",
-      "choices": ["PAN PAN, ALL STATIONS, THIS IS, identification, situation resolved, call sign, OUT", "CANCEL PAN PAN, ALL STATIONS, THIS IS, identification, OUT", "ALL STATIONS, THIS IS, identification, PAN PAN CANCELLED, OUT", "PAN PAN CANCEL x3, ALL STATIONS, THIS IS, identification"],
+      "choices": ["PAN PAN, ALL STATIONS x3, THIS IS, identification, situation resolved, call sign, OUT", "CANCEL PAN PAN, ALL STATIONS, THIS IS, identification, OUT", "ALL STATIONS, THIS IS, identification, PAN PAN CANCELLED, OUT", "PAN PAN CANCEL x3, ALL STATIONS, THIS IS, identification"],
       "correct_index": 0,
-      "explanation": "Per the RIC-21, urgency cancellation format is: PAN PAN, ALL STATIONS, THIS IS, identification, situation resolved, call sign, OUT."
+      "explanation": "Per the RIC-21, urgency cancellation format is: PAN PAN, ALL STATIONS (x3), THIS IS, identification, situation resolved, call sign, OUT."
     },
     {
       "id": "URG-008",
@@ -1149,16 +1149,16 @@
       "topic": "definitions_and_equipment",
       "subtopic": "aeronautical_terms",
       "question": "What is a 'Private Multiple Station'?",
-      "choices": ["A station with multiple antennas", "An air-ground station used for multipurpose operational communications", "A backup station for emergency use", "A military communications station"],
+      "choices": ["A station with multiple antennas", "An aircraft or aeronautical station used for air-ground multipurpose operational communications", "A backup station for emergency use", "A military communications station"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, a Private Multiple Station is an air-ground station used for multipurpose operational communications."
+      "explanation": "Per the RIC-21, a Private Multiple Station is an aircraft or aeronautical station established to provide air-ground multipurpose communications of an operational nature."
     },
     {
       "id": "APP-012",
       "topic": "definitions_and_equipment",
       "subtopic": "frequency_assignments",
       "question": "What frequency band is designated for Air Traffic Control Services in the VHF aeronautical range?",
-      "choices": ["108.0-111.975 MHz", "117.975-121.9625 MHz", "121.9825-123.5875 MHz", "108.0-117.975 MHz"],
+      "choices": ["108.1000-111.9750 MHz", "117.975-121.9625 MHz", "121.9825-123.5875 MHz", "108.1000-117.9750 MHz"],
       "correct_index": 1,
       "explanation": "Per the RIC-21, 117.975-121.9625 MHz is one of the bands designated for Air Traffic Control Services. Other ATC bands include 123.5875-128.8125 MHz and 132.0125-136.0 MHz."
     },
@@ -1176,7 +1176,7 @@
       "topic": "definitions_and_equipment",
       "subtopic": "frequency_assignments",
       "question": "What is the frequency range for General Aviation Communications (GAC)?",
-      "choices": ["108.0-111.975 MHz", "117.975-121.9625 MHz", "121.9825-123.5875 MHz", "128.8125-132.0125 MHz"],
+      "choices": ["108.1000-111.9750 MHz", "117.975-121.9625 MHz", "121.9825-123.5875 MHz", "128.8125-132.0125 MHz"],
       "correct_index": 2,
       "explanation": "Per the RIC-21, the frequency range 121.9825-123.5875 MHz is designated for General Aviation Communications (GAC)."
     },
@@ -1185,9 +1185,9 @@
       "topic": "definitions_and_equipment",
       "subtopic": "frequency_assignments",
       "question": "What is the frequency range for Aeronautical Radionavigation?",
-      "choices": ["108.0-117.975 MHz", "117.975-121.9625 MHz", "121.9825-123.5875 MHz", "128.8125-132.0125 MHz"],
+      "choices": ["108.1000-117.9750 MHz", "117.975-121.9625 MHz", "121.9825-123.5875 MHz", "128.8125-132.0125 MHz"],
       "correct_index": 0,
-      "explanation": "Per the RIC-21, the frequency range 108.0-117.975 MHz (spanning two sub-bands: 108.0-111.975 and 111.975-117.975) is designated for Aeronautical Radionavigation."
+      "explanation": "Per the RIC-21, the frequency range 108.1000-117.9750 MHz (spanning two sub-bands: 108.1000-111.9750 and 111.9750-117.9750) is designated for Aeronautical Radionavigation."
     },
     {
       "id": "APP-016",
@@ -1347,9 +1347,9 @@
       "topic": "operating_procedures",
       "subtopic": "number_transmission",
       "question": "How should the altimeter setting of 29.92 inches be transmitted?",
-      "choices": ["Twenty-nine point ninety-two", "Two niner decimal niner two", "Two nine decimal nine two", "Altimeter twenty-nine ninety-two"],
-      "correct_index": 2,
-      "explanation": "Per the RIC-21, each digit is pronounced separately, and the decimal point is spoken as 'decimal.' 29.92 is transmitted as 'two nine decimal nine two.'"
+      "choices": ["Twenty-nine point ninety-two", "Too niner niner too", "Two nine decimal nine two", "Altimeter twenty-nine ninety-two"],
+      "correct_index": 1,
+      "explanation": "Altimeter settings are transmitted as four digits using standard number pronunciations. 29.92 is transmitted as 'too niner niner too.'"
     },
     {
       "id": "PROC-054",
@@ -1365,9 +1365,9 @@
       "topic": "operating_procedures",
       "subtopic": "call_signs",
       "question": "An Air Canada aircraft operating as flight 456 would use what call sign?",
-      "choices": ["Air Canada four five six", "C-GACA four five six", "Canadian four five six", "ACA four five six"],
+      "choices": ["Air Canada fow-er fife six", "C-GACA four five six", "Canadian four five six", "ACA four five six"],
       "correct_index": 0,
-      "explanation": "Per the RIC-21, Canadian carriers use the company name followed by the flight number. Air Canada flight 456 would be 'Air Canada four five six.'"
+      "explanation": "Per the RIC-21, Canadian carriers use the company name followed by the flight number. Using standard digit pronunciations, Air Canada flight 456 would be 'Air Canada fow-er fife six.'"
     },
     {
       "id": "PROC-056",
@@ -1400,10 +1400,10 @@
       "id": "EMER-031",
       "topic": "emergency_communications",
       "subtopic": "distress_message",
-      "question": "You are flying a Cessna 172 (C-GABC) and experience an engine failure at 3,500 feet, 15 nm north of Montreal, with 2 persons on board, intending to attempt an emergency landing. After the distress call, what is the correct order of the first four elements of your distress message?",
+      "question": "In the full RIC-21 distress-message format, what is the correct order of the first four elements?",
       "choices": ["Call sign, position, nature of distress, intentions", "MAYDAY, call sign, nature of distress, intentions", "MAYDAY, nature of distress, call sign, position", "Call sign, MAYDAY, intentions, position"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, the distress message order is: 1) MAYDAY, 2) call sign, 3) nature of distress, 4) intentions. Position/altitude/heading comes fifth."
+      "explanation": "Per the RIC-21, the full distress message order starts with: 1) MAYDAY, 2) call sign, 3) nature of distress, 4) intentions. Position/altitude/heading comes fifth. If the message immediately follows the distress call, MAYDAY and the call sign may be omitted from the message."
     },
     {
       "id": "EMER-032",
@@ -1455,9 +1455,9 @@
       "topic": "urgency_communications",
       "subtopic": "urgency_cancellation",
       "question": "After declaring PAN PAN due to a rough-running engine, the engine resumes normal operation. What should the pilot transmit?",
-      "choices": ["MAYDAY CANCEL, ALL STATIONS, THIS IS, call sign, OUT", "PAN PAN, ALL STATIONS, THIS IS, identification, situation resolved, call sign, OUT", "CANCEL PAN PAN, THIS IS, call sign, OVER", "No transmission is needed; just resume normal operations"],
+      "choices": ["MAYDAY CANCEL, ALL STATIONS, THIS IS, call sign, OUT", "PAN PAN, ALL STATIONS x3, THIS IS, identification, situation resolved, call sign, OUT", "CANCEL PAN PAN, THIS IS, call sign, OVER", "No transmission is needed; just resume normal operations"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, the urgency cancellation format is: PAN PAN, ALL STATIONS, THIS IS, identification, situation resolved, call sign, OUT."
+      "explanation": "Per the RIC-21, the urgency cancellation format is: PAN PAN, ALL STATIONS (x3), THIS IS, identification, situation resolved, call sign, OUT."
     },
     {
       "id": "APP-026",
@@ -1536,9 +1536,9 @@
       "topic": "operating_procedures",
       "subtopic": "number_transmission",
       "question": "How should a heading of 270 degrees magnetic be transmitted?",
-      "choices": ["Two seventy", "Two seven zero", "Two hundred seventy", "Heading west"],
+      "choices": ["Two seventy", "Too sev-en zero", "Two hundred seventy", "Heading west"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, headings are transmitted using three digits with each digit spoken separately. 270 degrees is transmitted as 'two seven zero.'"
+      "explanation": "Per the RIC-21, headings are transmitted using three digits with each digit spoken separately. 270 degrees is transmitted as 'too sev-en zero.'"
     },
     {
       "id": "PROC-062",
@@ -1619,7 +1619,7 @@
       "question": "A frequency of 110.0 MHz would fall under which service designation?",
       "choices": ["Air Traffic Control Services", "General Aviation Communications", "Aeronautical Radionavigation", "Aeronautical Operational Control Communications"],
       "correct_index": 2,
-      "explanation": "Per the RIC-21, 110.0 MHz falls within the 108.0-111.975 MHz band, which is designated for Aeronautical Radionavigation."
+      "explanation": "Per the RIC-21, 110.0 MHz falls within the 108.1000-111.9750 MHz band, which is designated for Aeronautical Radionavigation."
     },
     {
       "id": "APP-033",
@@ -1671,9 +1671,9 @@
       "topic": "operating_procedures",
       "subtopic": "number_transmission",
       "question": "How should the number 3,000 be transmitted?",
-      "choices": ["Three thousand", "Three zero zero zero", "Thirty hundred", "Tree tousand"],
-      "correct_index": 0,
-      "explanation": "Per the RIC-21, whole thousands are spoken using the word 'thousand.' 3,000 is transmitted as 'three thousand.'"
+      "choices": ["Three thousand", "Three zero zero zero", "Thirty hundred", "Tree tou-sand"],
+      "correct_index": 3,
+      "explanation": "Per the RIC-21, whole thousands are spoken using the word 'thousand.' Using standard pronunciation, 3,000 is transmitted as 'tree tou-sand.'"
     },
     {
       "id": "EMER-038",
@@ -1753,17 +1753,17 @@
       "subtopic": "call_signs",
       "question": "What is the call sign for the flight service station at Winnipeg?",
       "choices": ["Winnipeg Tower", "Winnipeg Radio", "Winnipeg Flight Service", "Winnipeg Ground"],
-      "correct_index": 2,
-      "explanation": "Per the RIC-21, ground station call signs use the location followed by the function. A flight service station at Winnipeg would be 'Winnipeg Flight Service' or 'Winnipeg Radio,' with the specific designation depending on services provided."
+      "correct_index": 1,
+      "explanation": "Per the RIC-21, ground station call signs use the location followed by the function. In this study material, the RADIO suffix identifies a flight service station, so the call sign is 'Winnipeg Radio.'"
     },
     {
       "id": "PROC-074",
       "topic": "operating_procedures",
       "subtopic": "number_transmission",
       "question": "How should 7,500 feet be transmitted?",
-      "choices": ["Seventy-five hundred", "Seven five zero zero", "Seven thousand five hundred", "Seven point five thousand"],
-      "correct_index": 1,
-      "explanation": "Per the RIC-21, numbers are pronounced as individual digits. 7,500 is transmitted as 'seven five zero zero.'"
+      "choices": ["Seventy-five hundred", "Seven five zero zero", "Sev-en tou-sand fife hundred", "Seven point five thousand"],
+      "correct_index": 2,
+      "explanation": "Per the RIC-21, altitudes are expressed in thousands plus hundreds of feet. 7,500 feet is transmitted as 'sev-en tou-sand fife hundred.'"
     },
     {
       "id": "REG-034",
@@ -1824,7 +1824,7 @@
       "topic": "emergency_communications",
       "subtopic": "distress_call",
       "question": "A pilot is experiencing a complete engine failure. Their aircraft is a Cessna 172, registration C-GABC. What is the correct distress call?",
-      "choices": ["MAYDAY MAYDAY MAYDAY, THIS IS, Cessna one seven two Golf Alfa Bravo Charlie, Cessna one seven two Golf Alfa Bravo Charlie, Cessna one seven two Golf Alfa Bravo Charlie", "MAYDAY, THIS IS, Cessna GABC", "MAYDAY MAYDAY MAYDAY, Cessna Golf Alfa Bravo Charlie", "HELP HELP HELP, THIS IS, Cessna GABC"],
+      "choices": ["MAYDAY MAYDAY MAYDAY, THIS IS, Cessna wun sev-en too Golf Alfa Bravo Charlie, Cessna wun sev-en too Golf Alfa Bravo Charlie, Cessna wun sev-en too Golf Alfa Bravo Charlie", "MAYDAY, THIS IS, Cessna GABC", "MAYDAY MAYDAY MAYDAY, Cessna Golf Alfa Bravo Charlie", "HELP HELP HELP, THIS IS, Cessna GABC"],
       "correct_index": 0,
       "explanation": "Per the RIC-21, the distress call is MAYDAY (x3), THIS IS, then the aircraft call sign (x3). The full call sign including type designation should be used."
     },
@@ -1841,19 +1841,19 @@
       "id": "REG-036",
       "topic": "regulations",
       "subtopic": "privacy",
-      "question": "A telecommunication operator intercepts an aeronautical communication. May they divulge its contents?",
-      "choices": ["No, under no circumstances", "Yes, telecommunication operators are among those authorized to receive divulged intercepted communications", "Only with written permission", "Only if it relates to an emergency"],
+      "question": "May a radio operator divulge intercepted communications to a telecommunications system operator when necessary to forward or deliver them?",
+      "choices": ["No, under no circumstances", "Yes, when necessary to forward or deliver the communication", "Only with written permission", "Only if it relates to an emergency"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, telecommunications operators are among those to whom contents may be divulged, along with the addressee, accredited agents, authorized government officials, and court officers."
+      "explanation": "Per the RIC-21, intercepted communications may be divulged to an operator of a telecommunications system when necessary to forward or deliver the communication."
     },
     {
       "id": "PROC-077",
       "topic": "operating_procedures",
       "subtopic": "number_transmission",
       "question": "How should a runway designated as Runway 27 be transmitted?",
-      "choices": ["Runway twenty-seven", "Runway two seven", "Runway two seven zero", "Runway twenty seven"],
+      "choices": ["Runway twenty-seven", "Runway too sev-en", "Runway two seven zero", "Runway twenty seven"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, numbers are pronounced as individual digits. Runway 27 is transmitted as 'Runway two seven.'"
+      "explanation": "Per the RIC-21, runway designations are transmitted as separate digits. Runway 27 is transmitted as 'Runway too sev-en.'"
     },
     {
       "id": "EMER-042",
