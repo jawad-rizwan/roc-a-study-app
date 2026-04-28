@@ -428,10 +428,10 @@
       "id": "PROC-023",
       "topic": "operating_procedures",
       "subtopic": "call_signs",
-      "question": "How should a Canadian private aircraft with registration C-GFAC and type Cessna 182 identify itself?",
-      "choices": ["Charlie Golf Foxtrot Alfa Charlie", "Cessna wun ait too Golf Foxtrot Alfa Charlie", "Cessna Golf Foxtrot Alfa Charlie", "Golf Foxtrot Alfa Charlie"],
+      "question": "Using the aircraft-type form, how should a Canadian private aircraft with registration C-GFAC and type Cessna 182 identify itself?",
+      "choices": ["Charlie Golf Foxtrot Alfa Charlie", "Cessna wun ait too Golf Foxtrot Alfa Charlie", "Cessna wun ait too Charlie Golf Foxtrot Alfa Charlie", "Golf Foxtrot Alfa Charlie"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, private aircraft use the manufacturer/type name followed by the last four characters of the registration. C-GFAC in a Cessna 182 would be 'Cessna wun ait too Golf Foxtrot Alfa Charlie.'"
+      "explanation": "Per the RIC-21, private aircraft use the manufacturer/type name followed by the last four characters after the hyphen. For the type-form call sign, C-GFAC in a Cessna 182 is 'Cessna wun ait too Golf Foxtrot Alfa Charlie.' The leading C- is not spoken in this radiotelephone call sign."
     },
     {
       "id": "PROC-024",
@@ -645,9 +645,9 @@
       "topic": "operating_procedures",
       "subtopic": "calling_procedure",
       "question": "What is the correct format for an initial radio call from aircraft C-GFAC (Cessna 182) to Ottawa Tower?",
-      "choices": ["Cessna GFAC calling Ottawa Tower", "Ottawa Tower, THIS IS, Cessna wun ait too Golf Foxtrot Alfa Charlie", "THIS IS Cessna GFAC for Ottawa Tower", "Ottawa Tower, Cessna GFAC here"],
+      "choices": ["Cessna GFAC calling Ottawa Tower", "Ottawa Tower, THIS IS, Cessna wun ait too Golf Foxtrot Alfa Charlie", "THIS IS Cessna wun ait too Charlie Golf Foxtrot Alfa Charlie for Ottawa Tower", "Ottawa Tower, Golf Foxtrot Alfa Charlie here"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, the correct calling format is: station called first (Ottawa Tower), THIS IS, then calling station's call sign (Cessna wun ait too Golf Foxtrot Alfa Charlie)."
+      "explanation": "Per the RIC-21, the correct calling format is: station called first (Ottawa Tower), THIS IS, then the calling station's call sign. A Cessna 182 with registration C-GFAC uses 'Cessna wun ait too Golf Foxtrot Alfa Charlie'; the leading C- is dropped."
     },
     {
       "id": "PROC-048",
@@ -1409,7 +1409,7 @@
       "id": "EMER-032",
       "topic": "emergency_communications",
       "subtopic": "distress_acknowledgment",
-      "question": "Ottawa Tower acknowledges a distress call from Cessna GABC. What does the acknowledgment end with?",
+      "question": "Ottawa Tower acknowledges a distress call. What does the acknowledgment end with?",
       "choices": ["ROGER", "OVER", "RECEIVED MAYDAY", "ACKNOWLEDGED"],
       "correct_index": 2,
       "explanation": "Per the RIC-21, the distress acknowledgment format ends with RECEIVED MAYDAY: MAYDAY, [distressed station x3], THIS IS, [acknowledging station x3], RECEIVED MAYDAY."
@@ -1661,10 +1661,10 @@
       "id": "PROC-069",
       "topic": "operating_procedures",
       "subtopic": "call_signs",
-      "question": "A Piper Cherokee with registration C-FABC would use which call sign format?",
-      "choices": ["Piper Foxtrot Alfa Bravo Charlie", "Cherokee Foxtrot Alfa Bravo Charlie", "Charlie Foxtrot Alfa Bravo Charlie", "Piper Cherokee Charlie Foxtrot Alfa Bravo Charlie"],
+      "question": "Using the aircraft-type form, how would a Piper Cherokee with registration C-FABC identify itself?",
+      "choices": ["Charlie Foxtrot Alfa Bravo Charlie", "Cherokee Foxtrot Alfa Bravo Charlie", "Cherokee Charlie Foxtrot Alfa Bravo Charlie", "Piper Cherokee Charlie Foxtrot Alfa Bravo Charlie"],
       "correct_index": 1,
-      "explanation": "Per the RIC-21, private aircraft use the manufacturer or type name followed by the last four characters of the registration. A Piper Cherokee C-FABC would be 'Cherokee Foxtrot Alfa Bravo Charlie.'"
+      "explanation": "Per the RIC-21, private aircraft use the manufacturer or type name followed by the last four characters after the hyphen. In this type-name form, a Piper Cherokee C-FABC is 'Cherokee Foxtrot Alfa Bravo Charlie.' The leading C- is not spoken."
     },
     {
       "id": "PROC-070",
