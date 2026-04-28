@@ -216,7 +216,7 @@
           "content": "All times in aviation are in UTC (Zulu) unless explicitly stated otherwise. If an exam question asks about time in aviation radio communications, assume UTC. Also remember that time digits are spoken individually: 0930 is 'zero niner three zero,' not 'nine thirty' or 'oh-nine-thirty.'"
         }
       ],
-      "quiz_question_ids": ["PROC-001", "PROC-002", "PROC-003", "PROC-004", "PROC-005", "PROC-006", "PROC-007", "PROC-008"]
+      "quiz_question_ids": ["PROC-044", "PROC-045", "PROC-056", "PROC-012", "PROC-013", "PROC-014", "PROC-015", "PROC-054", "PROC-071"]
     },
     {
       "id": "lesson_04",
@@ -244,7 +244,7 @@
             ["G", "GOLF", "GOLF"],
             ["H", "HOTEL", "HOH-TEL"],
             ["I", "INDIA", "IN-DEE-AH"],
-            ["J", "JULIET", "JEW-LEE-ETT"],
+            ["J", "JULIETT", "JEW-LEE-ETT"],
             ["K", "KILO", "KEY-LOH"],
             ["L", "LIMA", "LEE-MAH"],
             ["M", "MIKE", "MIKE"],
@@ -265,7 +265,7 @@
         },
         {
           "type": "warning",
-          "content": "Note the spelling: it is ALFA (not ALPHA) and JULIET (not JULIETT or JULIETTE). The ITU deliberately chose these non-standard spellings to ensure consistent pronunciation across different languages. The exam may test you on the correct spelling."
+          "content": "Note the spelling: it is ALFA (not ALPHA) and JULIETT (with two T's). The ITU deliberately chose these non-standard spellings to ensure consistent pronunciation across different languages. The exam may test you on the correct spelling."
         },
         {
           "type": "text",
@@ -292,7 +292,7 @@
         {
           "type": "text",
           "title": "Special Words: Decimal, Hundred, Thousand",
-          "content": "In addition to the basic digits, several special words are used when transmitting numbers in aviation:\n\nDECIMAL - Spoken as 'DAY-SEE-MAL.' Used when transmitting frequencies or other numbers containing a decimal point. For example, 121.5 is spoken as 'wun too wun DAY-SEE-MAL fife.'\n\nHUNDRED - Spoken as 'HUN-DRED.' Used when transmitting whole hundreds. For example, 500 is spoken as 'fife hun-dred.'\n\nTHOUSAND - Spoken as 'TOU-SAND.' Used when transmitting whole thousands. For example, 3000 is spoken as 'tree tou-sand.'\n\nThese words allow more natural and efficient transmission of large numbers while maintaining clarity."
+          "content": "In addition to the basic digits, several special words are used when transmitting numbers in aviation:\n\nDECIMAL - Spoken as 'DAY-SEE-MAL.' Used when transmitting frequencies or other numbers containing a decimal point. For example, 121.5 is spoken as 'wun too wun DAY-SEE-MAL fife.'\n\nTHOUSAND - Spoken as 'TOU-SAND.' Used when transmitting whole thousands. For example, 3000 is spoken as 'tree tou-sand.'\n\nHUNDRED - Spoken as 'HUN-DRED.' This appears in specific contexts such as altitude or elevation groups, but plain numbers follow the RIC-21 digit-by-digit rule unless they are whole thousands. For example, the plain number 100 is 'wun zero zero,' not 'wun hundred.'\n\nThese words allow more natural and efficient transmission of large numbers while maintaining clarity."
         },
         {
           "type": "text",
@@ -309,7 +309,7 @@
           "content": "On the exam, pay close attention to pronunciation questions. '9' is NIN-ER (not NINE), '3' is TREE (not THREE), '5' is FIFE (not FIVE), and '4' is FOW-ER (two syllables). These non-standard pronunciations exist to improve clarity across languages and in noisy conditions."
         }
       ],
-      "quiz_question_ids": ["PROC-009", "PROC-010", "PROC-011", "PROC-012", "PROC-013", "PROC-014", "PROC-015", "PROC-016", "PROC-017", "PROC-018"]
+      "quiz_question_ids": ["PROC-001", "PROC-002", "PROC-003", "PROC-004", "PROC-005", "PROC-006", "PROC-050", "PROC-051", "PROC-052", "PROC-062", "PROC-063", "PROC-064", "PROC-065", "PROC-066", "PROC-078"]
     },
     {
       "id": "lesson_05",
@@ -321,7 +321,7 @@
         {
           "type": "text",
           "title": "Rules for Transmitting Numbers",
-          "content": "The way numbers are spoken on the radio depends on what the number represents. Different rules apply to different types of information. The general rule is that numbers are transmitted by speaking each digit separately, but there are important exceptions.\n\nGENERAL RULE: All numbers are transmitted by pronouncing each digit separately.\nExample: 10 is spoken as 'wun zero,' 583 is spoken as 'fife ait tree.'\n\nEXCEPTION - WHOLE HUNDREDS: Whole hundreds are spoken as the digit(s) followed by 'hundred.'\nExample: 500 is 'fife hundred,' 1100 is 'wun wun hundred.'\n\nEXCEPTION - WHOLE THOUSANDS: Whole thousands are spoken as the digit(s) followed by 'thousand.'\nExample: 3000 is 'tree tou-sand,' 12000 is 'wun too tou-sand.'\n\nEXCEPTION - COMBINATIONS: Numbers with both thousands and hundreds are spoken as the thousands portion followed by the hundreds portion.\nExample: 4500 is 'fow-er tou-sand fife hundred,' 10500 is 'wun zero tou-sand fife hundred.'"
+          "content": "The way numbers are spoken on the radio depends on what the number represents. Different rules apply to different types of information.\n\nGENERAL RULE: All numbers are transmitted by pronouncing each digit separately.\nExample: 10 is spoken as 'wun zero,' 100 is spoken as 'wun zero zero,' 583 is spoken as 'fife ait tree,' and 5,800 is spoken as 'fife ait zero zero.'\n\nEXCEPTION - WHOLE THOUSANDS: Whole thousands are spoken as the digit(s) followed by 'thousand.'\nExample: 3000 is 'tree tou-sand,' 12000 is 'wun too tou-sand,' and 11000 is 'wun wun tou-sand.'\n\nCONTEXT-SPECIFIC GROUPS: Some aviation values use their own grouping rules. Altitudes and aerodrome elevations are commonly expressed in thousands plus hundreds, while flight levels, headings, frequencies, and altimeter settings have their own formats covered below."
         },
         {
           "type": "text",
@@ -382,7 +382,7 @@
           ]
         }
       ],
-      "quiz_question_ids": ["PROC-019", "PROC-020", "PROC-021", "PROC-022", "PROC-023", "PROC-024", "PROC-025", "PROC-026", "PROC-027", "PROC-028", "PROC-029", "PROC-030"]
+      "quiz_question_ids": ["PROC-007", "PROC-008", "PROC-009", "PROC-010", "PROC-011", "PROC-046", "PROC-053", "PROC-074", "PROC-077", "PROC-016", "PROC-017", "PROC-018", "PROC-019", "PROC-020", "PROC-021", "PROC-022", "PROC-048", "PROC-067", "PROC-068"]
     },
     {
       "id": "lesson_06",
@@ -399,7 +399,7 @@
         {
           "type": "text",
           "title": "Private Civil Registration Call Signs",
-          "content": "Canadian privately registered aircraft have markings that begin with the nationality mark C, followed by a hyphen and four registration letters (e.g., C-GFAB). When using this registration as a radio call sign, the format is:\n\nFULL CALL SIGN: The aircraft type or manufacturer's name followed by the four letters after the hyphen, spoken phonetically.\n\nExample: A Cessna 172 with registration C-GFAB would use:\n'Cessna wun sev-en too Golf Foxtrot Alfa Bravo'\n\nThe leading 'C-' is not spoken as part of this radiotelephone call sign. The aircraft type or manufacturer comes first, then the four registration letters after the hyphen. Common examples:\n- C-GFAB (Cessna 172): 'Cessna wun sev-en too Golf Foxtrot Alfa Bravo'\n- C-FXYZ (Piper Cherokee): 'Cherokee Foxtrot X-ray Yankee Zulu'\n- C-GMJK (Beechcraft Baron): 'Baron Golf Mike Juliet Kilo'"
+          "content": "Canadian privately registered aircraft have markings that begin with the nationality mark C, followed by a hyphen and four registration letters (e.g., C-GFAB). When using this registration as a radio call sign, the format is:\n\nFULL CALL SIGN: The aircraft type or manufacturer's name followed by the four letters after the hyphen, spoken phonetically.\n\nExample: A Cessna 172 with registration C-GFAB would use:\n'Cessna wun sev-en too Golf Foxtrot Alfa Bravo'\n\nThe leading 'C-' is not spoken as part of this radiotelephone call sign. The aircraft type or manufacturer comes first, then the four registration letters after the hyphen. Common examples:\n- C-GFAB (Cessna 172): 'Cessna wun sev-en too Golf Foxtrot Alfa Bravo'\n- C-FXYZ (Piper Cherokee): 'Cherokee Foxtrot X-ray Yankee Zulu'\n- C-GMJK (Beechcraft Baron): 'Baron Golf Mike Juliett Kilo'"
         },
         {
           "type": "text",
@@ -433,7 +433,7 @@
         {
           "type": "example",
           "title": "Example: Initial Call to Different Station Types",
-          "content": "Calling a tower:\n'Toronto Tower, Cessna Golf Foxtrot Alfa Bravo, over.'\n\nCalling ground control:\n'Vancouver Ground, Piper Golf Hotel Juliet Kilo, request taxi.'\n\nCalling a flight service station:\n'Kamloops Radio, Cessna Golf Foxtrot Alfa Bravo, over.'\n\nCalling centre:\n'Montreal Centre, Air Canada wun too tree, Flight Level tree fife zero.'"
+          "content": "Calling a tower:\n'Toronto Tower, Cessna Golf Foxtrot Alfa Bravo, over.'\n\nCalling ground control:\n'Vancouver Ground, Piper Golf Hotel Juliett Kilo, request taxi.'\n\nCalling a flight service station:\n'Kamloops Radio, Cessna Golf Foxtrot Alfa Bravo, over.'\n\nCalling centre:\n'Montreal Centre, Air Canada wun too tree, Flight Level tree fife zero.'"
         },
         {
           "type": "key_points",
@@ -449,7 +449,7 @@
           ]
         }
       ],
-      "quiz_question_ids": ["PROC-031", "PROC-032", "PROC-033", "PROC-034", "PROC-035", "PROC-036", "PROC-037", "PROC-038"]
+      "quiz_question_ids": ["PROC-023", "PROC-024", "PROC-025", "PROC-026", "PROC-055", "PROC-069", "PROC-073"]
     },
     {
       "id": "lesson_07",
@@ -534,7 +534,7 @@
           ]
         }
       ],
-      "quiz_question_ids": ["PROC-039", "PROC-040", "PROC-041", "PROC-042", "PROC-043", "PROC-044", "PROC-045", "PROC-046", "PROC-047", "PROC-048", "PROC-049", "PROC-050"]
+      "quiz_question_ids": ["PROC-027", "PROC-028", "PROC-029", "PROC-030", "PROC-031", "PROC-032", "PROC-033", "PROC-034", "PROC-035", "PROC-036", "PROC-037", "PROC-038", "PROC-039", "PROC-040", "PROC-041", "PROC-042", "PROC-043", "PROC-047", "PROC-049", "PROC-057", "PROC-058", "PROC-059", "PROC-060", "PROC-075", "PROC-076"]
     },
     {
       "id": "lesson_08",
@@ -719,7 +719,7 @@
         {
           "type": "text",
           "title": "More Key Definitions",
-          "content": "AERONAUTICAL MOBILE (R) SERVICE: An aeronautical mobile service reserved for communications relating to safety and regularity of flight, primarily along national and international civil air routes. The '(R)' stands for 'route.'\n\nAERONAUTICAL MOBILE (OR) SERVICE: An aeronautical mobile service intended for communications relating to flight coordination, primarily outside national and international civil air routes. The '(OR)' stands for 'off-route.'\n\nBLIND TRANSMISSION: A transmission from one station to another in circumstances where two-way communication cannot be established, but where it is believed the called station is able to receive the transmission.\n\nBROADCAST: A transmission of information relating to air navigation that is not addressed to a specific station or stations.\n\nCONTROLLED AERODROME: An aerodrome at which air traffic control service is provided. This requires a control tower.\n\nMANOEUVRING AREA: That part of an aerodrome to be used for the takeoff, landing, and taxiing of aircraft, excluding aprons (ramp areas).\n\nMOVEMENT AREA: That part of an aerodrome to be used for the takeoff, landing, and taxiing of aircraft, INCLUDING aprons. Note: the movement area includes the manoeuvring area plus the aprons."
+          "content": "AERONAUTICAL MOBILE (R) SERVICE: An aeronautical mobile service reserved for communications relating to safety and regularity of flight, primarily along national and international civil air routes. The '(R)' stands for 'route.'\n\nAERONAUTICAL MOBILE (OR) SERVICE: An aeronautical mobile service intended for communications relating to flight coordination, primarily outside national and international civil air routes. The '(OR)' stands for 'off-route.'\n\nAERONAUTICAL OPERATIONAL CONTROL COMMUNICATIONS (AOCC): Communications related to the regularity of flight.\n\nGENERAL AVIATION COMMUNICATIONS (GAC): Communications relating to civil aviation operations other than scheduled air service and non-scheduled air transport operations for remuneration or hire.\n\nGROUND CONTROL COMMUNICATIONS: ATC service communications used to prevent collisions on the manoeuvring area and to maintain the orderly flow of aircraft operating on the manoeuvring area.\n\nPRIVATE ADVISORY SERVICE: A service at controlled aerodromes for company business such as servicing aircraft, fuel, lodging, and similar support. It does not include ATC service, weather reports, runway condition reports, or other information normally provided by ATC units.\n\nPRIVATE MULTIPLE STATION: An aircraft or aeronautical station used for air-ground multipurpose operational communications.\n\nCONTROLLED AERODROME: An aerodrome at which air traffic control service is provided. This requires a control tower.\n\nMANOEUVRING AREA: That part of an aerodrome to be used for the takeoff, landing, and taxiing of aircraft, excluding aprons (ramp areas).\n\nMOVEMENT AREA: That part of an aerodrome to be used for the takeoff, landing, and taxiing of aircraft, INCLUDING aprons. Note: the movement area includes the manoeuvring area plus the aprons."
         },
         {
           "type": "warning",
@@ -751,20 +751,22 @@
         {
           "type": "text",
           "title": "VHF Frequency Band Assignments",
-          "content": "Aeronautical communications in Canada use the Very High Frequency (VHF) band. Understanding the frequency assignments is important:\n\nVHF COMMUNICATION BAND: 118.000 MHz to 136.975 MHz\nThis is the frequency range used for voice communications between aircraft and ground stations, and between aircraft.\n\nVHF NAVIGATION BAND: 108.000 MHz to 117.950 MHz\nThis range is used for navigational aids such as VORs (VHF Omnidirectional Range) and ILS (Instrument Landing System) localizers.\n\nEMERGENCY FREQUENCY: 121.5 MHz\nThe international aeronautical emergency frequency. Monitored by ATC, flight service stations, and many aircraft. Used for distress and urgency communications.\n\nSECOND EMERGENCY FREQUENCY: 243.0 MHz\nA UHF emergency frequency primarily used by military aircraft. It is the military equivalent of 121.5 MHz.\n\nVHF radio signals travel in straight lines (line-of-sight). This means that the range of VHF communications is affected by altitude: the higher you fly, the farther you can communicate. At low altitudes, terrain can block VHF signals."
+          "content": "RIC-21 Appendix E lists the aeronautical frequency assignments by service. For exam questions, use these exact ranges:\n\nAERONAUTICAL RADIONAVIGATION: 108.1000 - 117.9750 MHz. This includes services such as VORs and ILS localizers.\n\nAIR TRAFFIC CONTROL SERVICES: Three separate VHF ranges are listed for ATC: 117.9750 - 121.9625 MHz, 123.5875 - 128.8125 MHz, and 132.0125 - 136.0000 MHz.\n\nGENERAL AVIATION COMMUNICATIONS (GAC): 121.9825 - 123.5875 MHz.\n\nAERONAUTICAL OPERATIONAL CONTROL COMMUNICATIONS (AOCC): 128.8125 - 132.0125 MHz.\n\nEMERGENCY FREQUENCY: 121.5 MHz is the international aeronautical emergency frequency. It is monitored by ATC, flight service stations, and many aircraft, and is used for distress and urgency communications.\n\nSECOND EMERGENCY FREQUENCY: 243.0 MHz is a UHF emergency frequency primarily used by military aircraft.\n\nVHF radio signals travel in straight lines (line-of-sight). This means that the range of VHF communications is affected by altitude: the higher you fly, the farther you can communicate. At low altitudes, terrain can block VHF signals."
         },
         {
           "type": "table",
           "title": "Key Frequency Assignments",
           "columns": ["Frequency/Range", "Purpose"],
           "rows": [
-            ["108.0 - 117.95 MHz", "VHF Navigation (VOR, ILS)"],
-            ["118.0 - 136.975 MHz", "VHF Voice Communications"],
+            ["108.1000 - 111.9750 MHz", "Aeronautical Radionavigation"],
+            ["111.9750 - 117.9750 MHz", "Aeronautical Radionavigation"],
+            ["117.9750 - 121.9625 MHz", "Air Traffic Control Services"],
+            ["121.9825 - 123.5875 MHz", "General Aviation Communications"],
+            ["123.5875 - 128.8125 MHz", "Air Traffic Control Services"],
+            ["128.8125 - 132.0125 MHz", "Aeronautical Operational Control Communications"],
+            ["132.0125 - 136.0000 MHz", "Air Traffic Control Services"],
             ["121.5 MHz", "International Aeronautical Emergency"],
-            ["123.1 MHz", "Search and Rescue (SAR)"],
-            ["126.7 MHz", "Aerodrome Traffic Frequency (ATF) - common default"],
-            ["243.0 MHz", "Military Emergency (UHF)"],
-            ["406 MHz", "ELT satellite detection frequency"]
+            ["243.0 MHz", "Military Emergency (UHF)"]
           ]
         },
         {
@@ -784,8 +786,9 @@
             "Aerodrome = any area used for aircraft operations (land, water, or ice)",
             "Aircraft station = radio on the aircraft; Aeronautical station = ground radio facility",
             "Manoeuvring area EXCLUDES aprons; Movement area INCLUDES aprons",
-            "VHF communications: 118.0 - 136.975 MHz",
-            "VHF navigation: 108.0 - 117.95 MHz",
+            "Aeronautical radionavigation: 108.1000 - 117.9750 MHz",
+            "ATC service uses three bands, ending with 132.0125 - 136.0000 MHz",
+            "GAC: 121.9825 - 123.5875 MHz; AOCC: 128.8125 - 132.0125 MHz",
             "Emergency frequency: 121.5 MHz (international), 243.0 MHz (military)",
             "VHF is line-of-sight: range increases with altitude",
             "Never replace a fuse with a higher-rated one",
@@ -794,7 +797,7 @@
           ]
         }
       ],
-      "quiz_question_ids": ["APP-001", "APP-002", "APP-003", "APP-004", "APP-005", "APP-006", "APP-007", "APP-008", "APP-009", "APP-010"]
+      "quiz_question_ids": ["APP-001", "APP-002", "APP-003", "APP-004", "APP-005", "APP-006", "APP-007", "APP-008", "APP-009", "APP-010", "APP-011", "APP-012", "APP-013", "APP-014", "APP-015", "APP-016", "APP-017", "APP-018", "APP-020", "APP-021", "APP-023", "APP-024", "APP-025", "APP-028", "APP-034", "APP-035", "APP-036", "APP-039"]
     }
   ]
 }
