@@ -1824,9 +1824,9 @@
       "topic": "emergency_communications",
       "subtopic": "distress_call",
       "question": "A pilot is experiencing a complete engine failure. Their aircraft is a Cessna 172, registration C-GABC. What is the correct distress call?",
-      "choices": ["MAYDAY MAYDAY MAYDAY, THIS IS, Cessna wun sev-en too Golf Alfa Bravo Charlie, Cessna wun sev-en too Golf Alfa Bravo Charlie, Cessna wun sev-en too Golf Alfa Bravo Charlie", "MAYDAY, THIS IS, Cessna GABC", "MAYDAY MAYDAY MAYDAY, Cessna Golf Alfa Bravo Charlie", "HELP HELP HELP, THIS IS, Cessna GABC"],
+      "choices": ["MAYDAY MAYDAY MAYDAY, THIS IS, Cessna Golf Alfa Bravo Charlie, Cessna Golf Alfa Bravo Charlie, Cessna Golf Alfa Bravo Charlie", "MAYDAY, THIS IS, Cessna GABC", "MAYDAY MAYDAY MAYDAY, Cessna Golf Alfa Bravo Charlie", "HELP HELP HELP, THIS IS, Cessna GABC"],
       "correct_index": 0,
-      "explanation": "Per the RIC-21, the distress call is MAYDAY (x3), THIS IS, then the aircraft call sign (x3). The full call sign including type designation should be used."
+      "explanation": "Per the RIC-21, the distress call is MAYDAY (x3), THIS IS, then the aircraft call sign (x3). This uses the manufacturer-name form of the private aircraft call sign: manufacturer followed by the four letters after the hyphen."
     },
     {
       "id": "PROC-076",
