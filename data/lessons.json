@@ -570,12 +570,12 @@
         {
           "type": "text",
           "title": "Distress Message Format",
-          "content": "Immediately following the distress call, the distress MESSAGE provides essential information. The distress message contains the following elements (as many as time and circumstances permit):\n\n1. MAYDAY (spoken once)\n2. Call sign of the station in distress\n3. Nature of the distress (engine failure, fire, etc.)\n4. Intention of the pilot-in-command (ditching, forced landing, etc.)\n5. Present position (latitude/longitude, bearing and distance from a known point, or last known position)\n6. Altitude or flight level\n7. Heading\n8. Any other useful information (souls on board, fuel remaining, aircraft colour, ELT status, etc.)"
+          "content": "Immediately following the distress call, the distress MESSAGE provides essential information. The distress message contains the following elements (as many as time and circumstances permit):\n\n1. MAYDAY (spoken once)\n2. Call sign of the station in distress\n3. Nature of the distress (engine failure, fire, etc.)\n4. Intention of the pilot-in-command (ditching, forced landing, etc.)\n5. Position details, including position, airspeed, altitude, and heading as available\n6. Number of persons on board and injuries, if applicable\n7. Any other useful information (fuel remaining, aircraft colour, ELT status, landmarks, etc.)\n8. Call sign of the station in distress, repeated at the end\n\nIf the distress message is transmitted immediately after the distress call, RIC-21 permits the first two message items (MAYDAY and call sign) to be omitted, but they are often included in training examples for clarity."
         },
         {
           "type": "example",
           "title": "Example: Complete Distress Call and Message",
-          "content": "MAYDAY MAYDAY MAYDAY,\nthis is Cessna Golf Foxtrot Alfa Bravo, Cessna Golf Foxtrot Alfa Bravo, Cessna Golf Foxtrot Alfa Bravo.\n\nMAYDAY, Cessna Golf Foxtrot Alfa Bravo,\nengine failure,\nintending forced landing,\nfife miles south of Buttonville airport,\ntoo tou-sand fife hundred feet,\nheading tree fow-er zero,\ntoo persons on board,\nwun hour fuel remaining,\nwhite and blue Cessna wun sev-en too,\nELT will be activated on impact."
+          "content": "MAYDAY MAYDAY MAYDAY,\nthis is Cessna Golf Foxtrot Alfa Bravo, Cessna Golf Foxtrot Alfa Bravo, Cessna Golf Foxtrot Alfa Bravo.\n\nMAYDAY, Cessna Golf Foxtrot Alfa Bravo,\nengine failure,\nintending forced landing,\nfife miles south of Buttonville airport,\nairspeed niner zero knots,\ntoo tou-sand fife hundred feet,\nheading tree fow-er zero,\ntoo persons on board,\nwun hour fuel remaining,\nwhite and blue Cessna wun sev-en too,\nELT will be activated on impact,\nCessna Golf Foxtrot Alfa Bravo."
         },
         {
           "type": "text",
@@ -585,7 +585,7 @@
         {
           "type": "text",
           "title": "Actions by the Station in Distress",
-          "content": "When you are the pilot of an aircraft in distress, you should take the following actions (time and circumstances permitting):\n\n1. SET TRANSPONDER TO 7700 - This is the international emergency transponder code. It causes your aircraft to appear with a distinctive symbol on ATC radar screens, immediately alerting controllers to your emergency.\n\n2. TRANSMIT THE DISTRESS CALL AND MESSAGE - Using the formats described above, on the current frequency or 121.5 MHz.\n\n3. ACTIVATE THE ELT (Emergency Locator Transmitter) - If not already automatically activated, switch the ELT to the ON position. The ELT transmits a distress signal on 121.5 MHz and 406 MHz that can be detected by satellites and search-and-rescue aircraft.\n\n4. FLY A TRIANGULAR PATTERN - If possible and if search aircraft are in the area, fly a triangular pattern to help searchers locate you (this applies mainly to VFR situations).\n\n5. WHEN COMMUNICATING, MAINTAIN A LISTENING WATCH - Listen on the distress frequency for instructions from the controlling station or search-and-rescue aircraft."
+          "content": "When you are the pilot of an aircraft in distress, RIC-21 lists the following radio actions, as time and circumstances permit:\n\n1. TRANSMIT THE DISTRESS CALL.\n2. TRANSMIT THE DISTRESS MESSAGE.\n3. LISTEN FOR ACKNOWLEDGMENT.\n4. EXCHANGE FURTHER DISTRESS TRAFFIC as required.\n5. ACTIVATE AUTOMATIC EMERGENCY EQUIPMENT, such as the ELT, if available and appropriate.\n\nIf no acknowledgment is received, repeat the distress message at intervals, leaving enough time between transmissions for other stations to reply.\n\nOther practical cockpit actions may also help rescuers. Set the transponder to 7700 if equipped and appropriate, and maintain a listening watch for instructions from the controlling station or search-and-rescue aircraft."
         },
         {
           "type": "warning",
@@ -609,7 +609,7 @@
             "MAYDAY spoken THREE times is the international distress signal",
             "Transmit on current frequency FIRST, then 121.5 MHz if no response",
             "Call sign spoken THREE times in the distress call",
-            "Distress message has 8 key elements (nature, intention, position, altitude, heading, etc.)",
+            "Distress message has 8 key elements and ends with the call sign repeated",
             "Distress has ABSOLUTE priority over ALL other communications",
             "Set transponder to 7700 in any emergency",
             "Activate ELT in a distress situation",
@@ -617,7 +617,7 @@
           ]
         }
       ],
-      "quiz_question_ids": ["EMER-001", "EMER-002", "EMER-003", "EMER-004", "EMER-005", "EMER-006", "EMER-007", "EMER-008", "EMER-009", "EMER-010", "EMER-011", "EMER-012"]
+      "quiz_question_ids": ["EMER-001", "EMER-002", "EMER-003", "EMER-004", "EMER-005", "EMER-006", "EMER-007", "EMER-008", "EMER-009", "EMER-010", "EMER-018", "EMER-019"]
     },
     {
       "id": "lesson_09",
@@ -702,7 +702,7 @@
           ]
         }
       ],
-      "quiz_question_ids": ["EMER-013", "EMER-014", "EMER-015", "EMER-016", "EMER-017", "EMER-018", "EMER-019", "EMER-020", "URG-001", "URG-002", "URG-003", "URG-004"]
+      "quiz_question_ids": ["EMER-011", "EMER-012", "EMER-013", "EMER-014", "EMER-015", "EMER-016", "EMER-017", "EMER-020", "URG-001", "URG-002", "URG-003", "URG-004"]
     },
     {
       "id": "lesson_10",

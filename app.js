@@ -7,7 +7,7 @@ const DATA_PATHS = {
 
 const PROGRESS_KEY = "rocaStudyProgress:v1";
 const THEME_KEY = "rocaStudyTheme";
-const APP_VERSION = "1.4.5";
+const APP_VERSION = "1.4.6";
 const DEFAULT_TIME_LIMIT_SECONDS = 45 * 60;
 const TOPICS = {
   regulations: "Regulations",
